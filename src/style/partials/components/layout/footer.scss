@@ -1,0 +1,39 @@
+.footer {
+  flex: none;
+  line-height: 1.2;
+}
+
+.totop {
+  --fz: 25;
+
+  position: fixed;
+  bottom: calc(40 / var(--fz) * var(--fz-em));
+  right: calc(40 / var(--fz) * var(--fz-em));
+  background: var(--totop-bg);
+  border-radius: 50%;
+  width: calc(50 / var(--fz) * var(--fz-em));
+  height: calc(50 / var(--fz) * var(--fz-em));
+  color: var(--totop-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s linear;
+
+  &.sticky-to-top {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--totop-color);
+  }
+
+  svg {
+    transform: rotate(-90deg);
+  }
+}

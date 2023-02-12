@@ -1,0 +1,18 @@
+a {
+  outline: none;
+}
+
+.link,
+a.link {
+  color: var(--link-color);
+  font-weight: 400;
+  transition: 0.2s;
+  border-bottom: 1px solid transparent;
+
+  &:hover,
+  &:focus {
+    color: var(--text-color);
+    text-decoration: none;
+    border-color: currentColor;
+  }
+}

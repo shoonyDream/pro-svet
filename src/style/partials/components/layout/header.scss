@@ -1,0 +1,227 @@
+.header {
+  position: fixed;
+}
+
+.header {
+  flex: none;
+  z-index: 980;
+  color: var(--text-color);
+  position: relative;
+  background: var(--header-bg);
+  border-bottom: 2px solid var(--header-border-color);
+  height: calc(var(--header-height) / var(--fz) * var(--fz-em));
+
+  &--desktop {
+    height: 100%;
+    display: none;
+
+    @media (min-width: 1140px) {
+      display: block;
+    }
+  }
+
+  &--mobile {
+    display: block;
+
+    @media (min-width: 1140px) {
+      display: none;
+    }
+
+    .uk-container {
+      justify-content: space-between;
+    }
+  }
+
+  &__main {
+    height: 100%;
+
+    >.uk-container {
+      display: flex;
+      height: 100%;
+    }
+  }
+
+  &__nav {
+    width: 100%;
+  }
+
+  &__mobile-burger {
+    margin-left: auto;
+  }
+}
+
+.header--desktop {
+  .nav {
+    height: 100%;
+
+    &__list {
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      margin: 0 calc(-10 / var(--fz) * var(--fz-em));
+    }
+
+    &__item {
+      padding: 0 calc(10 / var(--fz) * var(--fz-em));
+    }
+
+    &__link {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      transition: 0.2s linear;
+
+      &:hover,
+      &:focus {
+        color: var(--link-color);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.mobile-nav-container {
+  .nav {
+    &__link {
+      display: block;
+      transition: 0.2s linear;
+      padding: calc(10 / var(--fz) * var(--fz-em)) 0;
+
+      &:hover,
+      &:focus {
+        color: var(--link-color);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.header-burger,
+.hamburger {
+  height: 100%;
+}
+
+.header-burger {
+  color: var(--burger-color);
+}
+
+.hamburger {
+  padding: 1rem 1rem;
+  display: inline-block;
+  cursor: pointer;
+
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  transition-property: opacity, filter, color;
+
+  border: 0;
+  font: inherit;
+  outline: none;
+  overflow: visible;
+  margin: 0 0 0 0.5rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: currentColor;
+}
+
+.hamburger .hamburger-inner,
+.hamburger .hamburger-inner::after {
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  transition-property: background-color, color;
+}
+
+.hamburger:hover {
+  opacity: 1;
+  color: currentColor !important;
+}
+
+.hamburger:hover .hamburger-inner {
+  background-color: currentColor;
+}
+
+.hamburger:hover .hamburger-inner::after {
+  background-color: currentColor !important;
+}
+
+.hamburger.is-active {
+  color: currentColor !important;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: currentColor !important;
+}
+
+.hamburger-box {
+  width: 26px;
+  height: calc(3px * 3 + 5px * 2);
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  width: 36px;
+  height: 3px;
+  position: absolute;
+  background-color: currentColor;
+  transition-duration: 0.15s;
+  transition-property: transform;
+  transition-timing-function: ease;
+  border-radius: 4px;
+}
+
+.hamburger-inner {
+  top: 50%;
+  display: block;
+  margin-top: calc(3px / -2);
+  background-color: currentColor;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: "";
+  display: block;
+}
+
+.hamburger-inner::before {
+  top: calc(8px * -1);
+}
+
+.hamburger-inner::after {
+  bottom: calc(8px * -1);
+}
+
+.hamburger--squeeze .hamburger-inner {
+  transition-duration: 0.075s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--squeeze .hamburger-inner::before {
+  transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+}
+
+.hamburger--squeeze .hamburger-inner::after {
+  transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.uk-offcanvas-container .hamburger--squeeze .hamburger-inner {
+  transform: rotate(45deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.uk-offcanvas-container .hamburger--squeeze .hamburger-inner::before {
+  top: 0;
+  opacity: 1;
+  transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+}
+
+.uk-offcanvas-container .hamburger--squeeze .hamburger-inner::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}

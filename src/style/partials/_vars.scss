@@ -1,0 +1,107 @@
+:root {
+	--fz-px: 1px;
+	--fz-em: 1em;
+	--fz-base: 14;
+	--fz: var(--fz-base);
+	--font: "Suisse Int'l", sans-serif;
+	--font-title: 'Futura New Book', sans-serif;
+
+	@media (min-width: 960px) {
+		--fz-base: 16;
+	}
+
+	@media (min-width: 1200px) {
+		--fz-base: 18;
+	}
+
+	@media (min-width: 1480px) {
+		--fz-base: 20;
+	}
+}
+
+:root {
+	--h1: 40;
+	--h2: 20;
+	--h3: 20;
+	--h4: 20;
+	--text: calc(var(--fz-base) * var(--fz-px));
+	--text-small: calc(14 * var(--fz-px));
+
+	@media (min-width: 960px) {
+		--h1: 56;
+		--h2: 40;
+		--h3: 32;
+		--h4: 24;
+	}
+}
+
+:root {
+	--z-white: #ffffff;
+	--z-teak: #B18D63;
+	--z-leather: #9C7C56;
+	--z-yellow-metal: #69543a;
+	--z-mine-shaft: #333333;
+	--z-island-spice: #fffaf0;
+	--z-spring-wood: #f6f3ee;
+	--z-pearl-bush: #eee8e2;
+
+	--main-1: var(--z-white);
+	--main-2-light: var(--z-teak);
+	--main-2: var(--z-leather);
+	--main-2-dark: var(--z-yellow-metal);
+	--main-3: var(--z-mine-shaft);
+	--bg-1: var(--z-island-spice);
+	--bg-2: var(--z-spring-wood);
+	--line: var(--z-pearl-bush);
+}
+
+:root {
+	// common colors
+	--primary-light: var(--main-2-light);
+	--primary: var(--main-2);
+	--primary-dark: var(--main-2-dark);
+
+	--header-h1-color: var(--main-3);
+	--header-color: var(--main-3);
+
+	--text-color: var(--main-3);
+	--link-color: var(--main-2);
+
+	--icon-color: var(--main-3);
+
+	--main-bg: var(--main-1);
+
+	--header-bg: var(--main-1);
+	--header-border-color: var(--main-3);
+
+	--modal-bg: var(--main-1);
+	--bg-offset-canvas: var(--main-1);
+	--bg-offset-canvas-overlay: hsla(0, 0%, 0%, 0.2);
+	--bg-offset-canvas-mobile: var(--main-1);
+
+	--scrollbar-bg: var(--main-2);
+
+	--list-marker-color: currentColor;
+	--totop-color: var(--main-1);
+	--totop-bg: var(--primary);
+	--burger-color: var(--text-color);
+	--border-color: var(--line);
+}
+
+:root {
+	--header-height: 123;
+
+	@media (min-width: 1140px) {
+		--header-height: 155;
+	}
+}
+
+.dark-theme {
+	--header-h1-color: var(--main-1);
+	--header-color: var(--main-1);
+
+	--text-color: var(--main-1);
+	--link-color: var(--main-1);
+
+	--icon-color: var(--main-3);
+}

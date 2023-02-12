@@ -1,0 +1,37 @@
+.vertical-slider .slick-arrow {
+  display: none !important;
+  /* `arrows: false;` is not enough to prevent horizontal scrolling */
+}
+
+.slick-slide {
+  margin: 0 2px;
+}
+
+.photo-slider {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .uk-dotnav {
+    margin-top: calc(60 / var(--fz) * var(--fz-em));
+
+    >* {
+      padding-left: calc(16 / var(--fz) * var(--fz-em));
+    }
+
+    >*>* {
+      background: var(--text-color);
+      opacity: 0.7;
+      width: calc(14 / var(--fz) * var(--fz-em));
+      height: calc(14 / var(--fz) * var(--fz-em));
+    }
+
+    >.uk-active>* {
+      background: var(--header-h1-color);
+      opacity: 1;
+    }
+  }
+
+  .uk-slidenav {
+    color: var(--text-color);
+  }
+}

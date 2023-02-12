@@ -1,0 +1,156 @@
+.scrollbar,
+.select2-results__options {
+	overflow: auto;
+	padding-right: 1em;
+}
+
+/* полоса прокрутки (скроллбар) */
+.scrollbar::-webkit-scrollbar,
+.select2-results__options::-webkit-scrollbar {
+	width: 3px;
+	/* ширина для вертикального скролла */
+	height: 3px;
+	/* высота для горизонтального скролла */
+	background-color: transparent;
+}
+
+/* ползунок скроллбара */
+.scrollbar::-webkit-scrollbar-thumb,
+.select2-results__options::-webkit-scrollbar-thumb {
+	background-color: var(--scrollbar-bg);
+	border-radius: 1em;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover,
+.select2-results__options::-webkit-scrollbar-thumb:hover {
+	background-color: var(--scrollbar-bg);
+}
+
+/* Стрелки */
+
+.scrollbar::-webkit-scrollbar-button:vertical:start:decrement,
+.select2-results__options::-webkit-scrollbar-button:vertical:start:decrement {
+	background-color: transparent;
+}
+
+.scrollbar::-webkit-scrollbar-button:vertical:end:increment,
+.select2-results__options::-webkit-scrollbar-button:vertical:end:increment {
+	background-color: transparent;
+}
+
+.scrollbar::-webkit-scrollbar-button:horizontal:start:decrement,
+.select2-results__options::-webkit-scrollbar-button:horizontal:start:decrement {
+	background-color: transparent;
+}
+
+.scrollbar::-webkit-scrollbar-button:horizontal:end:increment,
+.select2-results__options::-webkit-scrollbar-button:horizontal:end:increment {
+	background-color: transparent;
+}
+
+.scrollbar {
+	scrollbar-color: var(--scrollbar-bg) transparent;
+	/* «цвет ползунка» «цвет полосы скроллбара» */
+	scrollbar-width: thin;
+	/* толщина */
+}
+
+.scrollbar {
+	.scrollbar-mobile-container & {
+		padding: calc(25 / var(--fz) * var(--fz-em)) calc(10 / var(--fz) * var(--fz-em));
+		margin-top: calc(-25 / var(--fz) * var(--fz-em));
+
+		@media (max-width: 959px) {
+			flex-wrap: nowrap;
+		}
+
+		@media (min-width: 960px) {
+			overflow: inherit;
+		}
+
+		&.uk-grid {
+			@media (max-width: 959px) {
+				margin-left: 0;
+			}
+
+			>*:first-child {
+				@media (max-width: 959px) {
+					padding-left: 0;
+					width: calc(50% - 30px);
+				}
+
+				@media (max-width: 639px) {
+					width: calc(90% - 30px);
+				}
+			}
+		}
+
+		>div {
+			@media (max-width: 959px) {
+				flex-shrink: 0;
+			}
+
+			@media (max-width: 639px) {
+				width: 90%;
+			}
+		}
+	}
+
+	.scrollbar-mobile-container &.logo-center-list {
+		&.uk-grid {
+			>*:first-child {
+				@media (max-width: 959px) {
+					padding-left: 0;
+					width: calc(30% - 30px);
+				}
+
+				@media (max-width: 639px) {
+					width: calc(40% - 30px);
+				}
+			}
+		}
+
+		>div {
+			@media (max-width: 959px) {
+				width: 30%;
+			}
+
+			@media (max-width: 639px) {
+				width: 40%;
+			}
+		}
+	}
+
+	.scrollbar-mobile-container &.key-indicators {
+		&.uk-grid {
+			>*:first-child {
+				@media (max-width: 959px) {
+					padding-left: 0;
+					width: calc(40% - 15px);
+				}
+
+				@media (max-width: 639px) {
+					width: calc(50% - 15px);
+				}
+
+				@media (max-width: 480px) {
+					width: calc(70% - 15px);
+				}
+			}
+		}
+
+		>div {
+			@media (max-width: 959px) {
+				width: 40%;
+			}
+
+			@media (max-width: 639px) {
+				width: 50%;
+			}
+
+			@media (max-width: 480px) {
+				width: 70%;
+			}
+		}
+	}
+}

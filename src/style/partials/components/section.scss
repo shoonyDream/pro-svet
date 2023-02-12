@@ -1,0 +1,33 @@
+.section {
+  position: relative;
+
+  &__container {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__header,
+  &__body {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__header+&__header,
+  &__header+&__body,
+  &__body+&__header {
+    margin-top: calc(20 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 960px) {
+      margin-top: calc(40 / var(--fz) * var(--fz-em));
+    }
+  }
+
+
+  &__title+&__subtitle {
+    margin-top: calc(16 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 960px) {
+      margin-top: calc(30 / var(--fz) * var(--fz-em));
+    }
+  }
+}

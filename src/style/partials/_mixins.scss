@@ -1,0 +1,59 @@
+/*
+Функция обрезающая единицы измерения и возвращающая число
+@param {Number}
+@return {Number}
+*/
+
+@function strip-units($number) {
+	@return $number / ($number * 0 + 1);
+}
+
+/*Функция замены чего-либо в строке
+  @author Hugo Giraudel
+  @param {String} $string - строка в которой ищем
+  @param {String} $search - то что нужно заменить
+  @param {String} $replace ('') - то на что нужно заменить
+  @return {String} - обновленная строка
+*/
+@function str-replace($string, $search, $replace: '') {
+	$index: str-index($string, $search);
+
+	@if $index {
+		@return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+	}
+
+	@return $string;
+}
+
+/*
+  Функция возвращающая значение в em
+  **ВСЕГДА ДОЛЖНО БЫТЬ КАК МИНИМУМ 2 ВХОДНЫХ ПАРАМЕТРА**
+  - сколько угодно значений может быть передано в функцию
+  - последний параметр всегда указывает в каком контексте надо считать em'ы
+  @list, @Number $values - значения
+  @return EM
+  Примеры :
+    font-size: em($h1-font-size, 16);
+    font-size: em($h1-font-size, $context); Указание контекста(шрифта родителя)
+    border-bottom: em(1px solid black) => .0625em solid black) ;
+    box-shadow: em(0 0 2px #ccc, inset 0 0 5px #eee, $h1-font-size) => 0 0 .125em #ccc, inset 0 0 .3125em #eee; // Множественные значения
+  source: https://github.com/pierreburel/sass-em;
+ */
+@function em($values...) {
+	$context: strip-units(nth($values, length($values)));
+	$result: ();
+	$separator: list_separator($values);
+	@for $i from 1 through length($values) - 1 {
+		$value: nth($values, $i);
+		@if type-of($value) == 'number' {
+			$value: strip-units($value);
+			$result: append($result, $value / $context * 1em, $separator);
+		} @else if type-of($value) == 'list' {
+			$result: append($result, em(append($value, $context)...), $separator);
+		} @else {
+			$result: append($result, $value, $separator);
+		}
+	}
+	@return if(length($result) == 1, nth($result, 1), $result);
+}
+

@@ -1,0 +1,12 @@
+.icon {
+	width: 1em;
+	height: 1em;
+	fill: url(#linearGradient);
+	display: inline-block;
+}
+
+{{#shapes}}
+.icon-{{base}} {
+	width:({{width.inner}}/{{height.inner}})*1em;
+}
+{{/shapes}}
