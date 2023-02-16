@@ -150,8 +150,9 @@ h4,
 .uk-h4 {
   font-size: calc(var(--h4) / var(--fz-base) * var(--fz-em));
   font-weight: 400;
-  color: var(--primary);
+  color: var(--header-color);
   line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .uk-section-small {

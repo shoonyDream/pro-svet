@@ -1,4 +1,6 @@
 .list {
+  list-style-image: url(Vector.png);
+
   *+& {
     margin-top: calc(20 / var(--fz) * var(--fz-em));
   }
@@ -9,12 +11,15 @@
 
   li {
     position: relative;
-    padding-left: calc(20 / var(--fz) * var(--fz-em));
+    padding-left: calc(34 / var(--fz) * var(--fz-em));
   }
 
   &--ul {
     li {
       line-height: 1.5;
+      font-weight: 400;
+      font-size: 18px;
+      color: var(--text-color);
 
       +li {
         margin-top: calc(12 / var(--fz) * var(--fz-em));
@@ -26,12 +31,13 @@
 
       &::before {
         left: 0;
-        top: 0.6em;
+        top: calc(2 / var(--fz) * var(--fz-em));
         content: '';
-        width: 0.3em;
-        height: 0.3em;
+        width: calc(20 / var(--fz) * var(--fz-em));
+        height: calc(20 / var(--fz) * var(--fz-em));
         position: absolute;
         background-color: var(--list-marker-color);
+        background-image: url(/img/Vector.png);
         border-radius: 50%;
       }
     }
@@ -41,20 +47,31 @@
     counter-reset: list;
 
     li {
-      line-height: 1.56;
-      padding-left: calc(32 / var(--fz) * var(--fz-em));
+      font-weight: 400;
+      font-size: 18px;
+      color: var(--text-color);
+      line-height: 1.5;
+      padding-left: calc(48 / var(--fz) * var(--fz-em));
 
       +li {
         margin-top: calc(12 / var(--fz) * var(--fz-em));
       }
 
       &::before {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         left: 0;
         top: 0;
         counter-increment: list;
-        content: counter(list, decimal-leading-zero);
-        width: calc(26 / var(--fz) * var(--fz-em));
+        content: counter(list, decimal);
+        width: 32px;
+        height: 32px;
         position: absolute;
+        background-color: var(--list-marker-color);
+        border-radius: 50%;
+        color: #fff;
+        font-size: 14px;
 
       }
     }
