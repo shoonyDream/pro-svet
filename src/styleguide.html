@@ -60,6 +60,8 @@
           <div style="background: #333; padding: 1em; display: flex; align-items: center; font-size: 30px; color: #fff">
             {{mixins.icon('plus')}}
             {{mixins.icon('arrow-left')}}
+            {{mixins.icon('Cart')}}
+            {{mixins.icon('3dmodel')}}
           </div>
           <div class="uk-width-1-2">
             <h3>List ul</h3>
@@ -87,6 +89,8 @@
           <div>
             <h3>Link</h3>
             <p><a href="#" class="link">Link</a></p>
+            <p><a href="#" class="link--bordered">Читать дальше</a></p>
+            <div style="background: #000;"><a href="#" class="link--dark-theme">Link dark theme</a></div>
             <h3>Short btns</h3>
             <div>
               <a class="btn" href="#" role="button"><span>Link</span></a> &nbsp;
@@ -121,9 +125,11 @@
             </div>
             <h3>Btns with icons</h3>
             <p>
-              <a class="btn btn--icon" href="#" role="button"><span>{{mixins.icon('plus')}}</span><span>Добавить</span></a>
-              <a class="btn btn--primary btn--icon" href="#" role="button"><span>{{mixins.icon('plus')}}</span><span>Добавить</span></a>
-              <a class="btn btn--secondary btn--icon" href="#" role="button"><span>{{mixins.icon('plus')}}</span><span>Отправить</span></a>
+              <a class="btn btn--icon" href="#" role="button"><span class="icon">{{mixins.icon('plus')}}</span><span>Добавить</span></a>
+              <a class="btn btn--primary btn--icon" href="#" role="button"><span class="icon">{{mixins.icon('plus')}}</span><span>Добавить</span></a>
+              <a class="btn btn--secondary btn--icon" href="#" role="button"><span class="icon">{{mixins.icon('plus')}}</span><span>Отправить</span></a>
+              <a class="btn btn--secondary btn--icon" href="#" role="button"><span class="icon">{{mixins.icon('3dmodel')}}</span><span>Запросить 3D модель</span></a>
+              <a class="btn btn--primary btn--icon" href="#" role="button"><span class="icon">{{mixins.icon('Cart')}}</span><span>Добавить в корзину</span></a>
             </p>
             <h3>100% btn</h3>
             <p>

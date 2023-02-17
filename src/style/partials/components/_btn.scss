@@ -3,7 +3,6 @@ button {
 }
 
 .btn {
-  --fz: 16;
   --button-text-color: var(--z-white);
   --button-text-color-hover: var(--z-white);
   --button-bg: var(--primary);
@@ -18,9 +17,6 @@ button {
     --button-border: var(--primary);
   }
 
-  @media (min-width: 960px) {
-    --fz: 18;
-  }
 }
 
 .btn {
@@ -29,7 +25,7 @@ button {
   outline: none;
   cursor: pointer;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.5;
   text-align: center;
   display: inline-block;
   border: 1px solid var(--button-border);
@@ -37,6 +33,13 @@ button {
   padding: calc(14 / var(--fz) * var(--fz-em)) calc(16 / var(--fz) * var(--fz-em));
   transition: 0.2s linear;
   margin: 0;
+
+  span:not(.icon) {
+    --fz: 14;
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+  }
+
+
 
   &:hover,
   &:focus {
@@ -61,6 +64,7 @@ button {
 
     span {
       flex-shrink: 0;
+      line-height: 1;
     }
 
     span+span {
@@ -68,7 +72,8 @@ button {
     }
 
     .icon {
-      height: calc(20 / var(--fz) * var(--fz-em));
+      width: calc(25 / var(--fz) * var(--fz-em));
+      height: calc(25 / var(--fz) * var(--fz-em));
     }
   }
 
