@@ -60,8 +60,11 @@
           <div style="background: #333; padding: 1em; display: flex; align-items: center; font-size: 30px; color: #fff">
             {{mixins.icon('plus')}}
             {{mixins.icon('arrow-left')}}
-            {{mixins.icon('Cart')}}
+            {{mixins.icon('cart')}}
             {{mixins.icon('3dmodel')}}
+            {{mixins.icon('star')}}
+            {{mixins.icon('cone')}}
+            {{mixins.icon('lightbulb')}}
           </div>
           <div class="uk-width-1-2">
             <h3>List ul</h3>
@@ -129,7 +132,7 @@
               <a class="btn btn--primary btn--icon" href="#" role="button"><span class="icon">{{mixins.icon('plus')}}</span><span>Добавить</span></a>
               <a class="btn btn--secondary btn--icon" href="#" role="button"><span class="icon">{{mixins.icon('plus')}}</span><span>Отправить</span></a>
               <a class="btn btn--secondary btn--icon" href="#" role="button"><span class="icon">{{mixins.icon('3dmodel')}}</span><span>Запросить 3D модель</span></a>
-              <a class="btn btn--primary btn--icon" href="#" role="button"><span class="icon">{{mixins.icon('Cart')}}</span><span>Добавить в корзину</span></a>
+              <a class="btn btn--primary btn--icon" href="#" role="button"><span class="icon">{{mixins.icon('cart')}}</span><span>Добавить в корзину</span></a>
             </p>
             <h3>100% btn</h3>
             <p>
@@ -153,6 +156,10 @@
             <div>
               <input class="btn btn--primary btn--is-disabled" type="button" value="Disabled" disabled />
               <input class="btn btn--secondary btn--is-disabled" type="button" value="Disabled" disabled />
+            </div>
+            <h3>Status</h3>
+            <div class="status">
+              <span>В наличии</span>
             </div>
           </div>
         </div>
@@ -290,6 +297,23 @@
                 </div>
               </div>
             </form>
+          </div>
+        </div>
+        <div class="uk-width-1-2">
+          <h3>Key-indicators, -horizontal, __icon-bg</h3>
+          <div class="key-indicators">
+            {{mixins.icon('star')}}
+            <p>Следим за трендами рынка. Даем профессиональные рекомендации по стилевому соответствию.</p>
+          </div>
+          <div class="key-indicators key-indicators-bg">
+            {{mixins.icon('lightbulb')}}
+            <title>В каталогах — более
+              4 000 моделей
+            </title>
+            <p>Мы работаем с флагманскими фабриками и каждый месяц
+              в ассортименте появляются <a class="link" href="#">трендовые новинки</a>. Самые популярные модели всегда есть
+              в наличии
+            </p>
           </div>
         </div>
       </div>
