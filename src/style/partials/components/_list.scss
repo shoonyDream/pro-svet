@@ -64,7 +64,7 @@
         --fz-before: 14;
 
         position: absolute;
-        left: calc(12 / var(--fz-before) * var(--fz-em));
+        left: 0;
         top: calc(10 / var(--fz-before) * var(--fz-em));
         font-size: calc(var(--fz-before)/ var(--fz) * var(--fz-em));
         counter-increment: list;
@@ -72,6 +72,10 @@
         color: var(--main-1);
         line-height: 1;
         z-index: 1;
+        width: calc(32 / var(--fz-before) * var(--fz-em));
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
       }
 
