@@ -3,7 +3,8 @@ button {
 }
 
 .btn {
-  --fz: 16;
+  --fz: 14;
+
   --button-text-color: var(--z-white);
   --button-text-color-hover: var(--z-white);
   --button-bg: var(--primary);
@@ -16,10 +17,6 @@ button {
     --button-bg: transparent;
     --button-bg-hover: var(--primary);
     --button-border: var(--primary);
-  }
-
-  @media (min-width: 960px) {
-    --fz: 18;
   }
 }
 
@@ -68,7 +65,7 @@ button {
     }
 
     .icon {
-      height: calc(20 / var(--fz) * var(--fz-em));
+      height: calc(32 / var(--fz) * var(--fz-em));
     }
   }
 

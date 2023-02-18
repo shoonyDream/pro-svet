@@ -40,12 +40,18 @@
       </div>
       <div>
         <h3>Scrollbar vertical</h3>
-        <div style="width: 650px; height: 100px" class="scrollbar">
-          <p>Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Officia, deleniti rerum cupiditate, ab
-            consequatur perferendis iste quas ipsa in odio cumque enim earum. Ipsa, eaque. Quos, incidunt expedita
-            dolorum necessitatibus. Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Officia, deleniti rerum
-            cupiditate, ab consequatur perferendis iste quas ipsa in odio cumque enim earum. Ipsa, eaque. Quos, incidunt
-            expedita dolorum necessitatibus.</p>
+        <div style="width: 100%; height: 300px; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 30px"
+          class="scrollbar">
+          <img src="./img/common/blog-test.jpg" alt="">
+          <img src="./img/common/about.jpg" alt="">
+          <img src="./img/common/product-test.png" alt="">
+          <img src="./img/common/product-bg-test.png" alt="">
+          <img src="./img/common/vertical-test.png" alt="">
+          <img src="./img/common/designer.jpg" alt="">
+          <img src="./img/common/pek.svg" alt="">
+          <img src="./img/common/delovye-linii.svg" alt="">
+          <img src="./img/common/visa.png" alt="">
+          <img src="./img/common/union.png" alt="">
         </div>
         <h3>Scrollbar horizontal</h3>
         <div style="width: 650px; height: 100px;" class="scrollbar">
@@ -57,19 +63,47 @@
       <div uk-grid class="uk-child-width-1-1">
         <div>
           <h3>Icons</h3>
-          <div style="background: #333; padding: 1em; display: flex; align-items: center; font-size: 30px; color: #fff">
+          <div
+            style="background: #333; padding: 10px; display: flex; align-items: center; font-size: 30px; color: #fff">
             {{mixins.icon('plus')}}
             {{mixins.icon('arrow-left')}}
+            {{mixins.icon('wtsp')}}
+            {{mixins.icon('tg')}}
+            {{mixins.icon('circles')}}
+            {{mixins.icon('play')}}
+            {{mixins.icon('arrow-menu')}}
+            {{mixins.icon('arrow-triangle')}}
+            {{mixins.icon('phone')}}
+            {{mixins.icon('cart')}}
+            {{mixins.icon('model')}}
+            {{mixins.icon('favorite')}}
+            {{mixins.icon('user')}}
+            {{mixins.icon('fb')}}
+            {{mixins.icon('fb-footer')}}
+            {{mixins.icon('inst')}}
+            {{mixins.icon('inst-footer')}}
+            {{mixins.icon('ytb')}}
+            {{mixins.icon('ytb-footer')}}
+            {{mixins.icon('pnrst')}}
+            {{mixins.icon('pnrst-footer')}}
+          </div>
+          <div
+            style="background: #333; padding: 10px; display: flex; align-items: center; font-size: 30px; color: #fff; font-size: 60px;">
+            {{mixins.icon('free')}}
+            {{mixins.icon('star')}}
+            {{mixins.icon('cone')}}
+            {{mixins.icon('lightbulb')}}
+            {{mixins.icon('3d')}}
+            {{mixins.icon('repeat')}}
+            {{mixins.icon('count')}}
           </div>
           <div class="uk-width-1-2">
             <h3>List ul</h3>
             <div>
               <ul class="list list--ul">
-                <li>item 1</li>
-                <li>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Atque repellat explicabo dicta iste
-                  eligendi assumenda perferendis in, laborum praesentium, molestias fuga eos! Provident dolorem pariatur
-                  nisi iusto placeat eum, amet.</li>
-                <li>item 3</li>
+                <li>По готовому дизайн-проекту</li>
+                <li>По фото помещений</li>
+                <li>По эскизу и пожеланиям</li>
               </ul>
             </div>
           </div>
@@ -77,11 +111,10 @@
             <h3>List ol</h3>
             <div>
               <ol class="list list--ol">
-                <li>item 1</li>
-                <li>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Atque repellat explicabo dicta iste
-                  eligendi assumenda perferendis in, laborum praesentium, molestias fuga eos! Provident dolorem pariatur
-                  nisi iusto placeat eum, amet.</li>
-                <li>item 3</li>
+                <li>Сделает расчет освещения по техническим параметрам светильников</li>
+                <li>Подготовит эскиз с набросками концепции
+                  и план расположения светильников</li>
+                <li>Подберет комплект светильников, идеально попадающих в стиль интерьера и функционал помещения</li>
               </ol>
             </div>
           </div>
@@ -90,6 +123,8 @@
           <div>
             <h3>Link</h3>
             <p><a href="#" class="link">Link</a></p>
+            <p><a href="#" class="link--bordered">Читать дальше</a></p>
+            <div style="background: #333; padding: 10px"><a href="#" class="link--dark-theme">Link dark theme</a></div>
             <h3>Short btns</h3>
             <div>
               <a class="btn" href="#" role="button"><span>Link</span></a> &nbsp;
@@ -126,10 +161,14 @@
             <p>
               <a class="btn btn--icon" href="#"
                 role="button"><span>{{mixins.icon('plus')}}</span><span>Добавить</span></a>
-              <a class="btn btn--primary btn--icon" href="#"
-                role="button"><span>{{mixins.icon('plus')}}</span><span>Добавить</span></a>
+              <a class=" btn btn--primary btn--icon" href="#"
+                role="button"><span>Добавить</span><span>{{mixins.icon('plus')}}</span></a>
               <a class="btn btn--secondary btn--icon" href="#"
                 role="button"><span>{{mixins.icon('plus')}}</span><span>Отправить</span></a>
+              <a class="btn btn--secondary btn--icon" href="#"
+                role="button"><span>{{mixins.icon('model')}}</span><span>Запросить 3D модель</span></a>
+              <a class="btn btn--primary btn--icon" href="#"
+                role="button"><span>{{mixins.icon('cart')}}</span><span>Добавить в корзину</span></a>
             </p>
             <h3>100% btn</h3>
             <p>
@@ -153,6 +192,10 @@
             <div>
               <input class="btn btn--primary btn--is-disabled" type="button" value="Disabled" disabled />
               <input class="btn btn--secondary btn--is-disabled" type="button" value="Disabled" disabled />
+            </div>
+            <h3>Status</h3>
+            <div class="status">
+              <span>В наличии</span>
             </div>
           </div>
         </div>
@@ -290,6 +333,24 @@
                 </div>
               </div>
             </form>
+          </div>
+        </div>
+        <div class="uk-width-1-2">
+          <h3>Key-indicators, -horizontal, __icon-bg</h3>
+          <div class="key-indicators">
+            {{mixins.icon('star')}}
+            <p>Следим за трендами рынка. Даем профессиональные рекомендации по стилевому соответствию.</p>
+          </div>
+          <div class="key-indicators key-indicators-bg">
+            {{mixins.icon('lightbulb')}}
+            <title>В каталогах — более
+              4 000 моделей
+            </title>
+            <p>Мы работаем с флагманскими фабриками и каждый месяц
+              в ассортименте появляются <a class="link" href="#">трендовые новинки</a>. Самые популярные модели всегда
+              есть
+              в наличии
+            </p>
           </div>
         </div>
       </div>

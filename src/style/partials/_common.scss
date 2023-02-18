@@ -122,17 +122,20 @@ h1,
 .uk-h1 {
   font-size: calc(var(--h1) / var(--fz-base) * var(--fz-em));
   font-weight: 400;
-  line-height: 1.1;
+  line-height: 1.2;
   color: var(--header-h1-color);
   font-family: var(--font-title);
+  text-transform: uppercase;
 }
 
 h2,
 .uk-h2 {
   font-size: calc(var(--h2) / var(--fz-base) * var(--fz-em));
   font-weight: 400;
+  line-height: 1.2;
   color: var(--header-color);
   font-family: var(--font-title);
+  text-transform: uppercase;
 }
 
 h3,
@@ -140,6 +143,7 @@ h3,
   font-size: calc(var(--h3) / var(--fz-base) * var(--fz-em));
   font-weight: 400;
   color: var(--header-color);
+  text-transform: uppercase;
 }
 
 h4,
@@ -147,6 +151,8 @@ h4,
   font-size: calc(var(--h4) / var(--fz-base) * var(--fz-em));
   font-weight: 400;
   color: var(--header-color);
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .uk-section-small {
