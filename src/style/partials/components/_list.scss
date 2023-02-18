@@ -1,6 +1,4 @@
 .list {
-  list-style-image: url(Vector.png);
-
   *+& {
     margin-top: calc(20 / var(--fz) * var(--fz-em));
   }
