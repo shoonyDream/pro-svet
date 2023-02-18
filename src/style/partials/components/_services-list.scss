@@ -1,0 +1,40 @@
+.services-list {
+  display: flex;
+  gap: calc(20 / var(--fz) * var(--fz-em));
+
+  .mobile-menu & {
+    flex-direction: column;
+  }
+
+  &__item {
+    position: relative;
+
+    & .uk-badge {
+      --fz-badge: 12;
+
+      right: calc(-8 / var(--fz-badge) * var(--fz-em));
+      top: 0;
+      height: calc(16 / var(--fz-badge) * var(--fz-em));
+      min-width: calc(16 / var(--fz-badge) * var(--fz-em));
+      font-size: calc(var(--fz-badge) / var(--fz) * var(--fz-em));
+      position: absolute;
+      background-color: var(--primary);
+    }
+  }
+
+  &__icon {
+    --fz-icon: 32;
+
+    font-size: calc(var(--fz-icon) / var(--fz) * var(--fz-em));
+    display: flex;
+    align-items: center;
+    gap: calc(12 / var(--fz-icon) * var(--fz-em));
+
+    .mobile-menu & .link {
+      --fz-text: 14;
+
+      font-size: calc(var(--fz-text) / var(--fz-icon) * var(--fz-em));
+
+    }
+  }
+}

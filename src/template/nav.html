@@ -1,13 +1,172 @@
-<nav class="nav">
-  <ul class="nav__list">
-    <li class="nav__item">
-      <a href="#neurocoaching" class="nav__link" uk-scroll="offset: 100;">Item</a>
-    </li>
-    <li class="nav__item">
-      <a href="#services" class="nav__link" uk-scroll="offset: 100;">Item 2</a>
-    </li>
-    <li class="nav__item">
-      <a href="#price" class="nav__link" uk-scroll="offset: 100;">Item 3</a>
-    </li>
-  </ul>
+<nav class="top-nav">
+  <div class="top-nav__row">
+    <ul class="top-nav__list">
+      <li class="top-nav__item top-nav__item--catalog">
+        <a href="#" class="top-nav__link link" uk-toggle="target: #catalog">
+          <span class="catalog-indicator"></span>
+          <span class="top-nav__parent">Каталог</span>
+        </a>
+        <div id="catalog" class="top-nav__overlay" uk-offcanvas="overlay: true">
+          <div class="top-nav__childs">
+            <div class="uk-container">
+              <div class="main-nav scrollbar">
+                <ul class="main-nav__list main-nav__list--lvl1">
+                  <li class="main-nav__item main-nav__item--lvl1">
+                    <a href="#" class="main-nav__link link">Новинки</a>
+                  </li>
+                  <li class="main-nav__item main-nav__item--lvl1">
+                    <a href="#" class="main-nav__link link">Светильники</a>
+                  </li>
+                  <li class="main-nav__item main-nav__item--lvl1">
+                    <a href="#" class="main-nav__link link main-nav__parent">Люстры</a>
+                    <div class="main-nav__childs scrollbar">
+                      <div class="uk-container">
+                        <ul class="main-nav__list main-nav__list--lvl2">
+                          <li class="main-nav__item main-nav__item--lvl2">
+                            <a href="#" class="main-nav__link link">Подвесные люстры</a>
+                          </li>
+                          <li class="main-nav__item main-nav__item--lvl2">
+                            <a href="#" class="main-nav__link link">Потолочные люстры</a>
+                          </li>
+                          <li class="main-nav__item main-nav__item--lvl2">
+                            <a href="#" class="main-nav__link link">Люстры-кольца</a>
+                          </li>
+                          <li class="main-nav__item main-nav__item--lvl2">
+                            <a href="#" class="main-nav__link link">Прямые люстры</a>
+                          </li>
+                          <li class="main-nav__item main-nav__item--lvl2">
+                            <a href="#" class="main-nav__link link">Каскадные люстры</a>
+                          </li>
+                          <li class="main-nav__item main-nav__item--lvl2">
+                            <a href="#" class="main-nav__link link">Люстры-шары</a>
+                          </li>
+                          <li class="main-nav__item main-nav__item--lvl2">
+                            <a href="#" class="main-nav__link link">Геометрические люстры</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="main-nav__item main-nav__item--lvl1">
+                    <a href="#" class="main-nav__link link">Детский свет</a>
+                  </li>
+                  <li class="main-nav__item main-nav__item--lvl1">
+                    <a href="#" class="main-nav__link link main-nav__parent">Бра</a>
+                    <div class="main-nav__childs scrollbar">
+                      <ul class="main-nav__list main-nav__list--lvl2">
+                        <li class="main-nav__item main-nav__item--lvl2"><a href="#" class="main-nav__link link">Бра</a>
+                        </li>
+                        <li class="main-nav__item main-nav__item--lvl2"><a href="#" class="main-nav__link link">Бра
+                            2</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="main-nav__item main-nav__item--lvl1">
+                    <a href="#" class="main-nav__link link">Торшеры</a>
+                  </li>
+                  <li class="main-nav__item main-nav__item--lvl1">
+                    <a href="#" class="main-nav__link link">Настольные лампы</a>
+                  </li>
+                  <li class="main-nav__item main-nav__item--small">
+                    <a href="#" class="main-nav__link link">Доставка и оплата</a>
+                  </li>
+                  <li class="main-nav__item main-nav__item--small">
+                    <a href="#" class="main-nav__link link">Возврат и обмен</a>
+                  </li>
+                  <li class="main-nav__item main-nav__item--small">
+                    <a href="#" class="main-nav__link link">Блог</a>
+                  </li>
+                </ul>
+                <div class="main-nav__image uk-cover-container uk-height-medium">
+                  <img src="./img/common/vertical-test.jpg" alt="" uk-cover>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="top-nav__item">
+        <a href="#" class="top-nav__link link">
+          <span>Новинки</span>
+        </a>
+      </li>
+      <li class="top-nav__item">
+        <a href="#" class="top-nav__link link">
+          <span>Светильники</span>
+        </a>
+      </li>
+      <li class="top-nav__item">
+        <a href="#" class="top-nav__link link" uk-toggle="target: #lustry">
+          <span class="top-nav__parent">Люстры</span>
+        </a>
+        <div id="lustry" class="top-nav__overlay" uk-offcanvas="overlay: true">
+          <div class="top-nav__childs">
+            <div class="uk-container">
+              <div class="main-nav scrollbar">
+                <ul class="main-nav__list main-nav__list--lvl1">
+                  <li class="main-nav__item main-nav__item--lvl1">
+                    <a href="#" class="main-nav__link link main-nav__parent">Люстры</a>
+                    <div class="main-nav__childs scrollbar">
+                      <div class="uk-container">
+                        <ul class="main-nav__list main-nav__list--lvl2">
+                          <li class="main-nav__item main-nav__item--lvl2">
+                            <a href="#" class="main-nav__link link">Подвесные люстры</a>
+                          </li>
+                          <li class="main-nav__item main-nav__item--lvl2">
+                            <a href="#" class="main-nav__link link">Потолочные люстры</a>
+                          </li>
+                          <li class="main-nav__item main-nav__item--lvl2">
+                            <a href="#" class="main-nav__link link">Люстры-кольца</a>
+                          </li>
+                          <li class="main-nav__item main-nav__item--lvl2">
+                            <a href="#" class="main-nav__link link">Прямые люстры</a>
+                          </li>
+                          <li class="main-nav__item main-nav__item--lvl2">
+                            <a href="#" class="main-nav__link link">Каскадные люстры</a>
+                          </li>
+                          <li class="main-nav__item main-nav__item--lvl2">
+                            <a href="#" class="main-nav__link link">Люстры-шары</a>
+                          </li>
+                          <li class="main-nav__item main-nav__item--lvl2">
+                            <a href="#" class="main-nav__link link">Геометрические люстры</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="main-nav__image uk-cover-container uk-height-medium">
+                  <img src="./img/common/vertical-test.jpg" alt="" uk-cover>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="top-nav__item">
+        <a href="#" class="top-nav__link link">
+          <span>Детский свет</span>
+        </a>
+      </li>
+      <li class="top-nav__item">
+        <a href="#" class="top-nav__link link">
+          <span>Бра</span>
+        </a>
+      </li>
+      <li class="top-nav__item">
+        <a href="#" class="top-nav__link link">
+          <span>Торшеры</span>
+        </a>
+      </li>
+      <li class="top-nav__item">
+        <a href="#" class="top-nav__link link">
+          <span>Настольные лампы</span>
+        </a>
+      </li>
+    </ul>
+    <div class="top-nav__services">
+      {% include "template/services-list.html" %}
+    </div>
+  </div>
 </nav>

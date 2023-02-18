@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/packages.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/partials/components/layout/header.css">
+  <link rel="stylesheet" href="css/partials/components/layout/nav.css">
   <link rel="stylesheet" href="css/partials/components/layout/footer.css">
   <link rel="stylesheet" href="css/partials/components/section.css">
   <link rel="stylesheet" href="css/partials/components/card.css">
@@ -32,33 +33,62 @@
 
 <body class="body">
   <header class="header" uk-sticky>
-    <div class="header--desktop">
-      <div class="header__main">
-        <div class="uk-container uk-container-large">
-          <div class="header__nav">
-            {% include "template/nav.html" %}
+    <div class="uk-container uk-container-large">
+      <div class="header__container">
+        <div class="header__logo">
+          <div class="logo">
+            <img src="./img/logo.svg" alt="Pro-svetshop-logo" class="logo__img" width="76" height="135">
           </div>
         </div>
-      </div>
-    </div>
-    <div class="header--mobile">
-      <div class="header__main">
-        <div class="uk-container uk-container-large">
-          <div class="header__mobile-burger">
-            <div class="header__burger">
-              <div class="header-burger">
-                <button uk-toggle="target: #header-mobile" class="hamburger hamburger--squeeze">
-                  <span class="hamburger-box">
-                    <span class="hamburger-inner">
+        <div class="header--desktop">
+          <div class="header__top">
+            <div class="header-top">
+              <div class="header-top__contacts">
+                {% include "template/header-top-contacts.html" %}
+              </div>
+              <div class="header-top__nav">
+                {% include "template/header-top-nav.html" %}
+              </div>
+            </div>
+          </div>
+          <div class="header__main">
+            <div class="header__nav">
+              {% include "template/nav.html" %}
+            </div>
+          </div>
+        </div>
+        <div class="header--mobile">
+          <div class="header__main">
+            <div class="header__mobile-services">
+              <div class="services-list">
+                <div class="services-list__item">
+                  <a href="#" class="services-list__icon link link--icon-only">
+                    {{mixins.icon('phone')}}
+                  </a>
+                </div>
+                <div class="services-list__item">
+                  <a href="#" class="services-list__icon link link--icon-only">
+                    {{mixins.icon('cart')}}
+                  </a>
+                  <span class="uk-badge">1</span>
+                </div>
+              </div>
+            </div>
+            <div class="header__mobile-burger">
+              <div class="header__burger">
+                <div class="header-burger">
+                  <button uk-toggle="target: #header-mobile" class="hamburger hamburger--squeeze">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner">
+                      </span>
                     </span>
-                  </span>
-                </button>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
   </header>
   <div class="page-wrapper">
     <main class="content">

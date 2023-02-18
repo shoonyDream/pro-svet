@@ -74,6 +74,7 @@
   --social-icon-color: var(--main-1);
 
   --main-bg: var(--main-1);
+  --main-border: var(--line);
 
   --header-bg: var(--main-1);
   --header-border-color: var(--line);
@@ -88,15 +89,16 @@
   --list-marker-color: var(--main-2);
   --totop-color: var(--main-1);
   --totop-bg: var(--primary);
-  --burger-color: var(--text-color);
+  --burger-color: var(--z-white);
   --border-color: var(--line);
 }
 
 :root {
-  --header-height: 123;
+  --header-height: 130;
 
   @media (min-width: 1140px) {
-    --header-height: 155;
+    --header-height: 157;
+    --logo-width: 116;
   }
 }
 
