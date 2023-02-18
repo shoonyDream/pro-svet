@@ -16,7 +16,7 @@
   }
 </style>
 <section class="uk-section-small section">
-  <div class="uk-container uk-container-large">
+  <div class="uk-container">
     <div class="section__header section__header--decor">
       <div class="section__title">
         <h2>Elements from the project</h2>
@@ -122,9 +122,19 @@
         <div uk-grid class="uk-child-width-1-1">
           <div>
             <h3>Link</h3>
-            <p><a href="#" class="link">Link</a></p>
-            <p><a href="#" class="link--bordered">Читать дальше</a></p>
-            <div style="background: #333; padding: 10px"><a href="#" class="link--dark-theme">Link dark theme</a></div>
+            <div uk-grid class="uk-child-width-1-2">
+              <div>
+                <p><a href="#" class="link">Link</a></p>
+                <p><a href="#" class="link link--bordered">Читать дальше</a></p>
+                <p><a href="#" class="link link--icon-only">{{mixins.icon('tg')}}</a></p>
+              </div>
+
+              <div class="dark-theme" style="background: #333; padding: 10px">
+                <p><a href="#" class="link">Link</a></p>
+                <p><a href="#" class="link link--bordered">Читать дальше</a></p>
+                <p><a href="#" class="link link--icon-only">{{mixins.icon('tg')}}</a></p>
+              </div>
+            </div>
             <h3>Short btns</h3>
             <div>
               <a class="btn" href="#" role="button"><span>Link</span></a> &nbsp;

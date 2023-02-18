@@ -66,13 +66,14 @@
 
   --text-color: var(--main-3);
   --link-color: var(--main-2);
+  --link-color-hover: var(--main-3);
 
   --icon-color: var(--main-3);
 
   --main-bg: var(--main-1);
 
   --header-bg: var(--main-1);
-  --header-border-color: var(--main-3);
+  --header-border-color: var(--line);
 
   --modal-bg: var(--main-1);
   --bg-offset-canvas: var(--main-1);
@@ -102,6 +103,7 @@
 
   --text-color: var(--main-1);
   --link-color: var(--main-1);
+  --link-color-hover: var(--main-2);
 
   --icon-color: var(--main-3);
 }
