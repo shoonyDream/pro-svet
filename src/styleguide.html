@@ -128,7 +128,6 @@
                 <p><a href="#" class="link link--bordered">Читать дальше</a></p>
                 <p><a href="#" class="link link--icon-only">{{mixins.icon('tg')}}</a></p>
               </div>
-
               <div class="dark-theme" style="background: #333; padding: 10px">
                 <p><a href="#" class="link">Link</a></p>
                 <p><a href="#" class="link link--bordered">Читать дальше</a></p>
@@ -206,6 +205,35 @@
             <h3>Status</h3>
             <div class="status">
               <span>В наличии</span>
+            </div>
+            <h3>Key-indicators, -horizontal, __icon-bg</h3>
+            <div uk-grid class="key-indicators key-indicators--bordered-full uk-child-width-1-2@m">
+              <div class="key-indicators__item">
+                <div class="key-indicator">
+                  <div class="key-indicator__header">
+                    <div class="key-indicator__icon">{{mixins.icon('star')}}</div>
+                  </div>
+                  <div class="key-indicator__body">
+                    <div class="key-indicator__description">Следим за трендами рынка. Даем профессиональные рекомендации
+                      по стилевому соответствию.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="key-indicators__item">
+                <div class="key-indicator key-indicator--horizontal key-indicator--align-left">
+                  <div class="key-indicator__header">
+                    <div class="key-indicator__icon key-indicator__icon--bg">{{mixins.icon('lightbulb')}}</div>
+                  </div>
+                  <div class="key-indicator__body">
+                    <div class="key-indicator__title">В каталогах — более
+                      4 000 моделей</div>
+                    <div class="key-indicator__description">Мы работаем с флагманскими фабриками и каждый месяц
+                      в ассортименте появляются <a class="link" href="">трендовые новинки</a>. Самые популярные модели
+                      всегда есть
+                      в наличии</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -343,24 +371,6 @@
                 </div>
               </div>
             </form>
-          </div>
-        </div>
-        <div class="uk-width-1-2">
-          <h3>Key-indicators, -horizontal, __icon-bg</h3>
-          <div class="key-indicators">
-            {{mixins.icon('star')}}
-            <p>Следим за трендами рынка. Даем профессиональные рекомендации по стилевому соответствию.</p>
-          </div>
-          <div class="key-indicators key-indicators-bg">
-            {{mixins.icon('lightbulb')}}
-            <title>В каталогах — более
-              4 000 моделей
-            </title>
-            <p>Мы работаем с флагманскими фабриками и каждый месяц
-              в ассортименте появляются <a class="link" href="#">трендовые новинки</a>. Самые популярные модели всегда
-              есть
-              в наличии
-            </p>
           </div>
         </div>
       </div>

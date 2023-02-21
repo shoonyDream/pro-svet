@@ -52,35 +52,3 @@
     }
   }
 }
-
-.status {
-  font-family: 'Suisse Int';
-  font-weight: 400;
-  --fz: 14;
-  font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
-  line-height: 1.5;
-  color: var(--text-color);
-  position: relative;
-  display: flex;
-  width: calc(90 / var(--fz) * var(--fz-em));
-  height: calc(21 / var(--fz) * var(--fz-em));
-
-  &:before {
-    content: '';
-    width: calc(8 / var(--fz) * var(--fz-em));
-    height: calc(8 / var(--fz) * var(--fz-em));
-    background-color: var(--primary);
-    display: block;
-    border-radius: 50%;
-    position: absolute;
-    left: 0;
-    top: calc(7 / var(--fz) * var(--fz-em));
-  }
-
-  & span {
-    margin-left: calc(18 / var(--fz) * var(--fz-em));
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
