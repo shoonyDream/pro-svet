@@ -67,6 +67,9 @@
   }
 
   &__link {
+    --fz: 14;
+
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
     margin-top: auto;
 
     & .link {
