@@ -54,7 +54,7 @@
   }
 
   &__title {
-    --fz: 24;
+    --fz: 18;
 
     color: var(--primary);
     font-family: var(--font-title);
@@ -65,6 +65,10 @@
 
     &:last-child {
       margin-bottom: 0;
+    }
+
+    @media (min-width: 960px) {
+      --fz: 24;
     }
   }
 

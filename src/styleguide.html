@@ -40,7 +40,8 @@
       </div>
       <div>
         <h3>Scrollbar vertical</h3>
-        <div style="width: 100%; height: 300px; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 30px" class="scrollbar">
+        <div style="width: 100%; height: 300px; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 30px"
+          class="scrollbar">
           <img src="./img/common/blog-test.jpg" alt="">
           <img src="./img/common/about.jpg" alt="">
           <img src="./img/common/product-test.png" alt="">
@@ -62,7 +63,8 @@
       <div uk-grid class="uk-child-width-1-1">
         <div>
           <h3>Icons</h3>
-          <div style="background: #333; padding: 10px; display: flex; align-items: center; font-size: 30px; color: #fff">
+          <div
+            style="background: #333; padding: 10px; display: flex; align-items: center; font-size: 30px; color: #fff">
             {{mixins.icon('plus')}}
             {{mixins.icon('arrow-left')}}
             {{mixins.icon('wtsp')}}
@@ -85,7 +87,8 @@
             {{mixins.icon('pnrst')}}
             {{mixins.icon('pnrst-footer')}}
           </div>
-          <div style="background: #333; padding: 10px; display: flex; align-items: center; font-size: 30px; color: #fff; font-size: 60px;">
+          <div
+            style="background: #333; padding: 10px; display: flex; align-items: center; font-size: 30px; color: #fff; font-size: 60px;">
             {{mixins.icon('free')}}
             {{mixins.icon('star')}}
             {{mixins.icon('cone')}}
@@ -165,11 +168,16 @@
             </div>
             <h3>Btns with icons</h3>
             <p>
-              <a class="btn btn--icon" href="#" role="button"><span>{{mixins.icon('plus')}}</span><span>Добавить</span></a>
-              <a class=" btn btn--primary btn--icon" href="#" role="button"><span>Добавить</span><span>{{mixins.icon('plus')}}</span></a>
-              <a class="btn btn--secondary btn--icon" href="#" role="button"><span>{{mixins.icon('plus')}}</span><span>Отправить</span></a>
-              <a class="btn btn--secondary btn--icon" href="#" role="button"><span>{{mixins.icon('model')}}</span><span>Запросить 3D модель</span></a>
-              <a class="btn btn--primary btn--icon" href="#" role="button"><span>{{mixins.icon('cart')}}</span><span>Добавить в корзину</span></a>
+              <a class="btn btn--icon" href="#"
+                role="button"><span>{{mixins.icon('plus')}}</span><span>Добавить</span></a>
+              <a class=" btn btn--primary btn--icon" href="#"
+                role="button"><span>Добавить</span><span>{{mixins.icon('plus')}}</span></a>
+              <a class="btn btn--secondary btn--icon" href="#"
+                role="button"><span>{{mixins.icon('plus')}}</span><span>Отправить</span></a>
+              <a class="btn btn--secondary btn--icon" href="#"
+                role="button"><span>{{mixins.icon('model')}}</span><span>Запросить 3D модель</span></a>
+              <a class="btn btn--primary btn--icon" href="#"
+                role="button"><span>{{mixins.icon('cart')}}</span><span>Добавить в корзину</span></a>
             </p>
             <h3>100% btn</h3>
             <p>
@@ -359,7 +367,8 @@
               <div class="key-indicator__title">В каталогах — более
                 4 000 моделей</div>
               <div class="key-indicator__description">Мы работаем с флагманскими фабриками и каждый месяц
-                в ассортименте появляются <a class="link" href="#">трендовые новинки</a>. Самые популярные модели всегда есть
+                в ассортименте появляются <a class="link" href="#">трендовые новинки</a>. Самые популярные модели всегда
+                есть
                 в наличии</div>
             </div>
           </div>
@@ -405,7 +414,8 @@
                   <div class="tile__info">
                     <div class="tile__title">Топ-10 основных стилей в интерьере</div>
                     <div class="tile__description">
-                      <span>Дизайн интерьера можно выполнить в различных форматах, каждый из которых создает уникальное простран... </span>
+                      <span>Дизайн интерьера можно выполнить в различных форматах, каждый из которых создает уникальное
+                        простран... </span>
                     </div>
                   </div>
                   <div class="tile__link">
@@ -472,7 +482,7 @@
               </div>
             </article>
           </div>
-          <div class="tile-list__item uk-width-1-2">
+          <div class="tile-list__item uk-width-1-2@s">
             <article class="tile tile--main">
               <div class="tile__image">
                 <div class="tile__img">
@@ -480,7 +490,7 @@
                 </div>
               </div>
               <div class="tile__body">
-                <div class="tile__date">
+                <div class="tile__date uk-visible@s">
                   <time class="date date--bg" datetime="2023-10-26">
                     <span class="date__day">26</span>
                     <span class="date__month">окт</span>
@@ -489,6 +499,13 @@
                 <div class="tile__container">
                   <div class="tile__details">
                     <div class="details">
+                      <div class="details__time uk-hidden@s">
+                        <time class="date" datetime="2023-10-26">
+                          <span class="date__day">26</span>
+                          <span class="date__month">окт</span>
+                          <span class="date__year">2023</span>
+                        </time>
+                      </div>
                       <div class="details__body">
                         <span class="details__tag">
                           <span class="details__text">Гостиная</span>
@@ -505,7 +522,8 @@
                   <div class="tile__info">
                     <div class="tile__title">Топ-10 основных стилей в интерьере</div>
                     <div class="tile__description">
-                      <span>Дизайн интерьера можно выполнить в различных форматах, каждый из которых создает уникальное простран... </span>
+                      <span>Дизайн интерьера можно выполнить в различных форматах, каждый из которых создает уникальное
+                        простран... </span>
                     </div>
                   </div>
                   <div class="tile__link">
@@ -515,7 +533,7 @@
               </div>
             </article>
           </div>
-          <div class="tile-list__item uk-width-1-2">
+          <div class="tile-list__item uk-width-1-2@s">
             <article class="tile tile--main">
               <div class="tile__image">
                 <div class="tile__img">
@@ -523,7 +541,7 @@
                 </div>
               </div>
               <div class="tile__body">
-                <div class="tile__date">
+                <div class="tile__date uk-visible@s">
                   <time class="date date--bg" datetime="2023-10-26">
                     <span class="date__day">26</span>
                     <span class="date__month">окт</span>
@@ -532,6 +550,13 @@
                 <div class="tile__container">
                   <div class="tile__details">
                     <div class="details">
+                      <div class="details__time uk-hidden@s">
+                        <time class="date" datetime="2023-10-26">
+                          <span class="date__day">26</span>
+                          <span class="date__month">окт</span>
+                          <span class="date__year">2023</span>
+                        </time>
+                      </div>
                       <div class="details__body">
                         <span class="details__tag">
                           <a href="#" class="link details__link">Гостиная</a>
@@ -562,7 +587,8 @@
                         </span>
                         <span class="details__tag">
                           <a href="#" class="link details__link">Гостиная</a>
-                        </span><span class="details__tag">
+                        </span>
+                        <span class="details__tag">
                           <a href="#" class="link details__link">Гостиная</a>
                         </span>
                       </div>
@@ -571,7 +597,9 @@
                   <div class="tile__info">
                     <div class="tile__title">Топ-10 основных стилей в интерьере</div>
                     <div class="tile__description">
-                      <span>Дизайн интерьера можно выполнить в различных форматах, каждый из которых создает уникальное простран... Дизайн интерьера можно выполнить в различных форматах, каждый из которых создает уникальное простран... </span>
+                      <span>Дизайн интерьера можно выполнить в различных форматах, каждый из которых создает уникальное
+                        простран... Дизайн интерьера можно выполнить в различных форматах, каждый из которых создает
+                        уникальное простран... </span>
                     </div>
                   </div>
                   <div class="tile__link">
