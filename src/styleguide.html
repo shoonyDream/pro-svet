@@ -124,491 +124,540 @@
                 <p><a href="#" class="link">Link</a></p>
                 <p><a href="#" class="link link--bordered">Читать дальше</a></p>
                 <p><a href="#" class="link link--icon-only">{{mixins.icon('tg')}}</a></p>
+                <div class="social">
+                  <div class="social__list">
+                    <div class="social__item">
+                      <a href="#" class="link social__link social__link--bg">
+                        <svg class="icon">{{mixins.icon('fb-footer')}}</svg>
+                      </a>
+                    </div>
+                    <div class="social__item">
+                      <a href="#" class="link social__link social__link--bg">
+                        <svg class="icon icon--bg">{{mixins.icon('inst-footer')}}</svg>
+                      </a>
+                    </div>
+                    <div class="social__item">
+                      <a href="#" class="link social__link social__link--bg">
+                        <svg class="icon icon--bg">{{mixins.icon('ytb-footer')}}</svg>
+                      </a>
+                    </div>
+                    <div class="social__item">
+                      <a href="#" class="link social__link social__link--bg">
+                        <svg class="icon icon--bg">{{mixins.icon('pnrst-footer')}}</svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="dark-theme" style="background: #333; padding: 10px">
                 <p><a href="#" class="link">Link</a></p>
                 <p><a href="#" class="link link--bordered">Читать дальше</a></p>
                 <p><a href="#" class="link link--icon-only">{{mixins.icon('tg')}}</a></p>
+                <div class="social">
+                  <div class="social__list">
+                    <div class="social__item">
+                      <a href="#" class="link social__link social__link--bg">
+                        <svg class="icon">{{mixins.icon('fb-footer')}}</svg>
+                      </a>
+                    </div>
+                    <div class="social__item">
+                      <a href="#" class="link social__link social__link--bg">
+                        <svg class="icon icon--bg">{{mixins.icon('inst-footer')}}</svg>
+                      </a>
+                    </div>
+                    <div class="social__item">
+                      <a href="#" class="link social__link social__link--bg">
+                        <svg class="icon icon--bg">{{mixins.icon('ytb-footer')}}</svg>
+                      </a>
+                    </div>
+                    <div class="social__item">
+                      <a href="#" class="link social__link social__link--bg">
+                        <svg class="icon icon--bg">{{mixins.icon('pnrst-footer')}}</svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <h3>Short btns</h3>
+          </div>
+          <h3>Short btns</h3>
+          <div>
+            <a class="btn" href="#" role="button"><span>Link</span></a> &nbsp;
+            <button class="btn" type="submit"><span>Button</span></button> &nbsp;
+            <input class="btn" type="button" value="Input" /> &nbsp;
+            <input class="btn" type="submit" value="Submit" /> &nbsp;
+            <input class="btn" type="reset" value="Reset" /> &nbsp;
+          </div>
+          <h3>Primary btns</h3>
+          <div>
+            <a class="btn btn--primary" href="#" role="button"><span>Link</span></a>
+            <button class="btn btn--primary" type="submit"><span>Button</span></button>
+            <input class="btn btn--primary" type="button" value="Input" />
+            <input class="btn btn--primary" type="submit" value="Submit" />
+            <input class="btn btn--primary" type="reset" value="Reset" />
+          </div>
+          <h3>Secondary btns</h3>
+          <div>
+            <a class="btn btn--secondary" href="#" role="button"><span>Link</span></a>
+            <button class="btn btn--secondary" type="submit"><span>Button</span></button>
+            <input class="btn btn--secondary" type="button" value="Input" />
+            <input class="btn btn--secondary" type="submit" value="Submit" />
+            <input class="btn btn--secondary" type="reset" value="Reset" />
+          </div>
+          <h3>Fixed btns</h3>
+          <div>
+            <a class="btn btn--is-fixed" href="#" role="button"><span>Link</span></a>
+            <button class="btn btn--is-fixed" type="submit"><span>Button</span></button>
+            <input class="btn btn--is-fixed" type="button" value="Input" />
+            <input class="btn btn--is-fixed" type="submit" value="Submit" />
+            <input class="btn btn--is-fixed" type="reset" value="Reset" />
+          </div>
+          <h3>Btns with icons</h3>
+          <p>
+            <a class="btn btn--icon" href="#" role="button"><span>{{mixins.icon('plus')}}</span><span>Добавить</span></a>
+            <a class=" btn btn--primary btn--icon" href="#" role="button"><span>Добавить</span><span>{{mixins.icon('plus')}}</span></a>
+            <a class="btn btn--secondary btn--icon" href="#" role="button"><span>{{mixins.icon('plus')}}</span><span>Отправить</span></a>
+            <a class="btn btn--secondary btn--icon" href="#" role="button"><span>{{mixins.icon('model')}}</span><span>Запросить 3D модель</span></a>
+            <a class="btn btn--primary btn--icon" href="#" role="button"><span>{{mixins.icon('cart')}}</span><span>Добавить в корзину</span></a>
+          </p>
+          <h3>100% btn</h3>
+          <p>
+            <a class="btn uk-width-1-1" href="#" role="button"><span>Link</span></a>
+          </p>
+          <p>
+            <button class="btn uk-width-1-1" type="submit"><span>Button</span></button>
+          </p>
+          <p>
+            <input class="btn uk-width-1-1" type="button" value="Input" />
+          </p>
+          <p>
+            <input class="btn uk-width-1-1" type="submit" value="Submit" />
+          </p>
+          <p>
+            <input class="btn uk-width-1-1" type="reset" value="Reset" />
+          </p>
+          <h3>
+            Btn statements
+          </h3>
+          <div>
+            <input class="btn btn--primary btn--is-disabled" type="button" value="Disabled" disabled />
+            <input class="btn btn--secondary btn--is-disabled" type="button" value="Disabled" disabled />
+          </div>
+          <h3>Status</h3>
+          <div class="status">
+            <span>В наличии</span>
+          </div>
+        </div>
+      </div>
+      <div uk-grid class="uk-child-width-1-2">
+        <div>
+          <h3>Checkbox & Checkbox-confirm</h3>
+          <div uk-grid class="uk-child-width-1-2">
             <div>
-              <a class="btn" href="#" role="button"><span>Link</span></a> &nbsp;
-              <button class="btn" type="submit"><span>Button</span></button> &nbsp;
-              <input class="btn" type="button" value="Input" /> &nbsp;
-              <input class="btn" type="submit" value="Submit" /> &nbsp;
-              <input class="btn" type="reset" value="Reset" /> &nbsp;
+              <label class="checkbox">
+                <div class="checkbox__label">
+                  <input type="checkbox" class="checkbox__input" value="3" />
+                  <span class="checkbox__mark"></span>
+                  <div class="checkbox__text">
+                    Для личных целей
+                  </div>
+                </div>
+              </label>
             </div>
-            <h3>Primary btns</h3>
             <div>
-              <a class="btn btn--primary" href="#" role="button"><span>Link</span></a>
-              <button class="btn btn--primary" type="submit"><span>Button</span></button>
-              <input class="btn btn--primary" type="button" value="Input" />
-              <input class="btn btn--primary" type="submit" value="Submit" />
-              <input class="btn btn--primary" type="reset" value="Reset" />
-            </div>
-            <h3>Secondary btns</h3>
-            <div>
-              <a class="btn btn--secondary" href="#" role="button"><span>Link</span></a>
-              <button class="btn btn--secondary" type="submit"><span>Button</span></button>
-              <input class="btn btn--secondary" type="button" value="Input" />
-              <input class="btn btn--secondary" type="submit" value="Submit" />
-              <input class="btn btn--secondary" type="reset" value="Reset" />
-            </div>
-            <h3>Fixed btns</h3>
-            <div>
-              <a class="btn btn--is-fixed" href="#" role="button"><span>Link</span></a>
-              <button class="btn btn--is-fixed" type="submit"><span>Button</span></button>
-              <input class="btn btn--is-fixed" type="button" value="Input" />
-              <input class="btn btn--is-fixed" type="submit" value="Submit" />
-              <input class="btn btn--is-fixed" type="reset" value="Reset" />
-            </div>
-            <h3>Btns with icons</h3>
-            <p>
-              <a class="btn btn--icon" href="#" role="button"><span>{{mixins.icon('plus')}}</span><span>Добавить</span></a>
-              <a class=" btn btn--primary btn--icon" href="#" role="button"><span>Добавить</span><span>{{mixins.icon('plus')}}</span></a>
-              <a class="btn btn--secondary btn--icon" href="#" role="button"><span>{{mixins.icon('plus')}}</span><span>Отправить</span></a>
-              <a class="btn btn--secondary btn--icon" href="#" role="button"><span>{{mixins.icon('model')}}</span><span>Запросить 3D модель</span></a>
-              <a class="btn btn--primary btn--icon" href="#" role="button"><span>{{mixins.icon('cart')}}</span><span>Добавить в корзину</span></a>
-            </p>
-            <h3>100% btn</h3>
-            <p>
-              <a class="btn uk-width-1-1" href="#" role="button"><span>Link</span></a>
-            </p>
-            <p>
-              <button class="btn uk-width-1-1" type="submit"><span>Button</span></button>
-            </p>
-            <p>
-              <input class="btn uk-width-1-1" type="button" value="Input" />
-            </p>
-            <p>
-              <input class="btn uk-width-1-1" type="submit" value="Submit" />
-            </p>
-            <p>
-              <input class="btn uk-width-1-1" type="reset" value="Reset" />
-            </p>
-            <h3>
-              Btn statements
-            </h3>
-            <div>
-              <input class="btn btn--primary btn--is-disabled" type="button" value="Disabled" disabled />
-              <input class="btn btn--secondary btn--is-disabled" type="button" value="Disabled" disabled />
-            </div>
-            <h3>Status</h3>
-            <div class="status">
-              <span>В наличии</span>
+              <label class="checkbox checkbox--confirm">
+                <div class="checkbox__label">
+                  <input type="checkbox" class="checkbox__input" value="3" />
+                  <span class="checkbox__mark"></span>
+                  <div class="checkbox__text">
+                    Нажимая на кнопку вы соглашаетесь с <a href="#" class="link">политикой конфиденциальности</a>
+                  </div>
+                </div>
+              </label>
             </div>
           </div>
         </div>
-        <div uk-grid class="uk-child-width-1-2">
-          <div>
-            <h3>Checkbox & Checkbox-confirm</h3>
+        <div>
+          <h3>Radio</h3>
+          <fieldset id="radio">
             <div uk-grid class="uk-child-width-1-2">
               <div>
-                <label class="checkbox">
-                  <div class="checkbox__label">
-                    <input type="checkbox" class="checkbox__input" value="3" />
-                    <span class="checkbox__mark"></span>
-                    <div class="checkbox__text">
+                <label class="radio">
+                  <div class="radio__label">
+                    <input type="radio" class="radio__input" value="1" name="radio" />
+                    <span class="radio__mark"></span>
+                    <div class="radio__text">
                       Для личных целей
                     </div>
                   </div>
                 </label>
               </div>
               <div>
-                <label class="checkbox checkbox--confirm">
-                  <div class="checkbox__label">
-                    <input type="checkbox" class="checkbox__input" value="3" />
-                    <span class="checkbox__mark"></span>
-                    <div class="checkbox__text">
-                      Нажимая на кнопку вы соглашаетесь с <a href="#" class="link">политикой конфиденциальности</a>
+                <label class="radio radio--as-checkbox">
+                  <div class="radio__label">
+                    <input type="radio" class="radio__input" value="1" name="radio" />
+                    <span class="radio__mark"></span>
+                    <div class="radio__text">
+                      Для личных целей
                     </div>
                   </div>
                 </label>
               </div>
             </div>
-          </div>
-          <div>
-            <h3>Radio</h3>
-            <fieldset id="radio">
-              <div uk-grid class="uk-child-width-1-2">
-                <div>
-                  <label class="radio">
-                    <div class="radio__label">
-                      <input type="radio" class="radio__input" value="1" name="radio" />
-                      <span class="radio__mark"></span>
-                      <div class="radio__text">
-                        Для личных целей
-                      </div>
-                    </div>
-                  </label>
-                </div>
-                <div>
-                  <label class="radio radio--as-checkbox">
-                    <div class="radio__label">
-                      <input type="radio" class="radio__input" value="1" name="radio" />
-                      <span class="radio__mark"></span>
-                      <div class="radio__text">
-                        Для личных целей
-                      </div>
-                    </div>
-                  </label>
-                </div>
-              </div>
-            </fieldset>
-          </div>
-          <div>
-            <h3>Input</h3>
-            <form action="" class="form">
-              <div class="form__body">
-                <div class="form__item">
-                  <label class="form__label">
-                    <span>Наименование компании</span>
-                    <div class="input input--error">
-                      <input type="text" class="input__field" placeholder="Наименование компании">
-                    </div>
-                  </label>
-                </div>
-                <div class="form__item">
-                  <label class="form__label">
-                    <span>Контактное лицо</span>
-                    <div class="input input--success">
-                      <input type="text" class="input__field" placeholder="Контактное лицо">
-                    </div>
-                  </label>
-                </div>
-                <div class="form__item">
-                  <label class="form__label">
-                    <span>Ваш телефон</span>
-                    <div class="input input--active">
-                      <input type="text" class="input__field" placeholder="+7(___) ___ - __ - __">
-                    </div>
-                  </label>
-                </div>
-                <div class="form__item">
-                  <label class="form__label">
-                    <span>E-mail</span>
-                    <div class="input">
-                      <input type="email" class="input__field" placeholder="E-mail">
-                    </div>
-                  </label>
-                </div>
-                <div class="form__item">
-                  <label class="form__label">
-                    <span>Пароль</span>
-                    <div class="input">
-                      <input type="text" class="input__field" placeholder="Пароль">
-                    </div>
-                  </label>
-                </div>
-                <div class="form__item">
-                  <label class="form__label">
-                    <span>Повторите пароль</span>
-                    <div class="input">
-                      <input type="text" class="input__field" placeholder="Повторите пароль">
-                    </div>
-                  </label>
-                </div>
-                <div class="form__item">
-                  <div class="custom-file-upload input">
-                    <input type="file" id="file" name="myfiles[]" multiple />
+          </fieldset>
+        </div>
+        <div>
+          <h3>Input</h3>
+          <form action="" class="form">
+            <div class="form__body">
+              <div class="form__item">
+                <label class="form__label">
+                  <span>Наименование компании</span>
+                  <div class="input input--error">
+                    <input type="text" class="input__field" placeholder="Наименование компании">
                   </div>
+                </label>
+              </div>
+              <div class="form__item">
+                <label class="form__label">
+                  <span>Контактное лицо</span>
+                  <div class="input input--success">
+                    <input type="text" class="input__field" placeholder="Контактное лицо">
+                  </div>
+                </label>
+              </div>
+              <div class="form__item">
+                <label class="form__label">
+                  <span>Ваш телефон</span>
+                  <div class="input input--active">
+                    <input type="text" class="input__field" placeholder="+7(___) ___ - __ - __">
+                  </div>
+                </label>
+              </div>
+              <div class="form__item">
+                <label class="form__label">
+                  <span>E-mail</span>
+                  <div class="input">
+                    <input type="email" class="input__field" placeholder="E-mail">
+                  </div>
+                </label>
+              </div>
+              <div class="form__item">
+                <label class="form__label">
+                  <span>Пароль</span>
+                  <div class="input">
+                    <input type="text" class="input__field" placeholder="Пароль">
+                  </div>
+                </label>
+              </div>
+              <div class="form__item">
+                <label class="form__label">
+                  <span>Повторите пароль</span>
+                  <div class="input">
+                    <input type="text" class="input__field" placeholder="Повторите пароль">
+                  </div>
+                </label>
+              </div>
+              <div class="form__item">
+                <div class="custom-file-upload input">
+                  <input type="file" id="file" name="myfiles[]" multiple />
                 </div>
               </div>
-              <div class="form__footer">
-                <div class="form__item">
-                  <div uk-grid class="uk-child-width-1-2@m">
-                    <div>
-                      <div class="form__btn">
-                        <button class="btn btn--primary uk-width-1-1" role="button">
-                          <span>Стать партнером</span>
-                        </button>
-                      </div>
+            </div>
+            <div class="form__footer">
+              <div class="form__item">
+                <div uk-grid class="uk-child-width-1-2@m">
+                  <div>
+                    <div class="form__btn">
+                      <button class="btn btn--primary uk-width-1-1" role="button">
+                        <span>Стать партнером</span>
+                      </button>
                     </div>
-                    <div>
-                      <div class="form__btn">
-                        <a class="btn btn--secondary uk-width-1-1" href="/">
-                          <span>Отмена</span>
-                        </a>
-                      </div>
+                  </div>
+                  <div>
+                    <div class="form__btn">
+                      <a class="btn btn--secondary uk-width-1-1" href="/">
+                        <span>Отмена</span>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
-            </form>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <h3>Key-indicators, -horizontal, __icon-bg</h3>
+    <div uk-grid class="key-indicators key-indicators--bordered-full uk-child-width-1-2@m">
+      <div class="key-indicators__item">
+        <div class="key-indicator">
+          <div class="key-indicator__header">
+            <div class="key-indicator__icon">{{mixins.icon('star')}}</div>
+          </div>
+          <div class="key-indicator__body">
+            <div class="key-indicator__description">Следим за трендами рынка. Даем профессиональные рекомендации
+              по стилевому соответствию.</div>
           </div>
         </div>
       </div>
-      <h3>Key-indicators, -horizontal, __icon-bg</h3>
-      <div uk-grid class="key-indicators key-indicators--bordered-full uk-child-width-1-2@m">
-        <div class="key-indicators__item">
-          <div class="key-indicator">
-            <div class="key-indicator__header">
-              <div class="key-indicator__icon">{{mixins.icon('star')}}</div>
-            </div>
-            <div class="key-indicator__body">
-              <div class="key-indicator__description">Следим за трендами рынка. Даем профессиональные рекомендации
-                по стилевому соответствию.</div>
-            </div>
+      <div class="key-indicators__item">
+        <div class="key-indicator key-indicator--horizontal key-indicator--align-left">
+          <div class="key-indicator__header">
+            <div class="key-indicator__icon key-indicator__icon--bg">{{mixins.icon('lightbulb')}}</div>
           </div>
-        </div>
-        <div class="key-indicators__item">
-          <div class="key-indicator key-indicator--horizontal key-indicator--align-left">
-            <div class="key-indicator__header">
-              <div class="key-indicator__icon key-indicator__icon--bg">{{mixins.icon('lightbulb')}}</div>
-            </div>
-            <div class="key-indicator__body">
-              <div class="key-indicator__title">В каталогах — более
-                4 000 моделей</div>
-              <div class="key-indicator__description">Мы работаем с флагманскими фабриками и каждый месяц
-                в ассортименте появляются <a class="link" href="#">трендовые новинки</a>. Самые популярные модели всегда
-                есть
-                в наличии</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h3>Tile, -main</h3>
-      <div class="tiles">
-        <div uk-grid class="tile-list uk-child-width-1-3@m">
-          <div class="tile-list__item">
-            <article class="tile">
-              <div class="tile__image">
-                <div class="tile__img">
-                  <img src="img/common/blog-test.jpg" alt="">
-                </div>
-              </div>
-              <div class="tile__body">
-                <div class="tile__container">
-                  <div class="tile__details">
-                    <div class="details">
-                      <div class="details__time">
-                        <time class="date" datetime="2023-10-26">
-                          <span class="date__day">26</span>
-                          <span class="date__month">окт</span>
-                          <span class="date__year">2023</span>
-                        </time>
-                      </div>
-                      <div class="details__body">
-                        <span class="details__tag">
-                          <span class="details__text">Гостиная</span>
-                        </span>
-                        <span class="details__tag">
-                          <span class="details__text">Гостиная</span>
-                        </span>
-                        <span class="details__tag">
-                          <span class="details__text">Гостиная</span>
-                        </span>
-                        <span class="details__tag">
-                          <span class="details__text">Гостиная</span>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tile__info">
-                    <div class="tile__title">Топ-10 основных стилей в интерьере</div>
-                    <div class="tile__description">
-                      <span>Дизайн интерьера можно выполнить в различных форматах, каждый из которых создает уникальное
-                        простран... </span>
-                    </div>
-                  </div>
-                  <div class="tile__link">
-                    <a href="#" class="link link--bordered">Читать дальше</a>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="tile-list__item">
-            <article class="tile">
-              <div class="tile__image">
-                <div class="tile__img">
-                  <img src="img/common/designer.jpg" alt="">
-                </div>
-              </div>
-              <div class="tile__body">
-                <div class="tile__container">
-                  <div class="tile__details">
-                    <div class="details">
-                      <div class="details__time">
-                        <time class="date" datetime="2023-10-26">
-                          <span class="date__day">26</span>
-                          <span class="date__month">окт</span>
-                          <span class="date__year">2023</span>
-                        </time>
-                      </div>
-                      <div class="details__body">
-                        <span class="details__tag">
-                          <a href="#" class="link details__link">Гостиная</a>
-                        </span>
-                        <span class="details__tag">
-                          <a href="#" class="link details__link">Гостиная</a>
-                        </span>
-                        <span class="details__tag">
-                          <a href="#" class="link details__link">Гостиная</a>
-                        </span>
-                        <span class="details__tag">
-                          <a href="#" class="link details__link">Гостиная</a>
-                        </span>
-                        <span class="details__tag">
-                          <a href="#" class="link details__link">Гостиная</a>
-                        </span>
-                        <span class="details__tag">
-                          <a href="#" class="link details__link">Гостиная</a>
-                        </span>
-                        <span class="details__tag">
-                          <a href="#" class="link details__link">Гостиная</a>
-                        </span>
-                        <span class="details__tag">
-                          <a href="#" class="link details__link">Гостиная</a>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tile__info">
-                    <div class="tile__title">Топ-10 основных стилей в интерьере</div>
-                    <div class="tile__description"><span>Дизайн </span></div>
-                  </div>
-                  <div class="tile__link">
-                    <a href="#" class="link link--bordered">Читать дальше</a>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="tile-list__item uk-width-1-2@s">
-            <article class="tile tile--main">
-              <div class="tile__image">
-                <div class="tile__img">
-                  <img src="img/common/blog-test.jpg" alt="">
-                </div>
-              </div>
-              <div class="tile__body">
-                <div class="tile__date uk-visible@s">
-                  <time class="date date--bg" datetime="2023-10-26">
-                    <span class="date__day">26</span>
-                    <span class="date__month">окт</span>
-                  </time>
-                </div>
-                <div class="tile__container">
-                  <div class="tile__details">
-                    <div class="details">
-                      <div class="details__time uk-hidden@s">
-                        <time class="date" datetime="2023-10-26">
-                          <span class="date__day">26</span>
-                          <span class="date__month">окт</span>
-                          <span class="date__year">2023</span>
-                        </time>
-                      </div>
-                      <div class="details__body">
-                        <span class="details__tag">
-                          <span class="details__text">Гостиная</span>
-                        </span>
-                        <span class="details__tag">
-                          <span class="details__text">Гостиная</span>
-                        </span>
-                        <span class="details__tag">
-                          <span class="details__text">Гостиная</span>
-                        </span>
-                        <span class="details__tag">
-                          <span class="details__text">Гостиная</span>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tile__info">
-                    <div class="tile__title">Топ-10 основных стилей в интерьере</div>
-                    <div class="tile__description">
-                      <span>Дизайн интерьера можно выполнить в различных форматах, каждый из которых создает уникальное
-                        простран... </span>
-                    </div>
-                  </div>
-                  <div class="tile__link">
-                    <a href="#" class="link link--bordered">Читать дальше</a>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="tile-list__item uk-width-1-2@s">
-            <article class="tile tile--main">
-              <div class="tile__image">
-                <div class="tile__img">
-                  <img src="img/common/designer.jpg" alt="">
-                </div>
-              </div>
-              <div class="tile__body">
-                <div class="tile__date uk-visible@s">
-                  <time class="date date--bg" datetime="2023-10-26">
-                    <span class="date__day">26</span>
-                    <span class="date__month">окт</span>
-                  </time>
-                </div>
-                <div class="tile__container">
-                  <div class="tile__details">
-                    <div class="details">
-                      <div class="details__time uk-hidden@s">
-                        <time class="date" datetime="2023-10-26">
-                          <span class="date__day">26</span>
-                          <span class="date__month">окт</span>
-                          <span class="date__year">2023</span>
-                        </time>
-                      </div>
-                      <div class="details__body">
-                        <span class="details__tag">
-                          <a href="#" class="link details__link">Гостиная</a>
-                        </span>
-                        <span class="details__tag">
-                          <a href="#" class="link details__link">Гостиная</a>
-                        </span>
-                        <span class="details__tag">
-                          <a href="#" class="link details__link">Гостиная</a>
-                        </span>
-                        <span class="details__tag">
-                          <a href="#" class="link details__link">Гостиная</a>
-                        </span>
-                        <span class="details__tag">
-                          <a href="#" class="link details__link">Гостиная</a>
-                        </span>
-                        <span class="details__tag">
-                          <a href="#" class="link details__link">Гостиная</a>
-                        </span>
-                        <span class="details__tag">
-                          <a href="#" class="link details__link">Гостиная</a>
-                        </span>
-                        <span class="details__tag">
-                          <a href="#" class="link details__link">Гостиная</a>
-                        </span>
-                        <span class="details__tag">
-                          <a href="#" class="link details__link">Гостиная</a>
-                        </span>
-                        <span class="details__tag">
-                          <a href="#" class="link details__link">Гостиная</a>
-                        </span>
-                        <span class="details__tag">
-                          <a href="#" class="link details__link">Гостиная</a>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tile__info">
-                    <div class="tile__title">Топ-10 основных стилей в интерьере</div>
-                    <div class="tile__description">
-                      <span>Дизайн интерьера можно выполнить в различных форматах, каждый из которых создает уникальное
-                        простран... Дизайн интерьера можно выполнить в различных форматах, каждый из которых создает
-                        уникальное простран... </span>
-                    </div>
-                  </div>
-                  <div class="tile__link">
-                    <a href="#" class="link link--bordered">Читать дальше</a>
-                  </div>
-                </div>
-              </div>
-            </article>
+          <div class="key-indicator__body">
+            <div class="key-indicator__title">В каталогах — более
+              4 000 моделей</div>
+            <div class="key-indicator__description">Мы работаем с флагманскими фабриками и каждый месяц
+              в ассортименте появляются <a class="link" href="#">трендовые новинки</a>. Самые популярные модели всегда
+              есть
+              в наличии</div>
           </div>
         </div>
       </div>
     </div>
+    <h3>Tile, -main</h3>
+    <div class="tiles">
+      <div uk-grid class="tile-list uk-child-width-1-3@m">
+        <div class="tile-list__item">
+          <article class="tile">
+            <div class="tile__image">
+              <div class="tile__img">
+                <img src="img/common/blog-test.jpg" alt="">
+              </div>
+            </div>
+            <div class="tile__body">
+              <div class="tile__container">
+                <div class="tile__details">
+                  <div class="details">
+                    <div class="details__time">
+                      <time class="date" datetime="2023-10-26">
+                        <span class="date__day">26</span>
+                        <span class="date__month">окт</span>
+                        <span class="date__year">2023</span>
+                      </time>
+                    </div>
+                    <div class="details__body">
+                      <span class="details__tag">
+                        <span class="details__text">Гостиная</span>
+                      </span>
+                      <span class="details__tag">
+                        <span class="details__text">Гостиная</span>
+                      </span>
+                      <span class="details__tag">
+                        <span class="details__text">Гостиная</span>
+                      </span>
+                      <span class="details__tag">
+                        <span class="details__text">Гостиная</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tile__info">
+                  <div class="tile__title">Топ-10 основных стилей в интерьере</div>
+                  <div class="tile__description">
+                    <span>Дизайн интерьера можно выполнить в различных форматах, каждый из которых создает уникальное
+                      простран... </span>
+                  </div>
+                </div>
+                <div class="tile__link">
+                  <a href="#" class="link link--bordered">Читать дальше</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="tile-list__item">
+          <article class="tile">
+            <div class="tile__image">
+              <div class="tile__img">
+                <img src="img/common/designer.jpg" alt="">
+              </div>
+            </div>
+            <div class="tile__body">
+              <div class="tile__container">
+                <div class="tile__details">
+                  <div class="details">
+                    <div class="details__time">
+                      <time class="date" datetime="2023-10-26">
+                        <span class="date__day">26</span>
+                        <span class="date__month">окт</span>
+                        <span class="date__year">2023</span>
+                      </time>
+                    </div>
+                    <div class="details__body">
+                      <span class="details__tag">
+                        <a href="#" class="link details__link">Гостиная</a>
+                      </span>
+                      <span class="details__tag">
+                        <a href="#" class="link details__link">Гостиная</a>
+                      </span>
+                      <span class="details__tag">
+                        <a href="#" class="link details__link">Гостиная</a>
+                      </span>
+                      <span class="details__tag">
+                        <a href="#" class="link details__link">Гостиная</a>
+                      </span>
+                      <span class="details__tag">
+                        <a href="#" class="link details__link">Гостиная</a>
+                      </span>
+                      <span class="details__tag">
+                        <a href="#" class="link details__link">Гостиная</a>
+                      </span>
+                      <span class="details__tag">
+                        <a href="#" class="link details__link">Гостиная</a>
+                      </span>
+                      <span class="details__tag">
+                        <a href="#" class="link details__link">Гостиная</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tile__info">
+                  <div class="tile__title">Топ-10 основных стилей в интерьере</div>
+                  <div class="tile__description"><span>Дизайн </span></div>
+                </div>
+                <div class="tile__link">
+                  <a href="#" class="link link--bordered">Читать дальше</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="tile-list__item uk-width-1-2@s">
+          <article class="tile tile--main">
+            <div class="tile__image">
+              <div class="tile__img">
+                <img src="img/common/blog-test.jpg" alt="">
+              </div>
+            </div>
+            <div class="tile__body">
+              <div class="tile__date uk-visible@s">
+                <time class="date date--bg" datetime="2023-10-26">
+                  <span class="date__day">26</span>
+                  <span class="date__month">окт</span>
+                </time>
+              </div>
+              <div class="tile__container">
+                <div class="tile__details">
+                  <div class="details">
+                    <div class="details__time uk-hidden@s">
+                      <time class="date" datetime="2023-10-26">
+                        <span class="date__day">26</span>
+                        <span class="date__month">окт</span>
+                        <span class="date__year">2023</span>
+                      </time>
+                    </div>
+                    <div class="details__body">
+                      <span class="details__tag">
+                        <span class="details__text">Гостиная</span>
+                      </span>
+                      <span class="details__tag">
+                        <span class="details__text">Гостиная</span>
+                      </span>
+                      <span class="details__tag">
+                        <span class="details__text">Гостиная</span>
+                      </span>
+                      <span class="details__tag">
+                        <span class="details__text">Гостиная</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tile__info">
+                  <div class="tile__title">Топ-10 основных стилей в интерьере</div>
+                  <div class="tile__description">
+                    <span>Дизайн интерьера можно выполнить в различных форматах, каждый из которых создает уникальное
+                      простран... </span>
+                  </div>
+                </div>
+                <div class="tile__link">
+                  <a href="#" class="link link--bordered">Читать дальше</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="tile-list__item uk-width-1-2@s">
+          <article class="tile tile--main">
+            <div class="tile__image">
+              <div class="tile__img">
+                <img src="img/common/designer.jpg" alt="">
+              </div>
+            </div>
+            <div class="tile__body">
+              <div class="tile__date uk-visible@s">
+                <time class="date date--bg" datetime="2023-10-26">
+                  <span class="date__day">26</span>
+                  <span class="date__month">окт</span>
+                </time>
+              </div>
+              <div class="tile__container">
+                <div class="tile__details">
+                  <div class="details">
+                    <div class="details__time uk-hidden@s">
+                      <time class="date" datetime="2023-10-26">
+                        <span class="date__day">26</span>
+                        <span class="date__month">окт</span>
+                        <span class="date__year">2023</span>
+                      </time>
+                    </div>
+                    <div class="details__body">
+                      <span class="details__tag">
+                        <a href="#" class="link details__link">Гостиная</a>
+                      </span>
+                      <span class="details__tag">
+                        <a href="#" class="link details__link">Гостиная</a>
+                      </span>
+                      <span class="details__tag">
+                        <a href="#" class="link details__link">Гостиная</a>
+                      </span>
+                      <span class="details__tag">
+                        <a href="#" class="link details__link">Гостиная</a>
+                      </span>
+                      <span class="details__tag">
+                        <a href="#" class="link details__link">Гостиная</a>
+                      </span>
+                      <span class="details__tag">
+                        <a href="#" class="link details__link">Гостиная</a>
+                      </span>
+                      <span class="details__tag">
+                        <a href="#" class="link details__link">Гостиная</a>
+                      </span>
+                      <span class="details__tag">
+                        <a href="#" class="link details__link">Гостиная</a>
+                      </span>
+                      <span class="details__tag">
+                        <a href="#" class="link details__link">Гостиная</a>
+                      </span>
+                      <span class="details__tag">
+                        <a href="#" class="link details__link">Гостиная</a>
+                      </span>
+                      <span class="details__tag">
+                        <a href="#" class="link details__link">Гостиная</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tile__info">
+                  <div class="tile__title">Топ-10 основных стилей в интерьере</div>
+                  <div class="tile__description">
+                    <span>Дизайн интерьера можно выполнить в различных форматах, каждый из которых создает уникальное
+                      простран... Дизайн интерьера можно выполнить в различных форматах, каждый из которых создает
+                      уникальное простран... </span>
+                  </div>
+                </div>
+                <div class="tile__link">
+                  <a href="#" class="link link--bordered">Читать дальше</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
 </section>
 {% include "template/footer.html" %}
