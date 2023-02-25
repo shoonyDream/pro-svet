@@ -61,6 +61,7 @@
               <div class="footer-nav__item-body">
                 <div class="input input--subscribe">
                   <input type="text" class="input__field" placeholder="Ваш email">
+                  <button type="button" class="input__btn">{{mixins.icon('arrow-left')}}</button>
                 </div>
               </div>
             </div>
@@ -78,7 +79,7 @@
               Следите за нами в соцсетях
             </div>
             <div class="footer-nav__item footer-nav__socials">
-              socials
+              {% include "template/social.html" %}
             </div>
           </div>
         </div>

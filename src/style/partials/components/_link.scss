@@ -4,9 +4,27 @@ a {
 
 .link,
 a.link {
+  color: var(--link-color);
+  font-weight: 400;
+  transition: 0.2s;
+  border-bottom: 1px solid transparent;
 
-  &,
-  .uk-offcanvas-bar & {
+  &:hover,
+  &:focus {
+    color: var(--link-color-hover);
+    text-decoration: none;
+    border-color: currentColor;
+  }
+
+  &--bordered {
+    border-color: currentColor;
+  }
+
+  &--icon-only {
+    border: none;
+  }
+
+  .uk-offcanvas-bar &:not(.social__link):not(.main-nav__link) {
     color: var(--link-color);
     font-weight: 400;
     transition: 0.2s;
@@ -19,16 +37,37 @@ a.link {
       border-color: currentColor;
     }
 
-    &--bordered {
+    &.link--bordered {
       border-color: currentColor;
     }
 
-    &--icon-only {
+    &.link--icon-only {
       border: none;
     }
   }
 
+  .uk-offcanvas-bar .mobile-nav__link & {
+    border: none;
+    color: var(--text-color);
 
+    &:hover,
+    &:focus {
+      color: var(--link-color);
+    }
+  }
 
+  .uk-offcanvas-bar .uk-open .mobile-nav__link & {
+    color: var(--link-color);
+    border: none;
+  }
 
+  .uk-offcanvas-bar .mobile-nav__accordion .mobile-nav__link & {
+    border: none;
+    color: var(--link-color);
+
+    &:hover,
+    &:focus {
+      color: var(--text-color);
+    }
+  }
 }

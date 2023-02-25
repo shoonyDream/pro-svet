@@ -38,6 +38,10 @@
     background-color: var(--z-white);
     z-index: 2;
     position: relative;
+    width: 100%;
+    padding: 0;
+    overflow: inherit;
+    left: 0;
 
     >.uk-container {
       position: relative;
@@ -311,6 +315,10 @@ a.main-nav__link {
   &__nav+&__contacts {
     padding-top: calc(20 / var(--fz) * var(--fz-em));
     border-top: 1px solid var(--line);
+  }
+
+  &__socials {
+    margin-top: calc(20 / var(--fz) * var(--fz-em));
   }
 }
 
