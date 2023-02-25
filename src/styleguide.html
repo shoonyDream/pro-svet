@@ -40,8 +40,7 @@
       </div>
       <div>
         <h3>Scrollbar vertical</h3>
-        <div style="width: 100%; height: 300px; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 30px"
-          class="scrollbar">
+        <div style="width: 100%; height: 300px; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 30px" class="scrollbar">
           <img src="./img/common/blog-test.jpg" alt="">
           <img src="./img/common/about.jpg" alt="">
           <img src="./img/common/product-test.png" alt="">
@@ -63,8 +62,7 @@
       <div uk-grid class="uk-child-width-1-1">
         <div>
           <h3>Icons</h3>
-          <div
-            style="background: #333; padding: 10px; display: flex; align-items: center; font-size: 30px; color: #fff">
+          <div style="background: #333; padding: 10px; display: flex; align-items: center; font-size: 30px; color: #fff">
             {{mixins.icon('plus')}}
             {{mixins.icon('arrow-left')}}
             {{mixins.icon('wtsp')}}
@@ -87,8 +85,7 @@
             {{mixins.icon('pnrst')}}
             {{mixins.icon('pnrst-footer')}}
           </div>
-          <div
-            style="background: #333; padding: 10px; display: flex; align-items: center; font-size: 30px; color: #fff; font-size: 60px;">
+          <div style="background: #333; padding: 10px; display: flex; align-items: center; font-size: 30px; color: #fff; font-size: 60px;">
             {{mixins.icon('free')}}
             {{mixins.icon('star')}}
             {{mixins.icon('cone')}}
@@ -168,16 +165,11 @@
             </div>
             <h3>Btns with icons</h3>
             <p>
-              <a class="btn btn--icon" href="#"
-                role="button"><span>{{mixins.icon('plus')}}</span><span>Добавить</span></a>
-              <a class=" btn btn--primary btn--icon" href="#"
-                role="button"><span>Добавить</span><span>{{mixins.icon('plus')}}</span></a>
-              <a class="btn btn--secondary btn--icon" href="#"
-                role="button"><span>{{mixins.icon('plus')}}</span><span>Отправить</span></a>
-              <a class="btn btn--secondary btn--icon" href="#"
-                role="button"><span>{{mixins.icon('model')}}</span><span>Запросить 3D модель</span></a>
-              <a class="btn btn--primary btn--icon" href="#"
-                role="button"><span>{{mixins.icon('cart')}}</span><span>Добавить в корзину</span></a>
+              <a class="btn btn--icon" href="#" role="button"><span>{{mixins.icon('plus')}}</span><span>Добавить</span></a>
+              <a class=" btn btn--primary btn--icon" href="#" role="button"><span>Добавить</span><span>{{mixins.icon('plus')}}</span></a>
+              <a class="btn btn--secondary btn--icon" href="#" role="button"><span>{{mixins.icon('plus')}}</span><span>Отправить</span></a>
+              <a class="btn btn--secondary btn--icon" href="#" role="button"><span>{{mixins.icon('model')}}</span><span>Запросить 3D модель</span></a>
+              <a class="btn btn--primary btn--icon" href="#" role="button"><span>{{mixins.icon('cart')}}</span><span>Добавить в корзину</span></a>
             </p>
             <h3>100% btn</h3>
             <p>
@@ -217,9 +209,9 @@
                   <div class="checkbox__label">
                     <input type="checkbox" class="checkbox__input" value="3" />
                     <span class="checkbox__mark"></span>
-                  </div>
-                  <div class="checkbox__text">
-                    Для личных целей
+                    <div class="checkbox__text">
+                      Для личных целей
+                    </div>
                   </div>
                 </label>
               </div>
@@ -228,9 +220,9 @@
                   <div class="checkbox__label">
                     <input type="checkbox" class="checkbox__input" value="3" />
                     <span class="checkbox__mark"></span>
-                  </div>
-                  <div class="checkbox__text">
-                    Нажимая на кнопку вы соглашаетесь с <a href="#" class="link">политикой конфиденциальности</a>
+                    <div class="checkbox__text">
+                      Нажимая на кнопку вы соглашаетесь с <a href="#" class="link">политикой конфиденциальности</a>
+                    </div>
                   </div>
                 </label>
               </div>
@@ -245,9 +237,9 @@
                     <div class="radio__label">
                       <input type="radio" class="radio__input" value="1" name="radio" />
                       <span class="radio__mark"></span>
-                    </div>
-                    <div class="radio__text">
-                      Для личных целей
+                      <div class="radio__text">
+                        Для личных целей
+                      </div>
                     </div>
                   </label>
                 </div>
@@ -256,9 +248,9 @@
                     <div class="radio__label">
                       <input type="radio" class="radio__input" value="1" name="radio" />
                       <span class="radio__mark"></span>
-                    </div>
-                    <div class="radio__text">
-                      Для личных целей
+                      <div class="radio__text">
+                        Для личных целей
+                      </div>
                     </div>
                   </label>
                 </div>
@@ -280,7 +272,7 @@
                 <div class="form__item">
                   <label class="form__label">
                     <span>Контактное лицо</span>
-                    <div class="input">
+                    <div class="input input--success">
                       <input type="text" class="input__field" placeholder="Контактное лицо">
                     </div>
                   </label>
@@ -288,7 +280,7 @@
                 <div class="form__item">
                   <label class="form__label">
                     <span>Ваш телефон</span>
-                    <div class="input">
+                    <div class="input input--active">
                       <input type="text" class="input__field" placeholder="+7(___) ___ - __ - __">
                     </div>
                   </label>
@@ -322,6 +314,8 @@
                     <input type="file" id="file" name="myfiles[]" multiple />
                   </div>
                 </div>
+              </div>
+              <div class="form__footer">
                 <div class="form__item">
                   <div uk-grid class="uk-child-width-1-2@m">
                     <div>
