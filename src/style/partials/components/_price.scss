@@ -1,0 +1,14 @@
+.price {
+  display: flex;
+  gap: calc(10 / var(--fz) * var(--fz-em));
+
+  &__unit {
+    --fz: 14;
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+
+    &--through {
+      text-decoration: line-through;
+      color: var(--primary);
+    }
+  }
+}

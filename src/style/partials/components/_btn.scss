@@ -73,4 +73,17 @@ button {
     cursor: not-allowed;
     opacity: 0.5;
   }
+
+  &--is-favorite {
+    background-color: var(--z-white);
+    border-radius: 50%;
+    color: var(--primary);
+    padding: calc(5 / var(--fz) * var(--fz-em));
+    border: none;
+
+    & .icon {
+      --fz-icon: 40;
+      font-size: calc(var(--fz-icon) / var(--fz) * var(--fz-em));
+    }
+  }
 }
