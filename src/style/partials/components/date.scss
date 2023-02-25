@@ -9,6 +9,7 @@
   &--bg {
     --fz: 18;
 
+    font-family: var(--font-title);
     font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
     line-height: 1;
     display: flex;
