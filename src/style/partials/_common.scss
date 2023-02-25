@@ -233,8 +233,8 @@ p+p {
   top: calc(var(--header-height) / var(--fz) * var(--fz-em));
 }
 
-#burger-nav {
-  @media (min-width: 1024px) {
+#header-mobile {
+  @media (min-width: 1140px) {
     display: none !important;
   }
 }

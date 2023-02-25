@@ -84,6 +84,11 @@
 
   &__contacts {
     grid-area: contacts;
+
+    .link {
+      display: inline-block;
+      margin: calc(2 / var(--fz) * var(--fz-em)) 0;
+    }
   }
 
   &__copyright {
@@ -92,6 +97,11 @@
 
   &__policy {
     grid-area: policy;
+
+    .link {
+      display: inline-block;
+      margin: calc(2 / var(--fz) * var(--fz-em)) 0;
+    }
   }
 
   &__follow {
@@ -149,8 +159,7 @@
       }
     }
 
-    &.uk-accordion-title,
-    &--block {
+    &.uk-accordion-title {
       display: flex;
 
       @media (min-width: 1140px) {
@@ -159,13 +168,17 @@
     }
 
     &--block {
-      margin-bottom: calc(18 / var(--fz-title) * var(--fz-em));
+      display: flex;
+      margin-bottom: calc(20 / var(--fz-title) * var(--fz-em));
     }
   }
 
-  &__item-body,
-  &__item-body+&__item-title {
+  &__item-body {
     margin-top: calc(20 / var(--fz) * var(--fz-em));
+  }
+
+  &__item-body+&__item-title {
+    margin-top: calc(20 / var(--fz-title) * var(--fz-em));
   }
 
   &__item-list {
