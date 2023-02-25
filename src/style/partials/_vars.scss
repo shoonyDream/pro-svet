@@ -79,6 +79,8 @@
   --header-bg: var(--main-1);
   --header-border-color: var(--line);
 
+  --footer-bg: var(--main-3);
+
   --modal-bg: var(--main-1);
   --bg-offset-canvas: var(--main-1);
   --bg-offset-canvas-overlay: hsla(0, 0%, 0%, 0.2);
@@ -102,7 +104,8 @@
   }
 }
 
-.dark-theme {
+.dark-theme,
+.footer {
   --header-h1-color: var(--main-1);
   --header-color: var(--main-1);
 
