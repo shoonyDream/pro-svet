@@ -88,6 +88,13 @@ input::-webkit-inner-spin-button {
     align-items: flex-start;
   }
 
+  &--subscribe {
+    border: none;
+    border-top: 1px solid var(--z-white);
+    border-bottom: 1px solid var(--z-white);
+    color: var(--z-white);
+  }
+
   &__field {
     --fz: 14;
 
@@ -97,7 +104,7 @@ input::-webkit-inner-spin-button {
     font-weight: 400;
     color: var(--text-color);
     padding: 0;
-    font-family: var(--font-title);
+    font-family: var(--font);
     font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
     background: transparent;
 
@@ -105,6 +112,11 @@ input::-webkit-inner-spin-button {
       opacity: 0.6;
       color: var(--text-color);
       transition: opacity 0.2s linear, color 0.2s linear;
+
+      .input--subscribe & {
+        color: var(--z-white);
+        opacity: 1;
+      }
     }
 
 
