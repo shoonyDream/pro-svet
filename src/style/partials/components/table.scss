@@ -1,5 +1,4 @@
 .table {
-  width: 373px;
 
   &__header {
     border-bottom: 1px solid var(--line);
@@ -24,6 +23,7 @@
     font-weight: 400;
     line-height: 1.5;
     display: flex;
+    gap: calc(5 / var(--fz) * var(--fz-em));
     justify-content: space-between;
     padding: calc(5 / var(--fz) * var(--fz-em));
 
@@ -33,7 +33,6 @@
   }
 
   &__cell {
-    flex-shrink: 0;
     max-width: 50%;
     flex-basis: 50%;
     position: relative;
@@ -45,21 +44,24 @@
 }
 
 .check-table__tooltip {
-  top: 50%;
-  right: 0.5em;
-  position: absolute;
-  transform: translateY(-50%);
+  display: flex;
+  gap: 10px;
 }
 
-.check-table__tooltip::before {
-  font-size: .75em;
-  top: 50%;
-  right: 100%;
+.check-table__tooltip::after {
+  --fz: 8;
+
+  font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+  color: var(--question);
+  line-height: 1;
   content: '?';
-  padding: calc(5 / var(--fz) * var(--fz-em));
+  padding-top: calc(2 / var(--fz) * var(--fz-em));
   border-radius: 50%;
-  border: 1px solid #8D8D8D;
-  position: absolute;
-  transform: translateY(-50%);
+  border: 1px solid var(--question);
+  display: inline-block;
+  width: calc(12 / var(--fz) * var(--fz-em));
+  height: calc(12 / var(--fz) * var(--fz-em));
   cursor: help;
+  text-align: center;
+  flex-shrink: 0;
 }
