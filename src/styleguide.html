@@ -40,7 +40,8 @@
       </div>
       <div>
         <h3>Scrollbar vertical</h3>
-        <div style="width: 100%; height: 300px; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 30px" class="scrollbar">
+        <div style="width: 100%; height: 300px; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 30px"
+          class="scrollbar">
           <img src="./img/common/blog-test.jpg" alt="">
           <img src="./img/common/about.jpg" alt="">
           <img src="./img/common/product-test.png" alt="">
@@ -62,7 +63,8 @@
       <div uk-grid class="uk-child-width-1-1">
         <div>
           <h3>Icons</h3>
-          <div style="background: #333; padding: 10px; display: flex; align-items: center; font-size: 30px; color: #fff">
+          <div
+            style="background: #333; padding: 10px; display: flex; align-items: center; font-size: 30px; color: #fff">
             {{mixins.icon('plus')}}
             {{mixins.icon('arrow-left')}}
             {{mixins.icon('wtsp')}}
@@ -85,7 +87,8 @@
             {{mixins.icon('pnrst')}}
             {{mixins.icon('pnrst-footer')}}
           </div>
-          <div style="background: #333; padding: 10px; display: flex; align-items: center; font-size: 30px; color: #fff; font-size: 60px;">
+          <div
+            style="background: #333; padding: 10px; display: flex; align-items: center; font-size: 30px; color: #fff; font-size: 60px;">
             {{mixins.icon('free')}}
             {{mixins.icon('star')}}
             {{mixins.icon('cone')}}
@@ -124,7 +127,7 @@
                 <p><a href="#" class="link">Link</a></p>
                 <p><a href="#" class="link link--bordered">Читать дальше</a></p>
                 <p><a href="#" class="link link--icon-only">{{mixins.icon('tg')}}</a></p>
-                <div class="social">
+                <div class="social" style="margin-top: 10px">
                   <div class="social__list">
                     <div class="social__item">
                       <a href="#" class="link social__link social__link--bg">
@@ -148,7 +151,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="social">
+                <div class="social" style="margin-top: 10px">
                   <div class="social__list">
                     <div class="social__item">
                       <a href="#" class="link social__link social__link--bg-light">
@@ -172,25 +175,25 @@
                     </div>
                   </div>
                 </div>
-                <div class="social">
+                <div class="social" style="margin-top: 10px">
                   <div class="social__list social__list--vertical">
                     <div class="social__item">
-                      <a href="#" class="link social__link social__link--vertical">
+                      <a href="#" class="link social__link">
                         <svg class="icon">{{mixins.icon('fb')}}</svg>
                       </a>
                     </div>
                     <div class="social__item">
-                      <a href="#" class="link social__link social__link--vertical">
+                      <a href="#" class="link social__link">
                         <svg class="icon icon--bg">{{mixins.icon('inst')}}</svg>
                       </a>
                     </div>
                     <div class="social__item">
-                      <a href="#" class="link social__link social__link--vertical">
+                      <a href="#" class="link social__link">
                         <svg class="icon icon--bg">{{mixins.icon('ytb')}}</svg>
                       </a>
                     </div>
                     <div class="social__item">
-                      <a href="#" class="link social__link social__link--vertical">
+                      <a href="#" class="link social__link">
                         <svg class="icon icon--bg">{{mixins.icon('pnrst')}}</svg>
                       </a>
                     </div>
@@ -201,7 +204,7 @@
                 <p><a href="#" class="link">Link</a></p>
                 <p><a href="#" class="link link--bordered">Читать дальше</a></p>
                 <p><a href="#" class="link link--icon-only">{{mixins.icon('tg')}}</a></p>
-                <div class="social">
+                <div class="social" style="margin-top: 10px">
                   <div class="social__list">
                     <div class="social__item">
                       <a href="#" class="link social__link social__link--bg">
@@ -225,7 +228,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="social">
+                <div class="social" style="margin-top: 10px">
                   <div class="social__list">
                     <div class="social__item">
                       <a href="#" class="link social__link social__link--bg-light">
@@ -249,25 +252,25 @@
                     </div>
                   </div>
                 </div>
-                <div class="social">
+                <div class="social" style="margin-top: 10px">
                   <div class="social__list social__list--vertical">
                     <div class="social__item">
-                      <a href="#" class="link social__link social__link--vertical">
+                      <a href="#" class="link social__link">
                         <svg class="icon">{{mixins.icon('fb')}}</svg>
                       </a>
                     </div>
                     <div class="social__item">
-                      <a href="#" class="link social__link social__link--vertical">
+                      <a href="#" class="link social__link">
                         <svg class="icon icon--bg">{{mixins.icon('inst')}}</svg>
                       </a>
                     </div>
                     <div class="social__item">
-                      <a href="#" class="link social__link social__link--vertical">
+                      <a href="#" class="link social__link">
                         <svg class="icon icon--bg">{{mixins.icon('ytb')}}</svg>
                       </a>
                     </div>
                     <div class="social__item">
-                      <a href="#" class="link social__link social__link--vertical">
+                      <a href="#" class="link social__link">
                         <svg class="icon icon--bg">{{mixins.icon('pnrst')}}</svg>
                       </a>
                     </div>
@@ -312,10 +315,14 @@
         <h3>Btns with icons</h3>
         <p>
           <a class="btn btn--icon" href="#" role="button"><span>{{mixins.icon('plus')}}</span><span>Добавить</span></a>
-          <a class=" btn btn--primary btn--icon" href="#" role="button"><span>Добавить</span><span>{{mixins.icon('plus')}}</span></a>
-          <a class="btn btn--secondary btn--icon" href="#" role="button"><span>{{mixins.icon('plus')}}</span><span>Отправить</span></a>
-          <a class="btn btn--secondary btn--icon" href="#" role="button"><span>{{mixins.icon('model')}}</span><span>Запросить 3D модель</span></a>
-          <a class="btn btn--primary btn--icon" href="#" role="button"><span>{{mixins.icon('cart')}}</span><span>Добавить в корзину</span></a>
+          <a class=" btn btn--primary btn--icon" href="#"
+            role="button"><span>Добавить</span><span>{{mixins.icon('plus')}}</span></a>
+          <a class="btn btn--secondary btn--icon" href="#"
+            role="button"><span>{{mixins.icon('plus')}}</span><span>Отправить</span></a>
+          <a class="btn btn--secondary btn--icon" href="#"
+            role="button"><span>{{mixins.icon('model')}}</span><span>Запросить 3D модель</span></a>
+          <a class="btn btn--primary btn--icon" href="#"
+            role="button"><span>{{mixins.icon('cart')}}</span><span>Добавить в корзину</span></a>
         </p>
         <h3>100% btn</h3>
         <p>
