@@ -3,6 +3,12 @@
     display: flex;
     align-items: center;
     gap: calc(10 / var(--fz) * var(--fz-em));
+
+    &--vertical {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: calc(15 / var(--fz) * var(--fz-em));
+    }
   }
 
   & .icon {
@@ -15,11 +21,29 @@
 
 .social__link,
 a.social__link {
-  color: var(--social-icon-color);
+  color: var(--link-color);
   display: block;
+  border: none;
+
+  &:hover,
+  &:focus {
+    border: none;
+    text-decoration: none;
+
+  }
+
+  & .icon {
+    --fz-icon: 40;
+
+    font-size: calc(var(--fz-icon) / var(--fz) * var(--fz-em));
+    color: currentColor;
+  }
+
 
   &--bg {
     --social-icon-bg: var(--primary);
+
+    color: var(--social-icon-color);
     padding: calc(10 / var(--fz) * var(--fz-em));
     border-radius: 50%;
     background-color: var(--social-icon-bg);
@@ -33,5 +57,28 @@ a.social__link {
 
   &--bg-light {
     --social-icon-bg: var(--bg-2);
+
+    color: var(--link-color);
+
+    .dark-theme & {
+      color: var(--social-icon-color)
+    }
+
+    &:hover,
+    &:focus {
+      --social-icon-bg: var(--primary);
+
+      .dark-theme & {
+        color: var(--link-color);
+      }
+    }
+  }
+
+  &--is-small {
+    padding: calc(5 / var(--fz) * var(--fz-em));
+
+    & .icon {
+      --fz-icon: 25;
+    }
   }
 }
