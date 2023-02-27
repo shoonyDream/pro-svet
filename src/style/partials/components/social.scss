@@ -7,6 +7,7 @@
     &--vertical {
       flex-direction: column;
       align-items: flex-start;
+      gap: calc(15 / var(--fz) * var(--fz-em));
     }
   }
 
@@ -20,31 +21,29 @@
 
 .social__link,
 a.social__link {
-  color: var(--social-icon-color);
+  color: var(--link-color);
   display: block;
-  border-bottom: 0;
+  border: none;
 
-  .social__list--vertical & {
-    --social-icon-color: var(--link-color);
-    gap: calc(15 / var(--fz) * var(--fz-em));
+  &:hover,
+  &:focus {
+    border: none;
+    text-decoration: none;
 
-    &:hover,
-    &:focus {
-      border: none;
-      text-decoration: none;
-
-    }
-
-    & .icon {
-      --fz-icon: 40;
-
-      font-size: calc(var(--fz-icon) / var(--fz) * var(--fz-em));
-      color: currentColor;
-    }
   }
+
+  & .icon {
+    --fz-icon: 40;
+
+    font-size: calc(var(--fz-icon) / var(--fz) * var(--fz-em));
+    color: currentColor;
+  }
+
 
   &--bg {
     --social-icon-bg: var(--primary);
+
+    color: var(--social-icon-color);
     padding: calc(10 / var(--fz) * var(--fz-em));
     border-radius: 50%;
     background-color: var(--social-icon-bg);
@@ -60,9 +59,6 @@ a.social__link {
     --social-icon-bg: var(--bg-2);
 
     color: var(--link-color);
-    padding: calc(5 / var(--fz) * var(--fz-em));
-    border-radius: 50%;
-    background-color: var(--social-icon-bg);
 
     .dark-theme & {
       color: var(--social-icon-color)
@@ -72,18 +68,17 @@ a.social__link {
     &:focus {
       --social-icon-bg: var(--primary);
 
-      color: var(--social-icon-color);
-
       .dark-theme & {
         color: var(--link-color);
       }
     }
+  }
+
+  &--is-small {
+    padding: calc(5 / var(--fz) * var(--fz-em));
 
     & .icon {
       --fz-icon: 25;
-
-      font-size: calc(var(--fz-icon) / var(--fz) * var(--fz-em));
-      color: currentColor;
     }
   }
 }
