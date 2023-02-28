@@ -1,0 +1,57 @@
+.blockquote {
+
+  &__content-container {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  &__content {
+    padding-left: 97px;
+  }
+
+  &__content::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 77px;
+    height: 77px;
+    left: 10%;
+    padding: 0 15px;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    background: url("/img/common/quotatmark.jpg") no-repeat 0 0;
+  }
+
+
+  &__cite,
+  &__text {
+    --fz: 18;
+
+    font-family: var(--font-title);
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+    font-style: normal;
+
+    @media (min-width: 960px) {
+      --fz: 24;
+
+      font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+    }
+  }
+
+  &__cite {
+    margin-top: calc(20 / var(--fz) * var(--fz-em));
+  }
+
+  &__cite-text {
+    --fz: 14;
+
+    font-family: var(--font);
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+    line-height: 1.5;
+    font-style: normal;
+    margin-top: calc(5 / var(--fz) * var(--fz-em));
+  }
+}
