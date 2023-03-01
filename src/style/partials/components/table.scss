@@ -1,0 +1,69 @@
+.table {
+
+  &__header {
+    border-bottom: 1px solid var(--line);
+    padding-bottom: calc(10 / var(--fz) * var(--fz-em));
+    margin-bottom: calc(15 / var(--fz) * var(--fz-em));
+  }
+
+  &__title {
+    --fz: 24;
+
+    color: var(--text-color);
+    font-family: var(--font-title);
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  &__row {
+    --fz: 14;
+
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+    font-weight: 400;
+    line-height: 1.5;
+    display: flex;
+    gap: calc(5 / var(--fz) * var(--fz-em));
+    justify-content: space-between;
+    padding: calc(5 / var(--fz) * var(--fz-em));
+
+    &:nth-child(even) {
+      background-color: var(--bg-2);
+    }
+  }
+
+  &__cell {
+    max-width: 50%;
+    flex-basis: 50%;
+    position: relative;
+
+    &--meaning {
+      text-align: right;
+    }
+  }
+
+  &__tooltip {
+    display: flex;
+    gap: calc(10 / var(--fz) * var(--fz-em));
+
+    &::after {
+      --fz: 8;
+
+      font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+      color: var(--question);
+      line-height: 1;
+      content: '?';
+      padding-top: calc(2 / var(--fz) * var(--fz-em));
+      border-radius: 50%;
+      border: 1px solid var(--question);
+      display: inline-block;
+      width: calc(12 / var(--fz) * var(--fz-em));
+      height: calc(12 / var(--fz) * var(--fz-em));
+      cursor: help;
+      text-align: center;
+      flex-shrink: 0;
+    }
+  }
+
+
+}
