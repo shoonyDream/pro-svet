@@ -1,26 +1,75 @@
 .blockquote {
 
-  &__content-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 
+  @media (min-width: 960px) {
+    flex-direction: row;
+    gap: 38px;
+  }
+
+  &__content-container {
+    display: block;
+
+  }
+
+  &__image {
+    position: relative;
+    overflow: hidden;
+    height: calc(157 / var(--fz) * var(--fz-em));
+    width: calc(157 / var(--fz) * var(--fz-em));
+    flex-shrink: 0;
+    border-radius: 50%;
+
+    @media (min-width: 960px) {
+      height: calc(275 / var(--fz) * var(--fz-em));
+      width: calc(275 / var(--fz) * var(--fz-em));
+    }
+
+  }
+
+  &__img {
+    /*position: absolute;
+    top: 0;
+    left: 0;*/
+    width: 100%;
+    height: 100%;
+
+    & img {
+      position: absolute;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &__content {
-    padding-left: 97px;
+    display: flex;
+    gap: calc(20 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 960px) {
+      flex-direction: row;
+      gap: 38px;
+    }
   }
 
   &__content::before {
-    position: absolute;
-    content: "";
+    content: " ";
     display: inline-block;
-    width: 77px;
-    height: 77px;
-    left: 10%;
-    padding: 0 15px;
-    transform: translateX(-50%);
-    margin: 0 auto;
-    background: url("/img/common/quotatmark.jpg") no-repeat 0 0;
+    flex-shrink: 0;
+    width: calc(39 / var(--fz) * var(--fz-em));
+    height: calc(32 / var(--fz) * var(--fz-em));
+    background: url(../../../../../img/common/quotatmark.jpg) no-repeat 0 0;
+
+    @media (min-width: 960px) {
+      height: calc(32 / var(--fz) * var(--fz-em));
+      width: calc(39 / var(--fz) * var(--fz-em));
+    }
   }
 
 
@@ -42,6 +91,7 @@
   }
 
   &__cite {
+    display: block;
     margin-top: calc(20 / var(--fz) * var(--fz-em));
   }
 
