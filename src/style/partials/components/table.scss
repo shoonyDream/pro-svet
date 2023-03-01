@@ -36,33 +36,34 @@
     max-width: 50%;
     flex-basis: 50%;
     position: relative;
-  }
 
-  &__cell--meaning {
-    text-align: right;
+    &--meaning {
+      text-align: right;
+    }
   }
-
 
   &__tooltip {
     display: flex;
     gap: calc(10 / var(--fz) * var(--fz-em));
+
+    &::after {
+      --fz: 8;
+
+      font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+      color: var(--question);
+      line-height: 1;
+      content: '?';
+      padding-top: calc(2 / var(--fz) * var(--fz-em));
+      border-radius: 50%;
+      border: 1px solid var(--question);
+      display: inline-block;
+      width: calc(12 / var(--fz) * var(--fz-em));
+      height: calc(12 / var(--fz) * var(--fz-em));
+      cursor: help;
+      text-align: center;
+      flex-shrink: 0;
+    }
   }
 
-  &__tooltip::after {
-    --fz: 8;
 
-    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
-    color: var(--question);
-    line-height: 1;
-    content: '?';
-    padding-top: calc(2 / var(--fz) * var(--fz-em));
-    border-radius: 50%;
-    border: 1px solid var(--question);
-    display: inline-block;
-    width: calc(12 / var(--fz) * var(--fz-em));
-    height: calc(12 / var(--fz) * var(--fz-em));
-    cursor: help;
-    text-align: center;
-    flex-shrink: 0;
-  }
 }
