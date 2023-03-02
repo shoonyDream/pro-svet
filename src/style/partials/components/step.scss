@@ -1,10 +1,12 @@
 .step {
 
   &__list {
+    --fz: 18;
+
     list-style-type: none;
     counter-reset: list;
     position: relative;
-    font-size: calc(18 / var(--fz) * var(--fz-em));
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
     display: flex;
     flex-wrap: wrap;
   }
@@ -23,6 +25,8 @@
     }
 
     &::after {
+      --fz: 18;
+
       content: counter(list, decimal);
       counter-increment: list;
       display: inline-block;
@@ -36,9 +40,9 @@
       color: var(--primary);
       text-align: center;
       vertical-align: middle;
-      font-size: calc(18 / var(--fz) * var(--fz-em));
+      font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
       border-radius: 50%;
-      border: 1px solid var(--primary);
+      border: calc(1 / var(--fz) * var(--fz-em)) solid var(--primary);
     }
 
     &::before {
@@ -47,8 +51,8 @@
       top: calc(18 / var(--fz) * var(--fz-em));
       right: calc(24 / var(--fz) * var(--fz-em));
       left: calc(52 / var(--fz) * var(--fz-em));
-      height: 1px;
-      border-top: 1px solid var(--line);
+      height: calc(1 / var(--fz) * var(--fz-em));
+      border-top: calc(1 / var(--fz) * var(--fz-em)) solid var(--line);
     }
 
 
@@ -75,19 +79,21 @@
 
     @media (min-width: 960px) {
       & {
-        font-size: calc(24 / var(--fz) * var(--fz-em));
+        --fz: 24;
+
+        font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
       }
     }
   }
 
   &__content {
+    --fz: 14;
+
     font-family: var(--font-title);
-    font-size: 14px;
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
     font-weight: 400;
     line-height: 1.5;
-    color: #333333;
+    color: var(--text-color);
     margin-top: calc(10 / var(--fz) * var(--fz-em));
   }
-
-
 }
