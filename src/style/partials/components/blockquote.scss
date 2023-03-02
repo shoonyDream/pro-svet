@@ -43,6 +43,7 @@
   }
 
   &__content {
+    font-size: inherit;
     display: flex;
     gap: calc(20 / var(--fz) * var(--fz-em));
 

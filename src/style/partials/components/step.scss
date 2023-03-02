@@ -1,0 +1,93 @@
+.step {
+
+  &__list {
+    list-style-type: none;
+    counter-reset: list;
+    position: relative;
+    font-size: calc(18 / var(--fz) * var(--fz-em));
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex-basis: 50%;
+    position: relative;
+    padding-top: calc(45 / var(--fz) * var(--fz-em));
+    padding-right: calc(40 / var(--fz) * var(--fz-em));
+    margin-bottom: calc(20 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 960px) {
+      & {
+        flex-basis: 25%;
+      }
+    }
+
+    &::after {
+      content: counter(list, decimal);
+      counter-increment: list;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(32 / var(--fz) * var(--fz-em));
+      height: calc(32 / var(--fz) * var(--fz-em));
+      line-height: calc(35 / var(--fz) * var(--fz-em));
+      background: var(--z-white);
+      color: var(--primary);
+      text-align: center;
+      vertical-align: middle;
+      font-size: calc(18 / var(--fz) * var(--fz-em));
+      border-radius: 50%;
+      border: 1px solid var(--primary);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: calc(18 / var(--fz) * var(--fz-em));
+      right: calc(24 / var(--fz) * var(--fz-em));
+      left: calc(52 / var(--fz) * var(--fz-em));
+      height: 1px;
+      border-top: 1px solid var(--line);
+    }
+
+
+    &:last-child::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: calc(-38 / var(--fz) * var(--fz-em));
+      width: calc(28 / var(--fz) * var(--fz-em));
+      border-top: none;
+      background: var(--z-white);
+    }
+
+  }
+
+  &__title {
+    font-family: var(--font-title);
+    font-size: calc(18 / var(--fz) * var(--fz-em));
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--primary);
+
+    @media (min-width: 960px) {
+      & {
+        font-size: calc(24 / var(--fz) * var(--fz-em));
+      }
+    }
+  }
+
+  &__content {
+    font-family: var(--font-title);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333333;
+    margin-top: calc(10 / var(--fz) * var(--fz-em));
+  }
+
+
+}
