@@ -37,12 +37,14 @@
     gap: calc(5 / var(--fz) * var(--fz-em));
     flex-shrink: 0;
 
-    &:not(:last-child)::after {
-      content: " ";
-      width: calc(24 / var(--fz) * var(--fz-em));
-      height: calc(24 / var(--fz) * var(--fz-em));
-      color: var(--link-color);
-      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M10 8L14 12L10 16' stroke='%239C7C56'/%3e%3c/svg%3e");
+    &:not(:last-child) {
+      &::after {
+        content: " ";
+        width: calc(24 / var(--fz) * var(--fz-em));
+        height: calc(24 / var(--fz) * var(--fz-em));
+        color: var(--link-color);
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M10 8L14 12L10 16' stroke='%239C7C56'/%3e%3c/svg%3e");
+      }
     }
   }
 }
