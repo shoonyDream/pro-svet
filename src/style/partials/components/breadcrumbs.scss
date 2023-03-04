@@ -1,5 +1,8 @@
-.breadcrumbs {
+.breadcrumbs-container {
+  padding: calc(20 / var(--fz) * var(--fz-em)) 0;
+}
 
+.breadcrumbs {
   &.scrollbar {
     padding-bottom: calc(6 / var(--fz) * var(--fz-em));
   }

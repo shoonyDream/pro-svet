@@ -1,87 +1,75 @@
-<form action="" class="section-form form">
+<form action="" class="form">
   <div class="form__body">
-    <div uk-grid>
-      <div class="uk-width-1-2@s">
-        <div class="form__item">
-          <label class="form__label">
-            <span>Ваше имя</span>
-            <div class="input error">
-              <input type="text" class="input__field" placeholder="Иван">
-            </div>
-          </label>
+    <div class="form__item">
+      <label class="form__label">
+        <span>Наименование компании</span>
+        <div class="input input--error">
+          <input type="text" class="input__field" placeholder="Наименование компании">
         </div>
-        <div class="form__item">
-          <label class="form__label">
-            <span>Ваш телефон</span>
-            <div class="input">
-              <input type="text" class="input__field" placeholder="+7(___) ___ - __ - __">
-            </div>
-          </label>
+      </label>
+    </div>
+    <div class="form__item">
+      <label class="form__label">
+        <span>Контактное лицо</span>
+        <div class="input input--success">
+          <input type="text" class="input__field" placeholder="Контактное лицо">
         </div>
-        <div class="form__item">
-          <label class="form__label">
-            <span>Ваш E-mail</span>
-            <div class="input">
-              <input type="email" class="input__field" placeholder="example@domain.ru">
-            </div>
-          </label>
+      </label>
+    </div>
+    <div class="form__item">
+      <label class="form__label">
+        <span>Ваш телефон</span>
+        <div class="input input--active">
+          <input type="text" class="input__field" placeholder="+7(___) ___ - __ - __">
         </div>
-        <div class="form__item">
-          <label class="form__label">
-            <span>Дата и время</span>
-            <div class="input input--datepicker">
-              <div class="datepicker">
-                <div id="picker"></div>
-                <input type="hidden" id="result" value="">
-              </div>
-            </div>
-          </label>
+      </label>
+    </div>
+    <div class="form__item">
+      <label class="form__label">
+        <span>E-mail</span>
+        <div class="input">
+          <input type="email" class="input__field" placeholder="E-mail">
         </div>
+      </label>
+    </div>
+    <div class="form__item">
+      <label class="form__label">
+        <span>Пароль</span>
+        <div class="input">
+          <input type="text" class="input__field" placeholder="Пароль">
+        </div>
+      </label>
+    </div>
+    <div class="form__item">
+      <label class="form__label">
+        <span>Повторите пароль</span>
+        <div class="input">
+          <input type="text" class="input__field" placeholder="Повторите пароль">
+        </div>
+      </label>
+    </div>
+    <div class="form__item">
+      <div class="custom-file-upload input">
+        <input type="file" id="file" name="myfiles[]" multiple />
       </div>
-      <div class="uk-width-1-2@s">
-        <div class="form__item">
-          <label class="form__label">
-            <span>Предварительный запрос</span>
-            <div class="input input--textarea">
-              <textarea type="text" class="input__field scrollbar" placeholder="Укажи тему, которую хочешь проработать"></textarea>
-            </div>
-          </label>
-        </div>
-        <div class="form__item">
-          <label class="form__label">
-            <span>Возраст</span>
-            <select class="select js-select">
-              <option value="18">18</option>
-              <option value="19">19</option>
-              <option value="20">20</option>
-              <option value="30">30</option>
-              <option value="40">40</option>
-              <option value="50">50</option>
-              <option value="60">60</option>
-              <option value="70">70</option>
-              <option value="80">80</option>
-              <option value="90">90</option>
-              <option value="100">100</option>
-            </select>
-          </label>
-        </div>
-        <div class="form__item">
+    </div>
+  </div>
+  <div class="form__footer">
+    <div class="form__item">
+      <div uk-grid class="uk-child-width-1-2@m">
+        <div>
           <div class="form__btn">
-            <a class="btn btn--primary btn--icon uk-width-1-1" href="#" role="button">
-              <span>Записаться</span>
-            </a>
+            <button class="btn btn--primary uk-width-1-1" role="button">
+              <span>Стать партнером</span>
+            </button>
           </div>
         </div>
-        <div class="form__item">
-          <label class="checkbox checkbox--confirm">
-            <div class="checkbox__label">
-              <input type="checkbox" class="checkbox__input" value="3">
-              <span class="checkbox__mark"></span>
-            </div>
-            <div class="checkbox__text">
-              Нажимая на кнопку вы соглашаетесь с <a href="#" class="link">политикой конфиденциальности</a>
-            </div>
-          </label>
+        <div>
+          <div class="form__btn">
+            <a class="btn btn--secondary uk-width-1-1" href="/">
+              <span>Отмена</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
