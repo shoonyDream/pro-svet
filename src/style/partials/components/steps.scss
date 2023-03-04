@@ -3,79 +3,50 @@
   &__list {
     list-style-type: none;
     counter-reset: list;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
   }
-
-  &__item {
-    max-width: 50%;
-    flex-basis: 50%;
-    position: relative;
-    padding-top: calc(45 / var(--fz) * var(--fz-em));
-    padding-right: calc(40 / var(--fz) * var(--fz-em));
-    margin-bottom: calc(20 / var(--fz) * var(--fz-em));
-
-    @media (min-width: 960px) {
-      flex-basis: 25%;
-      max-width: 25%;
-    }
-
-    &::after {
-      --fz-after: 18;
-
-      content: counter(list, decimal);
-      counter-increment: list;
-      display: inline-block;
-      position: absolute;
-      top: 0;
-      left: calc(27 / var(--fz-after) * var(--fz-em));
-      width: calc(32 / var(--fz-after) * var(--fz-em));
-      height: calc(32 / var(--fz-after) * var(--fz-em));
-      line-height: 1.9;
-      background: var(--z-white);
-      color: var(--primary);
-      text-align: center;
-      vertical-align: middle;
-      font-size: calc(var(--fz-after) / var(--fz) * var(--fz-em));
-      border-radius: 50%;
-      border: 1px solid var(--primary);
-
-      @media (min-width: 960px) {
-        left: calc(35 / var(--fz-after) * var(--fz-em));
-      }
-    }
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: calc(18 / var(--fz) * var(--fz-em));
-      right: calc(-10 / var(--fz) * var(--fz-em));
-      left: calc(80 / var(--fz) * var(--fz-em));
-      height: calc(1 / var(--fz) * var(--fz-em));
-      border-top: 1px solid var(--line);
-    }
-
-
-    &:last-child {
-      &::before {
-        content: '';
-        display: inline-block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: calc(-38 / var(--fz) * var(--fz-em));
-        width: calc(28 / var(--fz) * var(--fz-em));
-        border-top: none;
-        background: var(--z-white);
-      }
-    }
-  }
-
-
 }
 
 .step {
+  position: relative;
+  padding-top: calc(45 / var(--fz) * var(--fz-em));
+
+  &::after {
+    --fz-after: 18;
+
+    content: counter(list, decimal);
+    counter-increment: list;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(32 / var(--fz-after) * var(--fz-em));
+    height: calc(32 / var(--fz-after) * var(--fz-em));
+    line-height: 1.9;
+    background: var(--z-white);
+    color: var(--primary);
+    text-align: center;
+    font-size: calc(var(--fz-after) / var(--fz) * var(--fz-em));
+    border-radius: 50%;
+    border: 1px solid var(--primary);
+
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: calc(16 / var(--fz) * var(--fz-em));
+    left: calc(42 / var(--fz) * var(--fz-em));
+    height: calc(1 / var(--fz) * var(--fz-em));
+    background-color: var(--line);
+    width: calc(100% - calc(30 / var(--fz) * var(--fz-em)));
+
+    .steps__item:last-child & {
+      display: none;
+    }
+  }
+
+
+
 
   &__title {
     --fz-title: 18;
