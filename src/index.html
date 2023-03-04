@@ -2,15 +2,194 @@
 {% import "template/_mixins.html" as mixins %}
 {% include "template/header.html" %}
 <section class="uk-section section">
-  <div class="uk-container">
+  <div class="uk-container section__container">
     <div class="section__header">
       <div class="section__title">
         <h1>Header H1</h1>
       </div>
     </div>
     <div class="section__body">
-      <p>Body</p>
+      <p>Card & slider</p>
     </div>
   </div>
 </section>
+<section class="uk-section section section--border section--border-top">
+  <div class="uk-container section__container">
+    <div class="section__body">
+      <p>Key</p>
+    </div>
+  </div>
+</section>
+<section class="uk-section section section--border section--border-top section--border-outside">
+  <div class="uk-container section__container">
+    <div class="section__header">
+      <div class="section__title section__title--decor">
+        <h2>Каталог светильников</h2>
+      </div>
+      <div class="section__subtitle">
+        <p>Актуальные дизайны и премиальное качество в мельчайших деталях</p>
+      </div>
+    </div>
+    <div class="section__body">
+      <div uk-grid class="card-list uk-grid-small">
+        <div class="card-list__item uk-width-1-4@m">
+          <a href="#" class="card card--bg">
+            <div class="card__image card__image--vertical">
+              <div class="card__img">
+                <img src="./decor/1.png" alt="product">
+              </div>
+            </div>
+            <div class="card__body card__body--auto-top">
+              <div class="card__title card__title--large">Подвесные светильники</div>
+            </div>
+          </a>
+        </div>
+        <div class="uk-width-3-4@m">
+          <div uk-grid class=" uk-grid-small">
+            <div class="card-list__item uk-width-1-2 uk-width-2-3@m">
+              <a href="#" class="card card--bg">
+                <div class="card__image card__image--horizontal">
+                  <div class="card__img">
+                    <img src="./decor/2.png" alt="product">
+                  </div>
+                </div>
+                <div class="card__body card__body--auto-top">
+                  <div class="card__title card__title--large">Люстры</div>
+                </div>
+              </a>
+            </div>
+            <div class="card-list__item uk-width-1-2 uk-width-1-3@m">
+              <a href="#" class="card card--bg">
+                <div class="card__image">
+                  <div class="card__img">
+                    <img src="./decor/3.png" alt="product">
+                  </div>
+                </div>
+                <div class="card__body card__body--auto-top">
+                  <div class="card__title card__title--large">Бра</div>
+                </div>
+              </a>
+            </div>
+            <div class="card-list__item uk-width-1-2 uk-width-1-3@m">
+              <a href="#" class="card card--bg">
+                <div class="card__image">
+                  <div class="card__img">
+                    <img src="./decor/4.png" alt="product">
+                  </div>
+                </div>
+                <div class="card__body card__body--auto-top">
+                  <div class="card__title card__title--large">Торшеры</div>
+                </div>
+              </a>
+            </div>
+            <div class="card-list__item uk-width-1-2 uk-width-1-3@m">
+              <a href="#" class="card card--bg">
+                <div class="card__image">
+                  <div class="card__img">
+                    <img src="./decor/5.png" alt="product">
+                  </div>
+                </div>
+                <div class="card__body card__body--auto-top">
+                  <div class="card__title card__title--large">Детский свет</div>
+                </div>
+              </a>
+            </div>
+            <div class="card-list__item uk-width-1-3@m">
+              <a href="#" class="card card--bg">
+                <div class="card__image">
+                  <div class="card__img">
+                    <img src="./decor/6.png" alt="product">
+                  </div>
+                </div>
+                <div class="card__body card__body--auto-top">
+                  <div class="card__title card__title--large">Настольные лампы</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section__footer">
+      <a href="#" class="btn btn--secondary"><span>Смотреть все категории</span></a>
+    </div>
+  </div>
+</section>
+<section class="uk-section section section--border section--border-top">
+  <div class="uk-container section__container">
+    <div class="section__header">
+      <div class="section__title section__title--decor">
+        <h2>Популярные модели</h2>
+      </div>
+      <div class="section__subtitle">
+        <p>Актуальные дизайны и премиальное качество в мельчайших деталях</p>
+      </div>
+    </div>
+    <div class="section__body">
+      <p>slider</p>
+    </div>
+  </div>
+</section>
+<section class="uk-section section section--border section--border-top section--border-outside">
+  <div class="uk-container section__container">
+    <div class="section__header">
+      <div class="section__title section__title--decor">
+        <h2>Подберем освещение к вашему дизайн-проекту</h2>
+      </div>
+    </div>
+    <div class="section__body">
+      <p>cards</p>
+    </div>
+  </div>
+</section>
+<section class="uk-section section section--white section--border section--border-top section--border-outside">
+  <div class="uk-container section__container">
+    <div class="section__header">
+      <div class="section__title section__title--decor">
+        <h2>сделайте свой интерьер стильным и современным
+          с дизайнерскими светильниками ПроSVET</h2>
+      </div>
+    </div>
+    <div class="section__body">
+      <p>interactive</p>
+    </div>
+  </div>
+</section>
+<section class="uk-section section section--border section--border-top section--border-outside">
+  <div class="uk-container section__container">
+    <div class="section__header">
+      <div class="section__title section__title--decor">
+        <h2>Помогаем выбирать освещение правильно</h2>
+      </div>
+    </div>
+    <div class="section__body">
+      <p>cards</p>
+    </div>
+  </div>
+</section>
+<section class="uk-section section section--white section--border section--border-top section--border-outside">
+  <div class="uk-container section__container">
+    <div class="section__body">
+      <p>Checkmate</p>
+    </div>
+  </div>
+</section>
+<section class="uk-section section section--border section--border-top section--border-bottom section--border-outside">
+  <div class="uk-container section__container">
+    <div class="section__body">
+      <p>card</p>
+    </div>
+  </div>
+</section>
+
+{% include "template/blog.html" %}
+
+<section class="uk-section section section--spring-wood">
+  <div class="uk-container section__container">
+    <div class="section__body">
+      {% include "template/form.html" %}
+    </div>
+  </div>
+</section>
+
 {% include "template/footer.html" %}

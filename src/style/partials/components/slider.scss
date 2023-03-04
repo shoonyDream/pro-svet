@@ -1,3 +1,22 @@
+.slider {
+  &__nav {
+    &>* {
+      padding-left: 30px;
+    }
+
+    &>*>* {
+      width: 7px;
+      height: 7px;
+      border: none;
+      background-color: var(--line);
+    }
+
+    &>*.uk-active>* {
+      background-color: var(--primary);
+    }
+  }
+}
+
 .vertical-slider .slick-arrow {
   display: none !important;
   /* `arrows: false;` is not enough to prevent horizontal scrolling */

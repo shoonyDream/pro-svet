@@ -97,10 +97,15 @@
   --border-color: var(--line);
 
   --card-bg: var(--bg-2);
+  --card-bg-dark: var(--main-3);
+  --card-title-color: var(--text-color);
+  --card-title-color-large: var(--primary);
 }
 
 :root {
   --header-height: 130;
+  --save-gutter: 140;
+  --card-image-decor-size: 219;
 
   @media (min-width: 1140px) {
     --header-height: 157;
@@ -119,4 +124,7 @@
 
   --icon-color: var(--main-3);
   --social-icon-color: var(--main-3);
+
+  --card-title-color: var(--main-1);
+  --card-title-color-large: var(--main-1);
 }
