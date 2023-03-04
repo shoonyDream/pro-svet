@@ -13,7 +13,9 @@ a.card {
   color: var(--text-color);
 
   &--large {
-    gap: calc(40 / var(--fz) * var(--fz-em));
+    @media (min-width: 1100px) {
+      gap: calc(40 / var(--fz) * var(--fz-em));
+    }
   }
 
   &--bg {
@@ -199,15 +201,16 @@ a.card {
     }
 
     &--extra-large {
-      --fz: var(--h2);
+      --fz: 32;
+
       line-height: 1.2;
       font-family: var(--font-title);
       text-transform: uppercase;
-    }
 
-    // #{$self}__icon+#{$self}__body & {
-    //   padding-right: calc((82 + 10) / var(--fz) * var(--fz-em));
-    // }
+      @media (min-width: 1100px) {
+        --fz: var(--h2);
+      }
+    }
   }
 
   &__info {
