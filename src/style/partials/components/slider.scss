@@ -1,5 +1,13 @@
 .slider {
+  &--bg {
+    background-color: var(--card-bg);
+  }
+
   &__nav {
+    .slider--bg & {
+      margin: 0 0 calc(20 / var(--fz) * var(--fz-em));
+    }
+
     &>* {
       padding-left: 30px;
     }
@@ -13,6 +21,31 @@
 
     &>*.uk-active>* {
       background-color: var(--primary);
+    }
+  }
+
+  &__arr {
+    .slider & {
+      background-color: var(--z-white);
+      color: var(--primary);
+      border-radius: 50%;
+      width: calc(32 / var(--fz) * var(--fz-em));
+      height: calc(32 / var(--fz) * var(--fz-em));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.2s linear;
+
+      svg {
+        width: calc(5 / var(--fz) * var(--fz-em));
+        height: calc(10 / var(--fz) * var(--fz-em));
+      }
+
+      &:hover,
+      &:focus {
+        color: var(--z-white);
+        background-color: var(--primary);
+      }
     }
   }
 }

@@ -41,7 +41,7 @@ a.tag {
   max-width: calc(250 / var(--fz) * var(--fz-em));
   text-transform: none;
 
-  .uk-active &,
+  .uk-active>*>&,
   a:hover>&,
   a:focus>& {
     color: var(--link-color);
@@ -51,16 +51,19 @@ a.tag {
   &--bordered {
     color: var(--tag-color);
     border: 1px solid var(--tag-color);
-    border-radius: calc(20 / var(--fz) * var(--fz-em));
     padding: calc(8 / var(--fz) * var(--fz-em)) calc(10 / var(--fz) * var(--fz-em));
 
-    .uk-active &,
+    .uk-active>*>&,
     a:hover>&,
     a:focus>& {
       color: var(--tag-color-hover);
       border-color: var(--tag-color);
       background-color: var(--tag-color);
     }
+  }
+
+  &--rounded {
+    border-radius: calc(20 / var(--fz) * var(--fz-em));
   }
 
   &__text {

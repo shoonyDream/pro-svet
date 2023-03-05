@@ -37,10 +37,11 @@
           content: '';
           background-color: transparent;
           position: absolute;
-          width: 100%;
+          width: 0;
           height: 1px;
           bottom: 0;
           left: 0;
+          transition: 0.2s linear;
         }
       }
     }
@@ -56,7 +57,9 @@
 
       &::before {
         #{$self}--large & {
+          width: 100%;
           background-color: var(--border-color);
+          transition: 0.4s linear;
         }
       }
     }

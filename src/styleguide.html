@@ -514,7 +514,7 @@
           <h3>Tags</h3>
           <div uk-grid class="uk-child-width-1-2">
             <div>
-              <div style="height: 100px; padding: 10px; display: grid; gap: 10px">
+              <div style="height: 150px; padding: 10px; display: grid; gap: 10px">
                 <div class="tags">
                   <div class="tags__item">
                     <a href="#" class="tag">
@@ -530,11 +530,23 @@
                 <div class="tags">
                   <div class="tags__item">
                     <a href="#" class="tag tag--bordered">
-                      <span class="tag__text">Квартиры и частные дома и частные дома</span>
+                      <span class="tag__text">Белый</span>
                     </a>
                   </div>
                   <div class="tags__item">
                     <div class="tag tag--bordered">
+                      <span class="tag__text">Розовый</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tags">
+                  <div class="tags__item">
+                    <a href="#" class="tag tag--bordered tag--rounded">
+                      <span class="tag__text">Квартиры и частные дома и частные дома</span>
+                    </a>
+                  </div>
+                  <div class="tags__item">
+                    <div class="tag tag--bordered tag--rounded">
                       <span class="tag__text">Бизнес пространства</span>
                     </div>
                   </div>
@@ -542,7 +554,7 @@
               </div>
             </div>
             <div>
-              <div class="dark-theme" style="background: #333; height: 100px; padding: 10px; display: grid; gap: 10px">
+              <div class="dark-theme" style="background: #333; height: 150px; padding: 10px; display: grid; gap: 10px">
                 <div class="tags">
                   <div class="tags__item">
                     <a href="#" class="tag">
@@ -558,11 +570,23 @@
                 <div class="tags">
                   <div class="tags__item">
                     <a href="#" class="tag tag--bordered">
-                      <span class="tag__text">Квартиры и частные дома</span>
+                      <span class="tag__text">Белый</span>
                     </a>
                   </div>
                   <div class="tags__item">
                     <div class="tag tag--bordered">
+                      <span class="tag__text">Розовый</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="tags">
+                  <div class="tags__item">
+                    <a href="#" class="tag tag--bordered tag--rounded">
+                      <span class="tag__text">Квартиры и частные дома</span>
+                    </a>
+                  </div>
+                  <div class="tags__item">
+                    <div class="tag tag--bordered tag--rounded">
                       <span class="tag__text">Бизнес пространства Бизнес пространства</span>
                     </div>
                   </div>
@@ -1413,7 +1437,7 @@
         <div>
           <h3>Slider</h3>
           <div uk-slider class="slider">
-            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+            <div class="uk-position-relative uk-light" tabindex="-1">
               <ul class="slider__list uk-grid uk-grid-small uk-slider-items">
                 <li class="slider__item uk-width-5-6 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
                   <article class="card card--bordered">
@@ -1499,8 +1523,6 @@
                 </li>
                 <li class="slider__item uk-width-5-6 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
                   <article class="card">
-                    <div class="card__labels">
-                    </div>
                     <div class="card__image">
                       <div class="card__img">
                         <img src="./decor/5.png" alt="product">
@@ -1517,35 +1539,130 @@
                   </article>
                 </li>
               </ul>
-              <a class="slider__arr uk-position-center-left uk-position-small uk-hidden-hover" href="#"
-                uk-slidenav-previous uk-slider-item="previous"></a>
-              <a class="slider__arr uk-position-center-right uk-position-small uk-hidden-hover" href="#"
-                uk-slidenav-next uk-slider-item="next"></a>
             </div>
             <ul class="slider__nav uk-slider-nav uk-dotnav uk-flex-center uk-margin-medium"></ul>
           </div>
         </div>
         <div>
-          <h3>Tabs</h3>
+          <h3>Slider with arrow</h3>
+          <div uk-slider class="slider slider--bg">
+            <div class="uk-position-relative uk-light" tabindex="-1">
+              <ul class="slider__list uk-grid uk-grid-small uk-slider-items">
+                <li class="slider__item uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+                  <article class="card card--bg">
+                    <div class="card__image">
+                      <div class="card__img">
+                        <img src="./decor/1.png" alt="product">
+                      </div>
+                    </div>
+                    <div class="card__body">
+                      <div class="card__title">Торшер Rondo 450*2300</div>
+                      <div class="card__info">
+                        <div class="price">
+                          <span class="price__unit">26 780 ₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="slider__item uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+                  <article class="card card--bg">
+                    <div class="card__image">
+                      <div class="card__img">
+                        <img src="./decor/2.png" alt="product">
+                      </div>
+                    </div>
+                    <div class="card__body">
+                      <div class="card__title">Торшер Rondo 450*2300</div>
+                      <div class="card__info">
+                        <div class="price">
+                          <span class="price__unit">26 780 ₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="slider__item uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+                  <article class="card card--bg">
+                    <div class="card__image">
+                      <div class="card__img">
+                        <img src="./decor/3.png" alt="product">
+                      </div>
+                    </div>
+                    <div class="card__body">
+                      <div class="card__title">Торшер Rondo 450*2300</div>
+                      <div class="card__info">
+                        <div class="price">
+                          <span class="price__unit">26 780 ₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="slider__item uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+                  <article class="card card--bg">
+                    <div class="card__image">
+                      <div class="card__img">
+                        <img src="./decor/4.png" alt="product">
+                      </div>
+                    </div>
+                    <div class="card__body">
+                      <div class="card__title">Торшер Rondo 450*2300</div>
+                      <div class="card__info">
+                        <div class="price">
+                          <span class="price__unit">26 780 ₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="slider__item uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+                  <article class="card card--bg">
+                    <div class="card__image">
+                      <div class="card__img">
+                        <img src="./decor/5.png" alt="product">
+                      </div>
+                    </div>
+                    <div class="card__body">
+                      <div class="card__title">Торшер Rondo 450*2300</div>
+                      <div class="card__info">
+                        <div class="price">
+                          <span class="price__unit">26 780 ₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+              <a class="slider__arr uk-position-center-left uk-position-small" href="#" uk-slidenav-previous
+                uk-slider-item="previous"></a>
+              <a class="slider__arr uk-position-center-right uk-position-small" href="#" uk-slidenav-next
+                uk-slider-item="next"></a>
+            </div>
+            <ul class="slider__nav uk-slider-nav uk-dotnav uk-flex-center"></ul>
+          </div>
+        </div>
+        <div>
+          <h3>Tabs small</h3>
           <div class="tabs tabs--small">
             <ul class="tabs__nav uk-subnav uk-subnav-pill" uk-switcher>
               <li class="tabs__item">
                 <a href="#" class="tabs__link">
-                  <div class="tag tag--bordered">
+                  <div class="tag tag--bordered tag--rounded">
                     <span class="tag__text">Светильники</span>
                   </div>
                 </a>
               </li>
               <li class="tabs__item">
                 <a href="#" class="tabs__link">
-                  <div class="tag tag--bordered">
+                  <div class="tag tag--bordered tag--rounded">
                     <span class="tag__text">Модерн</span>
                   </div>
                 </a>
               </li>
               <li class="tabs__item">
                 <a href="#" class="tabs__link">
-                  <div class="tag tag--bordered">
+                  <div class="tag tag--bordered tag--rounded">
                     <span class="tag__text">Скандинавский стиль</span>
                   </div>
                 </a>
@@ -1557,9 +1674,9 @@
               <li class="tabs__content">test2</li>
             </ul>
           </div>
-
         </div>
         <div>
+          <h3>Tabs large</h3>
           <div class="tabs tabs--large">
             <ul class="tabs__nav uk-subnav uk-subnav-pill" uk-switcher>
               <li class="tabs__item">
@@ -1749,6 +1866,5 @@
         </div>
       </div>
     </div>
-
 </section>
 {% include "template/footer.html" %}

@@ -350,6 +350,7 @@ input::-webkit-inner-spin-button {
   }
 
   &__mark {
+    flex-shrink: 0;
     width: calc(20 / var(--fz) * var(--fz-em));
     height: calc(20 / var(--fz) * var(--fz-em));
     display: block;
