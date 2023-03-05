@@ -291,7 +291,7 @@ p+p {
   --gutter: 40;
 
   @media (min-width: 960px) {
-    --gutter: 100;
+    --gutter: 60;
   }
 
   padding: calc(var(--gutter) / var(--fz) * var(--fz-em)) 0;
