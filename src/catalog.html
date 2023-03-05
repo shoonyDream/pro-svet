@@ -1,5 +1,131 @@
 {% set page = 'main' %}
 {% import "template/_mixins.html" as mixins %}
 {% include "template/header.html" %}
-<p>catalog & new</p>
+{% include "template/breadcrumbs.html" %}
+{% include "template/page-header.html" %}
+<section class="section section--border section--border-top section--border-bottom section--border-bottom-outside">
+  <div class="section__container uk-container">
+    <div class="section-grid">
+      <aside class="section-grid__aside">
+        <div class="section-grid-aside scrollbar" uk-sticky="offset: 157; end: true">
+          <div class="section-grid-aside__content">
+            <p>Aside</p>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+              doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+              accusantium debitis voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+              doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+              accusantium debitis voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+              doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+              accusantium debitis voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+              doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+              accusantium debitis voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+              doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+              accusantium debitis voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+              doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+              accusantium debitis voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+              doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+              accusantium debitis voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+              doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+              accusantium debitis voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+              doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+              accusantium debitis voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+              doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+              accusantium debitis voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+              doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+              accusantium debitis voluptatem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+              doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+              accusantium debitis voluptatem!</p> -->
+          </div>
+
+        </div>
+      </aside>
+      <div class="section-grid__content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+          doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+          accusantium debitis voluptatem!</p>
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+          doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+          accusantium debitis voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+          doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+          accusantium debitis voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+          doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+          accusantium debitis voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+          doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+          accusantium debitis voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+          doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+          accusantium debitis voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+          doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+          accusantium debitis voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+          doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+          accusantium debitis voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+          doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+          accusantium debitis voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+          doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+          accusantium debitis voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+          doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+          accusantium debitis voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+          doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+          accusantium debitis voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+          doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+          accusantium debitis voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+          doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+          accusantium debitis voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+          doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+          accusantium debitis voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+          doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+          accusantium debitis voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+          doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+          accusantium debitis voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+          doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+          accusantium debitis voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+          doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+          accusantium debitis voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+          doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+          accusantium debitis voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+          doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+          accusantium debitis voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+          doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+          accusantium debitis voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+          doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+          accusantium debitis voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi placeat quae inventore voluptatum
+          doloremque ullam reiciendis, voluptatem facere provident nihil velit. In ab dolorum commodi qui, iure
+          accusantium debitis voluptatem!</p> -->
+      </div>
+    </div>
+  </div>
+</section>
+{% include "template/blog.html" %}
 {% include "template/footer.html" %}

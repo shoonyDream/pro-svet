@@ -49,10 +49,6 @@
 
   &__header+&__body {
     margin-top: calc(20 / var(--fz) * var(--fz-em));
-
-    @media (min-width: 960px) {
-      margin-top: calc(40 / var(--fz) * var(--fz-em));
-    }
   }
 
   &__title+&__subtitle {

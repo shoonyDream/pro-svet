@@ -1,0 +1,19 @@
+.section-grid {
+  display: flex;
+
+  &__aside {
+    flex-shrink: 0;
+    max-width: calc(295 / var(--fz) * var(--fz-em));
+    flex-basis: calc(295 / var(--fz) * var(--fz-em));
+    border-right: 1px solid var(--border-color);
+    overflow: hidden;
+  }
+
+  &__content {
+    flex-grow: 1;
+  }
+}
+
+.section-grid-aside {
+  max-height: calc(100vh - var(--header-height) / var(--fz) * var(--fz-em) - 60px);
+}

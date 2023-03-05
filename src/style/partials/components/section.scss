@@ -31,13 +31,6 @@
           width: calc(100% - 2px * var(--save-gutter) + 2 * 24px);
         }
       }
-
-      @media (min-width: 1140px) {
-        #{$self}--border-outside & {
-          width: 100%;
-          left: 0;
-        }
-      }
     }
 
     &::before {
@@ -46,13 +39,25 @@
         top: calc((-1 * var(--gutter))/ var(--fz) * var(--fz-em));
       }
 
-
+      @media (min-width: 1140px) {
+        #{$self}--border-top-outside & {
+          width: 100%;
+          left: 0;
+        }
+      }
     }
 
     &::after {
       #{$self}--border-bottom & {
         display: block;
         bottom: calc((-1 * var(--gutter))/ var(--fz) * var(--fz-em));
+      }
+
+      @media (min-width: 1140px) {
+        #{$self}--border-bottom-outside & {
+          width: 100%;
+          left: 0;
+        }
       }
     }
   }
