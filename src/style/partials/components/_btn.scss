@@ -116,3 +116,30 @@ button {
     height: calc(9 / var(--fz) * var(--fz-em));
   }
 }
+
+.hide-section-btn {
+  --fz: 14;
+  font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+  outline: none;
+  cursor: pointer;
+  line-height: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: calc(10 / var(--fz) * var(--fz-em));
+  color: var(--text-color);
+  width: 100%;
+  padding: calc(20 / var(--fz) * var(--fz-em)) 0;
+
+  & .icon {
+    flex-shrink: 0;
+    width: calc(24 / var(--fz) * var(--fz-em));
+    height: calc(24 / var(--fz) * var(--fz-em));
+    transform: rotate(90deg);
+  }
+
+  &.btn-hide {
+    & .icon {
+      transform: rotate(-90deg);
+    }
+  }
+}

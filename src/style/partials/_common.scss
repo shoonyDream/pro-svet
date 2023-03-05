@@ -338,20 +338,53 @@ p+p {
 
 .hide-section {
   &__body {
+    --hidden-height: 570;
+
+    height: 100%;
+
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: calc(90 / var(--fz) * var(--fz-em));
+      z-index: 1;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.2s linear;
+      background: linear-gradient(0, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    }
+
     &.is-hidden {
       position: relative;
       overflow: hidden;
+      height: calc(var(--hidden-height) / var(--fz) * var(--fz-em));
 
       &::after {
-        position: absolute;
-        content: '';
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: calc(90 / var(--fz) * var(--fz-em));
-        z-index: 1;
-        background: linear-gradient(0, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+        opacity: 1;
+        visibility: visible;
       }
+    }
+  }
+
+  &__btn {
+    margin-top: calc(20 / var(--fz) * var(--fz-em));
+
+    & .btn-hide {
+      display: block;
+    }
+
+    & .btn-show {
+      display: none;
+    }
+
+    .is-hidden+& .btn-hide {
+      display: none;
+    }
+
+    .is-hidden+& .btn-show {
+      display: block;
     }
   }
 }
