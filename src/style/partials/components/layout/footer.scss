@@ -7,7 +7,6 @@
   background-color: var(--footer-bg);
   color: var(--text-color);
   padding: calc(60 / var(--fz) * var(--fz-em)) 0;
-  height: 1500px;
 
   @media (min-width: 1140px) {
     padding: calc(60 / var(--fz) * var(--fz-em)) calc(100 / var(--fz) * var(--fz-em));

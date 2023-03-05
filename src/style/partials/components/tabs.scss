@@ -1,40 +1,63 @@
 .tabs {
   $self: &;
 
-  &__link {
-    #{$self}__nav #{$self}__item & {
-      --header-color: var(--primary);
+  &__nav {
+    margin-left: 0;
+    gap: calc(10 / var(--fz) * var(--fz-em));
 
-      position: relative;
-      background-color: transparent;
-      color: var(--header-color);
-      padding: 0;
-      padding-bottom: calc(10 / var(--fz) * var(--fz-em));
-      margin-right: calc(20 / var(--fz) * var(--fz-em));
+    #{$self}--large & {
+      gap: calc(20 / var(--fz) * var(--fz-em));
 
       @media (min-width: 1100px) {
-        margin-right: calc(40 / var(--fz) * var(--fz-em));
+        gap: calc(40 / var(--fz) * var(--fz-em));
+      }
+    }
+  }
+
+  &__item {
+    padding-left: 0;
+  }
+
+  &__link {
+    #{$self}__nav #{$self}__item & {
+      font-size: inherit;
+      background-color: transparent;
+      padding: 0;
+
+      #{$self}--large & {
+        --header-color: var(--primary);
+
+        position: relative;
+        color: var(--header-color);
+        padding-bottom: calc(10 / var(--fz) * var(--fz-em));
       }
 
       &::before {
-        content: '';
-        background-color: transparent;
-        position: absolute;
-        width: 100%;
-        height: 1px;
-        bottom: 0;
-        left: 0;
+        #{$self}--large & {
+          content: '';
+          background-color: transparent;
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          bottom: 0;
+          left: 0;
+        }
       }
     }
 
     #{$self}__nav #{$self}__item.uk-active & {
-      --header-color: var(--text-color);
-
-      background-color: transparent;
       cursor: default;
 
+      #{$self}--large & {
+        --header-color: var(--text-color);
+
+        background-color: transparent;
+      }
+
       &::before {
-        background-color: var(--border-color);
+        #{$self}--large & {
+          background-color: var(--border-color);
+        }
       }
     }
   }

@@ -11,6 +11,7 @@
 
 a.tag {
   text-decoration: none;
+  color: var(--primary);
 
   &:hover,
   &:focus {
@@ -19,6 +20,7 @@ a.tag {
   }
 
   &--bordered {
+    color: var(--tag-color);
 
     &:hover,
     &:focus {
@@ -27,8 +29,6 @@ a.tag {
       background-color: var(--tag-color);
     }
   }
-
-
 }
 
 .tag {
@@ -39,12 +39,28 @@ a.tag {
   transition: 0.2s linear;
   min-width: 0;
   max-width: calc(250 / var(--fz) * var(--fz-em));
+  text-transform: none;
+
+  .uk-active &,
+  a:hover>&,
+  a:focus>& {
+    color: var(--link-color);
+    border-color: currentColor;
+  }
 
   &--bordered {
     color: var(--tag-color);
     border: 1px solid var(--tag-color);
     border-radius: calc(20 / var(--fz) * var(--fz-em));
     padding: calc(8 / var(--fz) * var(--fz-em)) calc(10 / var(--fz) * var(--fz-em));
+
+    .uk-active &,
+    a:hover>&,
+    a:focus>& {
+      color: var(--tag-color-hover);
+      border-color: var(--tag-color);
+      background-color: var(--tag-color);
+    }
   }
 
   &__text {
