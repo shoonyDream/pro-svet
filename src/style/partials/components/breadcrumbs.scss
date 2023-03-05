@@ -13,9 +13,9 @@
 
   .breadcrumbs__link,
   a.breadcrumbs__link {
-    --fz: 14;
+    --fz-link: 14;
 
-    font-size: calc(var(--fz) / var(--fz) * var(--fz-em));
+    font-size: calc(var(--fz-link) / var(--fz) * var(--fz-em));
     font-weight: 400;
     line-height: 1.5;
     color: var(--link-color);

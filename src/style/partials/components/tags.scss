@@ -3,6 +3,12 @@
 .tag {
 
   &__link {
+    --fz-text: 14;
+
+    font-size: calc(var(--fz-text) / var(--fz) * var(--fz-em));
+    color: var(--z-white);
+    font-weight: 400;
+    line-height: 1.5;
     text-decoration: none;
     display: inline-block;
     border: 1px solid var(--z-white);
@@ -12,15 +18,27 @@
     &:hover,
     &:focus {
       text-decoration: none;
-      opacity: 0.5;
+      color: var(--primary);
+      border: 1px solid var(--primary);
     }
   }
-
 
   &__text {
     --fz-text: 14;
 
     font-size: calc(var(--fz-text) / var(--fz) * var(--fz-em));
     color: var(--z-white);
+    font-weight: 400;
+    line-height: 1.5;
+    display: inline-block;
+    border: 1px solid var(--z-white);
+    border-radius: 20px;
+    padding: calc(5 / var(--fz) * var(--fz-em)) calc(10 / var(--fz) * var(--fz-em));
+
+    &:hover,
+    &:focus {
+      color: var(--primary);
+      border: 1px solid var(--primary);
+    }
   }
 }
