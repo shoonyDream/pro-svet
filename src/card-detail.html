@@ -1,5 +1,239 @@
 {% set page = 'main' %}
 {% import "template/_mixins.html" as mixins %}
 {% include "template/header.html" %}
-<p>card detail</p>
+{% include "template/breadcrumbs.html" %}
+<article class="article article--product">
+  <div class="article__header">
+    <div class="article__container uk-container">
+      <div class="article__title">
+        <h1 class="uk-h2">Реечный подвесной светильник в индустриальном стиле с 4 плафонами Urban</h1>
+      </div>
+      <div class="article__subtitle">
+        <div class="price">
+          <span class="price__unit">Цена</span>
+          <span class="price__unit price__unit--through">от 48 980 ₽</span>
+          <span class="price__unit">от 26 780 ₽</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="article__body">
+    <div class="article__container uk-container">
+      <div uk-grid>
+        <div class="uk-width-3-5">
+          <div class="article__slider">
+            <article class="card card--bg">
+              <div class="card__favorite">
+                <button type="button" class="btn btn--is-favorite">{{mixins.icon('favorite')}}</button>
+              </div>
+              <div class="card__labels">
+                <ul class="label-list label-list--large">
+                  <li class="label-list__item">
+                    <span>Скидка</span>
+                  </li>
+                  <li class="label-list__item">
+                    <span>Новинки</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="card__image">
+                <div class="card__img">
+                  <img src="./decor/10.png" alt="product">
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="uk-width-2-5">
+          <div class="article__info">
+            <div class="article-info">
+              <div class="article-info__top">
+                <div class="status">
+                  <span>В наличии</span>
+                </div>
+                <span class="article-info__label">Артикул:</span>
+                <span class="article-info__text">stavra01</span>
+              </div>
+              <div class="article-info__main">
+                <div class="article-info-main">
+                  <div class="article-info-main__row">
+                    <div class="article-info-main__label">Цвет</div>
+                    <div class="article-info-main__list">
+                      <ul class="article-tags" uk-tab>
+                        <li class="article-tags__item">
+                          <a href="#" class="tag tag--bordered">
+                            <span class="tag__text">Белый</span>
+                          </a>
+                        </li>
+                        <li class="article-tags__item">
+                          <a href="#" class="tag tag--bordered">
+                            <span class="tag__text">Розовый</span>
+                          </a>
+                        </li>
+                        <li class="article-tags__item">
+                          <a href="#" class="tag tag--bordered">
+                            <span class="tag__text">Серый</span>
+                          </a>
+                        </li>
+                        <li class="article-tags__item">
+                          <a href="#" class="tag tag--bordered">
+                            <span class="tag__text">Черный</span>
+                          </a>
+                        </li>
+                        <li class="article-tags__item">
+                          <a href="#" class="tag tag--bordered">
+                            <span class="tag__text">Бежевый</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="article-info-main__row">
+                    <div class="article-info-main__label">Свет</div>
+                    <div class="article-info-main__list">
+                      <ul class="article-tags" uk-tab>
+                        <li class="article-tags__item">
+                          <a href="#" class="tag tag--bordered">
+                            <span class="tag__text">Холодный</span>
+                          </a>
+                        </li>
+                        <li class="article-tags__item">
+                          <a href="#" class="tag tag--bordered">
+                            <span class="tag__text">Теплый</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="article-info-main__row">
+                    <div class="article-info-main__label">Мощность</div>
+                    <div class="article-info-main__list">
+                      <ul class="article-tags" uk-tab>
+                        <li class="article-tags__item">
+                          <a href="#" class="tag tag--bordered">
+                            <span class="tag__text">22 ВТ</span>
+                          </a>
+                        </li>
+                        <li class="article-tags__item">
+                          <a href="#" class="tag tag--bordered">
+                            <span class="tag__text">28 ВТ</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="article-info-main__row">
+                    <div class="article-info-main__label">Кол-во ламп</div>
+                    <div class="article-info-main__list">
+                      <ul class="article-tags" uk-tab>
+                        <li class="article-tags__item">
+                          <a href="#" class="tag tag--bordered">
+                            <span class="tag__text">3</span>
+                          </a>
+                        </li>
+                        <li class="article-tags__item">
+                          <a href="#" class="tag tag--bordered">
+                            <span class="tag__text">6</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="article-info-main__row">
+                    <div class="article-info-main__label">Диаметр</div>
+                    <div class="article-info-main__list">
+                      <ul class="article-tags" uk-tab>
+                        <li class="article-tags__item">
+                          <a href="#" class="tag tag--bordered">
+                            <span class="tag__text">450 мм</span>
+                          </a>
+                        </li>
+                        <li class="article-tags__item">
+                          <a href="#" class="tag tag--bordered">
+                            <span class="tag__text">650 мм</span>
+                          </a>
+                        </li>
+                        <li class="article-tags__item">
+                          <a href="#" class="tag tag--bordered">
+                            <span class="tag__text">1250 мм</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="article__additional">
+    <section class="uk-section section section--white">
+      <div class="uk-container section__container">
+        <div class="section__header">
+          <div class="section__title">
+            <h2>Технические характеристики</h2>
+          </div>
+        </div>
+        <div class="section__body">
+          <p>Tables</p>
+        </div>
+      </div>
+    </section>
+    <section class="uk-section section section--white section--border section--border-bottom section--border-outside">
+      <div class="uk-container section__container">
+        <div class="section__header">
+          <div class="section__title">
+            <h2>Другие модели</h2>
+          </div>
+        </div>
+        <div class="section__body">
+          <p>Cards vertical</p>
+        </div>
+      </div>
+    </section>
+    <section class="uk-section section section--border section--border-bottom section--border-outside">
+      <div class="uk-container section__container">
+        <div class="section__header">
+          <div class="section__title">
+            <h2>Похожие товары</h2>
+          </div>
+        </div>
+        <div class="section__body">
+          <p>Slider</p>
+        </div>
+      </div>
+    </section>
+    <section class="uk-section section section--white section--border section--border-bottom section--border-outside">
+      <div class="uk-container section__container">
+        <div class="section__header">
+          <div class="section__title">
+            <h2>Создайте свой стиль
+              с нашим ассортиментом дизайнерского освещения</h2>
+          </div>
+        </div>
+        <div class="section__body">
+          <p>Checkmate</p>
+        </div>
+      </div>
+    </section>
+    <section class="uk-section section section--border section--border-bottom section--border-outside">
+      <div class="uk-container section__container">
+        <div class="section__header">
+          <div class="section__title">
+            <h2>Рекомендуемые товары</h2>
+          </div>
+        </div>
+        <div class="section__body">
+          <p>Slider</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</article>
+
+{% include "template/blog.html" %}
 {% include "template/footer.html" %}

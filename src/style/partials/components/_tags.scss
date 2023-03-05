@@ -9,7 +9,7 @@
   }
 }
 
-a.tag {
+a.tag.tag {
   text-decoration: none;
   color: var(--primary);
 
@@ -31,7 +31,7 @@ a.tag {
   }
 }
 
-.tag {
+.tag.tag {
   display: flex;
   align-items: center;
   color: var(--primary);
@@ -40,8 +40,10 @@ a.tag {
   min-width: 0;
   max-width: calc(250 / var(--fz) * var(--fz-em));
   text-transform: none;
+  font-size: inherit;
 
   .uk-active>*>&,
+  .uk-active>&,
   a:hover>&,
   a:focus>& {
     color: var(--link-color);
@@ -54,6 +56,7 @@ a.tag {
     padding: calc(8 / var(--fz) * var(--fz-em)) calc(10 / var(--fz) * var(--fz-em));
 
     .uk-active>*>&,
+    .uk-active>&,
     a:hover>&,
     a:focus>& {
       color: var(--tag-color-hover);
@@ -66,7 +69,7 @@ a.tag {
     border-radius: calc(20 / var(--fz) * var(--fz-em));
   }
 
-  &__text {
+  & .tag__text {
     --fz-text: 14;
 
     font-size: calc(var(--fz-text) / var(--fz) * var(--fz-em));

@@ -1,14 +1,12 @@
 .status {
   --fz: 14;
 
-  font-weight: 400;
   font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
-  line-height: 1.5;
+  line-height: 1;
   color: var(--text-color);
   position: relative;
   display: flex;
-  width: calc(90 / var(--fz) * var(--fz-em));
-  height: calc(21 / var(--fz) * var(--fz-em));
+  max-width: calc(90 / var(--fz) * var(--fz-em));
 
   &:before {
     content: '';
@@ -19,11 +17,11 @@
     border-radius: 50%;
     position: absolute;
     left: 0;
-    top: calc(7 / var(--fz) * var(--fz-em));
+    top: calc(3 / var(--fz) * var(--fz-em));
   }
 
   & span {
-    margin-left: calc(18 / var(--fz) * var(--fz-em));
+    padding-left: calc(18 / var(--fz) * var(--fz-em));
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

@@ -23,8 +23,13 @@
         position: absolute;
         height: 1px;
         background-color: var(--main-border);
-        left: calc(1px * var(--save-gutter) - 24px);
-        width: calc(100% - 2px * var(--save-gutter) + 2 * 24px);
+        width: 100%;
+        left: 0;
+
+        @media (min-width: 1140px) {
+          left: calc(1px * var(--save-gutter) - 24px);
+          width: calc(100% - 2px * var(--save-gutter) + 2 * 24px);
+        }
       }
 
       @media (min-width: 1140px) {
@@ -36,20 +41,18 @@
     }
 
     &::before {
-      @media (min-width: 1140px) {
-        #{$self}--border-top & {
-          display: block;
-          top: calc((-1 * var(--gutter))/ var(--fz) * var(--fz-em));
-        }
+      #{$self}--border-top & {
+        display: block;
+        top: calc((-1 * var(--gutter))/ var(--fz) * var(--fz-em));
       }
+
+
     }
 
     &::after {
-      @media (min-width: 1140px) {
-        #{$self}--border-bottom & {
-          display: block;
-          bottom: calc((-1 * var(--gutter))/ var(--fz) * var(--fz-em));
-        }
+      #{$self}--border-bottom & {
+        display: block;
+        bottom: calc((-1 * var(--gutter))/ var(--fz) * var(--fz-em));
       }
     }
   }
