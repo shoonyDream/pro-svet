@@ -61,6 +61,7 @@
     font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
     font-weight: 400;
     line-height: 1.2;
+    display: block;
     margin-bottom: calc(10 / var(--fz) * var(--fz-em));
 
     &:last-child {
@@ -105,4 +106,9 @@
     max-width: calc(78 / var(--fz) * var(--fz-em));
     flex-basis: calc(78 / var(--fz) * var(--fz-em));
   }
+}
+
+a.tile__title {
+  color: var(--primary);
+  text-decoration: none;
 }

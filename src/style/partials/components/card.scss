@@ -1,5 +1,13 @@
 a.card {
   text-decoration: none;
+  color: var(--text-color);
+
+  &:hover,
+  &:focus {
+    .card__title {
+      color: var(--primary);
+    }
+  }
 }
 
 .card {
@@ -187,6 +195,7 @@ a.card {
     font-weight: 400;
     line-height: 1.5;
     color: var(--card-title-color);
+    transition: color 0.2s linear;
     font-size: calc(var(--fz)/ var(--fz-base) * var(--fz-em));
 
     &--large {
