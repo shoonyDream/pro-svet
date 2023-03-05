@@ -47,18 +47,18 @@
     gap: calc(10 / var(--fz) * var(--fz-em));
 
     &::after {
-      --fz: 8;
+      --fz-after: 9;
 
-      font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+      font-size: calc(var(--fz-after) / var(--fz-base) * var(--fz-em));
       color: var(--question);
       line-height: 1;
       content: '?';
-      padding-top: calc(2 / var(--fz) * var(--fz-em));
+      padding-top: calc(4 / var(--fz) * var(--fz-em));
       border-radius: 50%;
       border: 1px solid var(--question);
       display: inline-block;
-      width: calc(12 / var(--fz) * var(--fz-em));
-      height: calc(12 / var(--fz) * var(--fz-em));
+      width: calc(14 / var(--fz-after) * var(--fz-em));
+      height: calc(14 / var(--fz-after) * var(--fz-em));
       cursor: help;
       text-align: center;
       flex-shrink: 0;
