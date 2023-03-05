@@ -39,7 +39,7 @@ button {
   display: inline-block;
   border: 1px solid var(--button-border);
   background: var(--button-bg);
-  padding: calc(14 / var(--fz) * var(--fz-em)) calc(16 / var(--fz) * var(--fz-em));
+  padding: calc(14 / var(--fz) * var(--fz-em)) calc(12 / var(--fz) * var(--fz-em));
   transition: 0.2s linear;
   margin: 0;
 
@@ -69,11 +69,13 @@ button {
     }
 
     span+span {
+      flex-shrink: 1;
       margin-left: calc(10 / var(--fz) * var(--fz-em));
     }
 
     .icon {
-      height: calc(32 / var(--fz) * var(--fz-em));
+      width: calc(28 / var(--fz) * var(--fz-em));
+      height: calc(28 / var(--fz) * var(--fz-em));
     }
   }
 

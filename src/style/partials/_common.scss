@@ -279,6 +279,10 @@ p+p {
   margin-top: calc(40 / var(--fz) * var(--fz-em));
 }
 
+.uk-grid-medium>.uk-grid-margin {
+  margin-top: calc(30 / var(--fz) * var(--fz-em));
+}
+
 *+.uk-grid-margin-small,
 .uk-grid+.uk-grid-row-small,
 .uk-grid+.uk-grid-small,

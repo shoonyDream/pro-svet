@@ -20,7 +20,7 @@
   <div class="article__body">
     <div class="article__container uk-container">
       <div uk-grid>
-        <div class="uk-width-3-5">
+        <div class="uk-width-3-5@m">
           <div class="article__slider">
             <article class="card card--bg">
               <div class="card__favorite">
@@ -44,7 +44,7 @@
             </article>
           </div>
         </div>
-        <div class="uk-width-2-5">
+        <div class="uk-width-2-5@m">
           <div class="article__info">
             <div class="article-info">
               <div class="article-info__top">
@@ -163,8 +163,33 @@
                   </div>
                 </div>
               </div>
+              <div class="article-info__more">
+                <a href="#" class="link link--bordered"><span>Посмотреть все характеристики</span></a>
+              </div>
+              <div class="article-info__footer">
+                <div uk-grid class="uk-grid-small uk-child-width-1-2@m">
+                  <div>
+                    <div class="price price--vertical">
+                      <span class="price__unit price__unit--through">148 900 Р</span>
+                      <span class="price__unit price__unit--large">140 980 Р</span>
+                      <span class="price__unit">C учетом выбранных опций</span>
+                    </div>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn--icon">
+                      <span>{{mixins.icon('cart')}}</span>
+                      <span>Добавить в корзину</span>
+                    </button>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn--secondary btn--icon">
+                      <span>{{mixins.icon('model')}}</span><span>Запросить 3D
+                        модель</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-
           </div>
         </div>
       </div>
