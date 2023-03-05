@@ -100,6 +100,8 @@
   --card-bg-dark: var(--main-3);
   --card-title-color: var(--text-color);
   --card-title-color-large: var(--primary);
+  --tag-color: var(--primary);
+  --tag-color-hover: var(--main-1);
 }
 
 :root {
@@ -127,4 +129,6 @@
 
   --card-title-color: var(--main-1);
   --card-title-color-large: var(--main-1);
+  --tag-color: var(--main-1);
+  --tag-color-hover: var(--main-3);
 }
