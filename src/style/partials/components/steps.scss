@@ -28,7 +28,6 @@
     font-size: calc(var(--fz-after) / var(--fz) * var(--fz-em));
     border-radius: 50%;
     border: 1px solid var(--primary);
-
   }
 
   &::before {
@@ -38,15 +37,12 @@
     left: calc(42 / var(--fz) * var(--fz-em));
     height: calc(1 / var(--fz) * var(--fz-em));
     background-color: var(--line);
-    width: calc(100% - calc(30 / var(--fz) * var(--fz-em)));
+    width: calc(100% - calc(40 / var(--fz) * var(--fz-em)));
 
     .steps__item:last-child & {
       display: none;
     }
   }
-
-
-
 
   &__title {
     --fz-title: 18;
@@ -67,7 +63,6 @@
   &__content {
     --fz-content: 14;
 
-    font-family: var(--font-title);
     font-size: calc(var(--fz-content) / var(--fz) * var(--fz-em));
     font-weight: 400;
     line-height: 1.5;
