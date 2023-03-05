@@ -1,0 +1,19 @@
+.aside-social {
+    position: fixed;
+    top: calc(344 / var(--fz) * var(--fz-em));
+    display: none;
+    z-index: 2;
+
+    +.uk-sticky-placeholder {
+        display: none;
+    }
+
+    @media (min-width: 1140px) {
+        display: block;
+        right: calc(var(--logo-width) *1px - 80px);
+    }
+
+    @media (min-width: 1440px) {
+        right: calc(50% - var(--logo-width) *1px - 60px - 428px - 80px);
+    }
+}
