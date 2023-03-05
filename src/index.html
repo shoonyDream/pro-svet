@@ -1,7 +1,7 @@
 {% set page = 'main' %}
 {% import "template/_mixins.html" as mixins %}
 {% include "template/header.html" %}
-<section class="uk-section section">
+<section class="uk-section section section--border section--border-bottom">
   <div class="uk-container section__container">
     <div class="section__header">
       <div class="section__title">
@@ -13,10 +13,42 @@
     </div>
   </div>
 </section>
-<section class="uk-section section section--border section--border-top">
+<section class="section">
   <div class="uk-container section__container">
     <div class="section__body">
-      <p>Key</p>
+      <div uk-grid class="uk-grid-small key-indicators key-indicators--bordered-inside uk-child-width-1-3@m">
+        <div class="key-indicators__item">
+          <div class="key-indicator">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('star')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description">Следим за трендами рынка. Даем профессиональные рекомендации
+                по стилевому соответствию.</div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('cone')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description">Привозим под заказ уникальные и единичные изделия. Добавляем изюминку вашему интерьеру</div>
+            </div>
+          </div>
+        </div>
+        <div class="key-indicators__item">
+          <div class="key-indicator">
+            <div class="key-indicator__header">
+              <div class="key-indicator__icon">{{mixins.icon('lightbulb')}}</div>
+            </div>
+            <div class="key-indicator__body">
+              <div class="key-indicator__description">Современные технологии обеспечивают повышенную безопасность и значительную экономию электричества</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -138,7 +170,41 @@
       </div>
     </div>
     <div class="section__body">
-      <p>cards</p>
+      <div uk-grid class="uk-grid-small card-list">
+        <div class="uk-width-1-2@m card-list__item dark-theme">
+          <article class="card card--custom-bg card--image-decor" style="background-color: #9C7C56;">
+            <div class="card__image">
+              <div class="card__img">
+                <img src="./decor/8.png" alt="product">
+              </div>
+            </div>
+            <div class="card__body">
+              <div class="card__title card__title--large">Раздумываете, какой светильник выбрать?</div>
+              <div class="card__info">
+                <p class="card__text">Подберем несколько артикулов по фото интерьера</p>
+              </div>
+            </div>
+            <div class="card__footer">
+              <a href="#" class="btn btn--secondary"><span>Узнать больше</span></a>
+            </div>
+          </article>
+        </div>
+        <div class="uk-width-1-2@m card-list__item dark-theme">
+          <article class="card card--custom-bg card--bg-image" style="background-image: url('./decor/9.png')">
+            <div class="card__body">
+              <div class="card__title card__title--large">Вы дизайнер
+                интерьера или архитектор?</div>
+              <div class="card__info">
+                <p class="card__text">У нас выгодные условия сотрудничества
+                </p>
+              </div>
+            </div>
+            <div class="card__footer">
+              <a href="#" class="btn"><span>Узнать больше</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -181,9 +247,7 @@
     </div>
   </div>
 </section>
-
 {% include "template/blog.html" %}
-
 <section class="uk-section section section--spring-wood">
   <div class="uk-container section__container">
     <div class="section__body">
@@ -191,5 +255,4 @@
     </div>
   </div>
 </section>
-
 {% include "template/footer.html" %}
