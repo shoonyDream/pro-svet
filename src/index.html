@@ -3,13 +3,147 @@
 {% include "template/header.html" %}
 <section class="uk-section section section--border section--border-bottom">
   <div class="uk-container section__container">
-    <div class="section__header">
-      <div class="section__title">
-        <h1>Header H1</h1>
-      </div>
-    </div>
     <div class="section__body">
-      <p>Card & slider</p>
+      <div uk-grid class="uk-grid-small">
+        <div class="uk-width-2-3@l dark-theme">
+          <article class="card card--custom-bg card--bg-image" style="background-image: url('./decor/9.png')">
+            <div class="card__body">
+              <h1 class="card__title card__title--h1">
+                <span>Giving the light</span>
+              </h1>
+              <div class="card__info card__info--big">
+                <p class="card__text">Интернет-магазин дизайнерских светильников
+                </p>
+                <div class="card__tags-container">
+                  <div class="tags">
+                    <div class="tags__item">
+                      <a href="#" class="tag tag--bordered tag--rounded">
+                        <span class="tag__text">Квартиры и частные дома и частные дома</span>
+                      </a>
+                    </div>
+                    <div class="tags__item">
+                      <div class="tag tag--bordered tag--rounded">
+                        <span class="tag__text">Бизнес пространства</span>
+                      </div>
+                    </div>
+                    <div class="tags__item">
+                      <div class="tag tag--bordered tag--rounded">
+                        <span class="tag__text">Коммерческие помещения</span>
+                      </div>
+                    </div>
+                    <div class="tags__item">
+                      <div class="tag tag--bordered tag--rounded">
+                        <span class="tag__text">Рестораны и кафе</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="card__text">Особые условия для дизайнеров и архитекторов
+              </p>
+            </div>
+            <div class="card__footer">
+              <a href="#" class="btn"><span>Узнать больше</span></a>
+            </div>
+          </article>
+        </div>
+        <div class="uk-width-1-3@l">
+          <div uk-slider class="slider slider--bg">
+            <div class="uk-position-relative uk-light" tabindex="-1">
+              <ul class="slider__list uk-grid uk-grid-small uk-slider-items">
+                <li class="slider__item uk-width-5-6 uk-width-1-2@s uk-width-1-3@m uk-width-1-1@l">
+                  <article class="card card--bg">
+                    <div class="card__image">
+                      <div class="card__img">
+                        <img src="./decor/1.png" alt="product">
+                      </div>
+                    </div>
+                    <div class="card__body">
+                      <div class="card__title">Торшер Rondo 450*2300</div>
+                      <div class="card__info">
+                        <div class="price">
+                          <span class="price__unit">26 780 ₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="slider__item uk-width-5-6 uk-width-1-2@s uk-width-1-3@m uk-width-1-1@l">
+                  <article class="card card--bg">
+                    <div class="card__image">
+                      <div class="card__img">
+                        <img src="./decor/2.png" alt="product">
+                      </div>
+                    </div>
+                    <div class="card__body">
+                      <div class="card__title">Торшер Rondo 450*2300</div>
+                      <div class="card__info">
+                        <div class="price">
+                          <span class="price__unit">26 780 ₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="slider__item uk-width-5-6 uk-width-1-2@s uk-width-1-3@m uk-width-1-1@l">
+                  <article class="card card--bg">
+                    <div class="card__image">
+                      <div class="card__img">
+                        <img src="./decor/2.png" alt="product">
+                      </div>
+                    </div>
+                    <div class="card__body">
+                      <div class="card__title">Торшер Rondo 450*2300</div>
+                      <div class="card__info">
+                        <div class="price">
+                          <span class="price__unit">26 780 ₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="slider__item uk-width-5-6 uk-width-1-2@s uk-width-1-3@m uk-width-1-1@l">
+                  <article class="card card--bg">
+                    <div class="card__image">
+                      <div class="card__img">
+                        <img src="./decor/2.png" alt="product">
+                      </div>
+                    </div>
+                    <div class="card__body">
+                      <div class="card__title">Торшер Rondo 450*2300</div>
+                      <div class="card__info">
+                        <div class="price">
+                          <span class="price__unit">26 780 ₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="slider__item uk-width-5-6 uk-width-1-2@s uk-width-1-3@m uk-width-1-1@l">
+                  <article class="card card--bg">
+                    <div class="card__image">
+                      <div class="card__img">
+                        <img src="./decor/2.png" alt="product">
+                      </div>
+                    </div>
+                    <div class="card__body">
+                      <div class="card__title">Торшер Rondo 450*2300</div>
+                      <div class="card__info">
+                        <div class="price">
+                          <span class="price__unit">26 780 ₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+              <a class="slider__arr uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+              <a class="slider__arr uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            </div>
+            <ul class="slider__nav uk-slider-nav uk-dotnav uk-flex-center"></ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -151,16 +285,189 @@
 </section>
 <section class="uk-section section section--border section--border-top">
   <div class="uk-container section__container">
-    <div class="section__header">
-      <div class="section__title section__title--decor">
-        <h2>Популярные модели</h2>
-      </div>
-      <div class="section__subtitle">
-        <p>Актуальные дизайны и премиальное качество в мельчайших деталях</p>
-      </div>
-    </div>
     <div class="section__body">
-      <p>slider</p>
+      <div class="tabs tabs--large">
+        <ul class="tabs__nav uk-subnav uk-subnav-pill" uk-switcher>
+          <li class="tabs__item">
+            <a class="tabs__link" href="#">
+              <h2>Популярные модели</h2>
+            </a>
+          </li>
+          <li class="tabs__item">
+            <a class="tabs__link" href="#">
+              <h2>Новинки и тренды</h2>
+            </a>
+          </li>
+        </ul>
+        <ul class="tabs__container uk-switcher">
+          <li class="tabs__content">
+            <div class="tags uk-visible@m">
+              <div class="tags__item">
+                <a href="#" class="tag">
+                  <span class="tag__text">Светильники</span>
+                </a>
+              </div>
+              <div class="tags__item">
+                <a href="#" class="tag">
+                  <span class="tag__text">Люстры</span>
+                </a>
+              </div>
+              <div class="tags__item">
+                <a href="#" class="tag">
+                  <span class="tag__text">Детский свет</span>
+                </a>
+              </div>
+              <div class="tags__item">
+                <a href="#" class="tag">
+                  <span class="tag__text">Бра</span>
+                </a>
+              </div>
+              <div class="tags__item">
+                <a href="#" class="tag">
+                  <span class="tag__text">Торшеры</span>
+                </a>
+              </div>
+              <div class="tags__item">
+                <a href="#" class="tag">
+                  <span class="tag__text">Настольные лампы</span>
+                </a>
+              </div>
+            </div>
+            <div class="uk-hidden@m">
+              <article class="card card--bordered">
+                <div class="card__labels">
+                  <ul class="label-list">
+                    <li class="label-list__item">
+                      <span>До 01.01.2023</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card__icon">
+                  {{mixins.icon('3d')}}
+                </div>
+                <div class="card__body">
+                  <div class="card__title card__title--large">Дизайн-проект освещения бесплатно*</div>
+                  <div class="card__info">
+                    <p class="card__text">*При первой покупке в нашем магазине.</p>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <a href="#" class="btn"><span>Перейти в каталог</span></a>
+                </div>
+              </article>
+            </div>
+            <div uk-slider class="slider uk-margin-medium">
+              <div class="uk-position-relative uk-light" tabindex="-1">
+                <ul class="slider__list uk-grid uk-grid-small uk-slider-items">
+                  <li class="slider__item uk-width-5-6 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l uk-visible@m">
+                    <article class="card card--bordered">
+                      <div class="card__labels">
+                        <ul class="label-list">
+                          <li class="label-list__item">
+                            <span>До 01.01.2023</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="card__icon">
+                        {{mixins.icon('3d')}}
+                      </div>
+                      <div class="card__body">
+                        <div class="card__title card__title--large">Дизайн-проект освещения бесплатно*</div>
+                        <div class="card__info">
+                          <p class="card__text">*При первой покупке в нашем магазине.</p>
+                        </div>
+                      </div>
+                      <div class="card__footer">
+                        <a href="#" class="btn"><span>Перейти в каталог</span></a>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="slider__item uk-width-5-6 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+                    <article class="card">
+                      <div class="card__image">
+                        <div class="card__img">
+                          <img src="./decor/2.png" alt="product">
+                        </div>
+                      </div>
+                      <div class="card__body">
+                        <div class="card__title">Торшер Rondo 450*2300</div>
+                        <div class="card__info">
+                          <div class="price">
+                            <span class="price__unit">26 780 ₽</span>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="slider__item uk-width-5-6 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+                    <article class="card">
+                      <div class="card__labels">
+                        <ul class="label-list">
+                          <li class="label-list__item">
+                            <span>Скидка</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="card__image">
+                        <div class="card__img">
+                          <img src="./decor/3.png" alt="product">
+                        </div>
+                      </div>
+                      <div class="card__body">
+                        <div class="card__title">Торшер Rondo 450*2300</div>
+                        <div class="card__info">
+                          <div class="price">
+                            <span class="price__unit price__unit--through">46 780 ₽</span>
+                            <span class="price__unit">26 780 ₽</span>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="slider__item uk-width-5-6 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+                    <article class="card">
+                      <div class="card__image">
+                        <div class="card__img">
+                          <img src="./decor/4.png" alt="product">
+                        </div>
+                      </div>
+                      <div class="card__body">
+                        <div class="card__title">Торшер Rondo 450*2300</div>
+                        <div class="card__info">
+                          <div class="price">
+                            <span class="price__unit">26 780 ₽</span>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="slider__item uk-width-5-6 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+                    <article class="card">
+                      <div class="card__labels">
+                      </div>
+                      <div class="card__image">
+                        <div class="card__img">
+                          <img src="./decor/5.png" alt="product">
+                        </div>
+                      </div>
+                      <div class="card__body">
+                        <div class="card__title">Торшер Rondo 450*2300</div>
+                        <div class="card__info">
+                          <div class="price">
+                            <span class="price__unit">26 780 ₽</span>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </li>
+                </ul>
+              </div>
+              <ul class="slider__nav uk-slider-nav uk-dotnav uk-flex-center uk-margin-medium"></ul>
+            </div>
+          </li>
+          <li class="tabs__content">test</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
@@ -231,22 +538,80 @@
       </div>
     </div>
     <div class="section__body">
-      <p>cards</p>
+      <div uk-grid class="uk-grid-small card-list uk-grid">
+        <div class="uk-width-1-2@m card-list__item dark-theme">
+          <article class="card card--custom-bg card--bg-image" style="background-image: url('./decor/9.png')">
+            <div class="card__body">
+              <div class="card__title card__title--large">Помогаем выбирать освещение правильно</div>
+              <div class="card__info">
+                <p class="card__text">Разрабатываем световые решения, которые создают нужное настроение, вызывают эмоции
+                  и подчеркивают стилистику дизайна.
+                </p>
+              </div>
+            </div>
+            <div class="card__footer">
+              <a href="#" class="btn"><span>Узнать больше</span></a>
+            </div>
+          </article>
+        </div>
+        <div class="uk-width-1-2@m card-list__item">
+          <article class="card card--custom-bg card--image-decor" style="background-color: #F7F4EF;">
+            <div class="card__body">
+              <div class="card__title card__title--large card__title--dark">Профессиональный светодизайнер</div>
+              <div class="card__info">
+                <ol class="list list--ol">
+                  <li>Сделает расчет освещения по техническим параметрам светильников</li>
+                  <li>Подготовит эскиз с набросками концепции
+                    и план расположения светильников</li>
+                  <li>Подберет комплект светильников, идеально попадающих в стиль интерьера и функционал помещения</li>
+                </ol>
+              </div>
+            </div>
+            <div class="card__footer">
+              <a href="#" class="btn btn--secondary"><span>Подробнее об услуге</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 <section class="uk-section section section--white section--border section--border-top section--border-top-outside">
   <div class="uk-container section__container">
     <div class="section__body">
-      <p>Checkmate</p>
+      <div class="checkmate checkmate--vertical">
+        <div class="checkmate__description">
+          <h2 class="checkmate__title">Создайте свой стиль
+            с нашим ассортиментом дизайнерского освещения</h2>
+          <p class="checkmate__subtitle">Наша цель — чтобы покупатель получал все самое интересное и актуальное в
+            мире дизайнерского освещения,
+            а коллеги-дизайнеры и архитекторы с удовольствием и выгодой для себя сотрудничали
+            с компанией по своим проектам.</p>
+          <p><a href="#" class="btn btn--secondary"><span>Узнать больше</span></a></p>
+        </div>
+        <div class="checkmate__image-container">
+          <div class="checkmate__image checkmate__image--vertical">
+            <img src="./img/common/checkmate-2.jpg" alt="">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-<section
-  class="uk-section section section--border section--border-top section--border-bottom section--border-bottom-outside">
+<section class="uk-section section section--border section--border-top section--border-bottom section--border-bottom-outside">
   <div class="uk-container section__container">
     <div class="section__body">
-      <p>card</p>
+      <div class="card-list__item dark-theme">
+        <article class="card card--custom-bg card--bg-image card--centered card--large" style="background-image: url('./decor/9.png')">
+          <div class="card__body">
+            <div class="card__title card__title--extra-large">Вы дизайнер
+              интерьера или архитектор?</div>
+          </div>
+          <div class="card__footer">
+            <a href="#" class="btn"><span>Предложение&nbsp;о&nbsp;сотрудничестве</span></a>
+          </div>
+        </article>
+      </div>
     </div>
   </div>
 </section>
@@ -254,7 +619,36 @@
 <section class="uk-section section section--spring-wood">
   <div class="uk-container section__container">
     <div class="section__body">
-      {% include "template/form.html" %}
+      <div uk-grid class="uk-grid-small card-list uk-grid">
+        <div class="uk-width-1-2@s card-list__item uk-first__item">
+          <article class="card card--custom-bg card--image-decor card--medium" style="background-color: #ffffff;">
+            <div class="card__labels">
+              <ul class="label-list">
+                <li class="label-list__item label-list__item--free">
+                  {{mixins.icon('free')}}
+                </li>
+              </ul>
+            </div>
+            <div class="card__body">
+              <div class="card__title card__title--extra-large">Индиви&shy;дуальный подбор освещения
+                от дизайнера</div>
+              <div class="card__info">
+                <p class="card__text">Оставьте заявку и мы подберем светильники для вас</p>
+                <ul class="list list--ul">
+                  <li>По готовому дизайн-проекту</li>
+                  <li>По фото помещений</li>
+                  <li>по эскизу и пожеланиям</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="uk-width-1-2@s">
+          <div class="card card--custom-bg" style="background-color: #ffffff;">
+            {% include "template/form-small.html" %}
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
