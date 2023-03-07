@@ -10,6 +10,16 @@ a.card {
   }
 }
 
+a.card__title {
+  text-decoration: none;
+  color: var(--text-color);
+
+  &:hover,
+  &:focus {
+    color: var(--primary);
+  }
+}
+
 .card {
   $self: &;
 
@@ -19,6 +29,21 @@ a.card {
   flex-direction: column;
   gap: calc(20 / var(--fz) * var(--fz-em));
   color: var(--text-color);
+
+  &--medium {
+    @media (min-width: 1100px) {
+      padding: calc(40 / var(--fz) * var(--fz-em));
+    }
+
+  }
+
+  &__tags-container {
+    display: flex;
+    gap: calc(10 / var(--fz) * var(--fz-em));
+    max-width: calc(500 / var(--fz) * var(--fz-em));
+    padding-top: calc(40 / var(--fz) * var(--fz-em));
+    padding-bottom: calc(40 / var(--fz) * var(--fz-em));
+  }
 
   &--large {
     @media (min-width: 1100px) {
@@ -211,6 +236,10 @@ a.card {
       }
     }
 
+    &--large-dark {
+      --card-title-color-large: var(--text-color)
+    }
+
     &--extra-large {
       --fz: 32;
 
@@ -220,6 +249,18 @@ a.card {
 
       @media (min-width: 1100px) {
         --fz: var(--h2);
+      }
+    }
+
+    &--h1 {
+      --fz: 40;
+
+      line-height: 1.2;
+      font-family: var(--font-title);
+      text-transform: uppercase;
+
+      @media (min-width: 1100px) {
+        --fz: var(--h1);
       }
     }
   }
@@ -232,6 +273,9 @@ a.card {
       margin-top: calc(20 / var(--fz) * var(--fz-em));
     }
 
+    &--large {
+      margin-top: calc(40 / var(--fz) * var(--fz-em));
+    }
   }
 
   &__text {

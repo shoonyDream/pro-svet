@@ -1,5 +1,19 @@
 .form {
 
+  &--small {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    & .form__body {
+      margin-bottom: calc(30 / var(--fz) * var(--fz-em));
+    }
+
+    & .form__footer {
+      margin-top: auto;
+    }
+  }
+
   &__item+&__item {
     margin-top: calc(20 / var(--fz) * var(--fz-em));
   }
@@ -323,6 +337,7 @@ input::-webkit-inner-spin-button {
       line-height: 1.3;
       color: var(--text-color);
       margin-top: 0;
+      margin-left: 0;
     }
   }
 
