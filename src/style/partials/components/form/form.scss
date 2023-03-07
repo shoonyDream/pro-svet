@@ -1,21 +1,22 @@
 .form {
 
-  &--small {
+  &--small,
+  &--contacts {
     display: flex;
     flex-direction: column;
     height: 100%;
-
-    & .form__body {
-      margin-bottom: calc(30 / var(--fz) * var(--fz-em));
-    }
-
-    & .form__footer {
-      margin-top: auto;
-    }
   }
 
   &__item+&__item {
     margin-top: calc(20 / var(--fz) * var(--fz-em));
+  }
+
+  &__body {
+
+    .form--small &,
+    .form--contacts & {
+      margin-bottom: calc(30 / var(--fz) * var(--fz-em));
+    }
   }
 
   &__body+&__footer {
@@ -23,6 +24,11 @@
 
     @media (min-width: 960px) {
       margin-top: calc(30 / var(--fz) * var(--fz-em));
+    }
+
+    .form--small &,
+    .form--contacts & {
+      margin-top: auto;
     }
   }
 
@@ -320,16 +326,28 @@ input::-webkit-inner-spin-button {
     #{$self}:hover &,
     #{$self}:focus & {
       color: var(--primary);
+
+      #{$self}--confirm & {
+        color: var(--text-color);
+      }
     }
 
     #{$self}__mark:hover+&,
     #{$self}__mark:focus+& {
       color: var(--primary);
+
+      #{$self}--confirm & {
+        color: var(--text-color);
+      }
     }
 
 
     #{$self}__input:checked+#{$self}__mark+& {
       color: var(--primary);
+
+      #{$self}--confirm & {
+        color: var(--text-color);
+      }
     }
 
     #{$self}--confirm & {
@@ -338,6 +356,11 @@ input::-webkit-inner-spin-button {
       color: var(--text-color);
       margin-top: 0;
       margin-left: 0;
+    }
+
+    #{$self}--confirm:hover &,
+    #{$self}--confirm:focus & {
+      color: var(--text-color);
     }
   }
 

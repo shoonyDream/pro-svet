@@ -1,86 +1,29 @@
 .contacts {
-  &__content+&__content {
-    margin-top: calc(60 / var(--fz) * var(--fz-em));
-  }
+  display: flex;
+  flex-direction: column;
+  gap: calc(40 / var(--fz) * var(--fz-em));
+  height: 100%;
 
-  &__title+&__subtitle {
-    margin-top: calc(30 / var(--fz) * var(--fz-em));
-  }
-
-  &__subtitle>p {
+  &-info,
+  &__footer {
     --fz: 24;
 
-    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+    font-family: var(--title);
+    font-size: calc(var(--fz)/ var(--fz-base) * var(--fz-em));
     font-weight: 400;
+    line-height: 1.2;
   }
 
-  &__body {
-    margin-top: calc(30 / var(--fz) * var(--fz-em));
+  &__props {
+    --fz: 14;
+
+    font-family: var(--font);
+    font-size: calc(var(--fz)/ var(--fz-base) * var(--fz-em));
+    font-weight: 400;
+    line-height: 1.5;
   }
 
-  &__item {
-    display: flex;
-
-    .icon {
-      --fz: 16;
-
-      font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
-      color: var(--header-h1-color);
-      border-radius: 50%;
-      transition: 0.2s linear;
-      flex-shrink: 0;
-      margin-right: calc(5 / var(--fz) * var(--fz-em));
-
-      @media (min-width: 960px) {
-        --fz: 24;
-      }
-    }
-  }
-
-  &__item+&__item {
-    margin-top: calc(18 / var(--fz) * var(--fz-em));
-  }
-
-  &__info {
-    --fz: 16;
-
-    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
-    color: var(--text-color) !important;
-    font-weight: 500 !important;
-
-    @media (min-width: 960px) {
-      --fz: 24;
-    }
-  }
-
-  &__btn {
-    margin-top: calc(36 / var(--fz) * var(--fz-em));
-  }
-
-  &__map {
-    margin: 0 -30px;
-
-    @media (min-width: 960px) {
-      margin: 0;
-    }
-  }
-
-  &__map-container {
-    position: relative;
-    height: 0;
-    padding-bottom: 56%;
-    overflow: hidden;
-
-    @media (min-width: 960px) {
-      padding-bottom: 100%;
-    }
-
-    >iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100% !important;
-      height: 100% !important;
-    }
+  &__footer {
+    margin-top: auto;
   }
 }

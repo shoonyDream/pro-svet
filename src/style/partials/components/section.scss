@@ -46,6 +46,10 @@
     }
   }
 
+  &--contacts {
+    padding: calc(20 / var(--fz) * var(--fz-em)) 0;
+  }
+
   &__container {
     position: relative;
     z-index: 2;
