@@ -11,7 +11,7 @@
               <h1 class="card__title card__title--h1">
                 <span>Giving the light</span>
               </h1>
-              <div class="card__info card__info--big">
+              <div class="card__info card__info--large">
                 <p class="card__text">Интернет-магазин дизайнерских светильников
                 </p>
                 <div class="card__tags-container">
@@ -137,8 +137,10 @@
                   </article>
                 </li>
               </ul>
-              <a class="slider__arr uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-              <a class="slider__arr uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+              <a class="slider__arr uk-position-center-left uk-position-small" href="#" uk-slidenav-previous
+                uk-slider-item="previous"></a>
+              <a class="slider__arr uk-position-center-right uk-position-small" href="#" uk-slidenav-next
+                uk-slider-item="next"></a>
             </div>
             <ul class="slider__nav uk-slider-nav uk-dotnav uk-flex-center"></ul>
           </div>
@@ -526,7 +528,36 @@
       </div>
     </div>
     <div class="section__body">
-      <p>interactive</p>
+      <div class="tabs tabs--small">
+        <ul class="tabs__nav uk-subnav uk-subnav-pill" uk-switcher>
+          <li class="tabs__item">
+            <a href="#" class="tabs__link">
+              <div class="tag tag--bordered tag--rounded">
+                <span class="tag__text">Светильники</span>
+              </div>
+            </a>
+          </li>
+          <li class="tabs__item">
+            <a href="#" class="tabs__link">
+              <div class="tag tag--bordered tag--rounded">
+                <span class="tag__text">Модерн</span>
+              </div>
+            </a>
+          </li>
+          <li class="tabs__item">
+            <a href="#" class="tabs__link">
+              <div class="tag tag--bordered tag--rounded">
+                <span class="tag__text">Скандинавский стиль</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <ul class="tabs__container uk-switcher">
+          <li class="tabs__content">test</li>
+          <li class="tabs__content">test1</li>
+          <li class="tabs__content">test2</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
@@ -557,7 +588,7 @@
         <div class="uk-width-1-2@m card-list__item">
           <article class="card card--custom-bg card--image-decor" style="background-color: #F7F4EF;">
             <div class="card__body">
-              <div class="card__title card__title--large card__title--dark">Профессиональный светодизайнер</div>
+              <div class="card__title card__title--large card__title--large-dark">Профессиональный светодизайнер</div>
               <div class="card__info">
                 <ol class="list list--ol">
                   <li>Сделает расчет освещения по техническим параметрам светильников</li>
@@ -598,11 +629,13 @@
     </div>
   </div>
 </section>
-<section class="uk-section section section--border section--border-top section--border-bottom section--border-bottom-outside">
+<section
+  class="uk-section section section--border section--border-top section--border-bottom section--border-bottom-outside">
   <div class="uk-container section__container">
     <div class="section__body">
       <div class="card-list__item dark-theme">
-        <article class="card card--custom-bg card--bg-image card--centered card--large" style="background-image: url('./decor/9.png')">
+        <article class="card card--custom-bg card--bg-image card--centered card--large"
+          style="background-image: url('./decor/9.png')">
           <div class="card__body">
             <div class="card__title card__title--extra-large">Вы дизайнер
               интерьера или архитектор?</div>

@@ -41,7 +41,6 @@ a.card__title {
     display: flex;
     gap: calc(10 / var(--fz) * var(--fz-em));
     max-width: calc(500 / var(--fz) * var(--fz-em));
-    flex-basis: calc(500 / var(--fz) * var(--fz-em));
     padding-top: calc(40 / var(--fz) * var(--fz-em));
     padding-bottom: calc(40 / var(--fz) * var(--fz-em));
   }
@@ -237,8 +236,8 @@ a.card__title {
       }
     }
 
-    &--dark {
-      color: var(--text-color);
+    &--large-dark {
+      --card-title-color-large: var(--text-color)
     }
 
     &--extra-large {
@@ -273,10 +272,10 @@ a.card__title {
     #{$self}--custom-bg & {
       margin-top: calc(20 / var(--fz) * var(--fz-em));
     }
-  }
 
-  &__info--big {
-    margin-top: calc(40 / var(--fz) * var(--fz-em));
+    &--large {
+      margin-top: calc(40 / var(--fz) * var(--fz-em));
+    }
   }
 
   &__text {

@@ -18,7 +18,7 @@
     }
 
     &>* {
-      padding-left: 30px;
+      padding-left: calc(30 / var(--fz) * var(--fz-em));
 
       &:first-child {
         padding-left: 0
