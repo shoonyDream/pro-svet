@@ -4,6 +4,8 @@ a.card {
 
   &:hover,
   &:focus {
+    color: var(--text-color);
+
     .card__title {
       color: var(--primary);
     }
