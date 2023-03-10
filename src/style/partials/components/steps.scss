@@ -1,4 +1,10 @@
 .steps {
+  margin-bottom: calc(30 / var(--fz) * var(--fz-em));
+
+  @media (min-width: 960px) {
+    margin-bottom: calc(60 / var(--fz) * var(--fz-em));
+    padding-top: calc(20 / var(--fz) * var(--fz-em));
+  }
 
   &__list {
     list-style-type: none;
