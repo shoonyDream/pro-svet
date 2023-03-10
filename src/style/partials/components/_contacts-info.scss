@@ -3,6 +3,12 @@
   gap: calc(10 / var(--fz) * var(--fz-em));
   align-items: center;
 
+  &--vertical {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+
   &__phone {
     flex-shrink: 0;
   }

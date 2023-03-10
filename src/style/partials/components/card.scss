@@ -36,7 +36,6 @@ a.card__title {
     @media (min-width: 1100px) {
       padding: calc(40 / var(--fz) * var(--fz-em));
     }
-
   }
 
   &__tags-container {
@@ -293,9 +292,11 @@ a.card__title {
 
       @media (min-width: 1100px) {
         --fz: 24;
+
       }
     }
   }
+
 
   &__footer {
     margin-top: auto;
