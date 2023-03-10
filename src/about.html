@@ -2,28 +2,36 @@
 {% import "template/_mixins.html" as mixins %}
 {% include "template/header.html" %}
 {% include "template/breadcrumbs.html" %}
-<section class="uk-section section section--border section--border-bottom">
+<section class="uk-section-small section section--border section--border-bottom">
   <div class="uk-container section__container">
-    <div class="checkmate checkmate--large">
+    <div class="checkmate checkmate--top">
       <div class="checkmate__description">
         <h1 class="uk-h2">О нас</h1>
-        <p class="checkmate__subtitle">Наша цель — чтобы покупатель получал все самое интересное и актуальное в
-          мире дизайнерского освещения,
-          а коллеги-дизайнеры и архитекторы с удовольствием и выгодой для себя сотрудничали
-          с компанией по своим проектам.</p>
-        <div class="hide-section__btn">
-          <button class="hide-section-btn btn-show" uk-toggle="target: #hidden-1; cls: is-hidden">
-            <span>Узнать больше</span>
-            {{mixins.icon('arrow-menu')}}
-          </button>
-          <button class="hide-section-btn btn-hide" uk-toggle="target: #hidden-1; cls: is-hidden">
-            <span>Скрыть</span>
-            {{mixins.icon('arrow-menu')}}
-          </button>
+        <div class="hide-section">
+          <div id="hidden-1" style="--hidden-height: 150" class="hide-section__body is-hidden">
+            <p class="checkmate__subtitle">Наша цель — чтобы покупатель получал все самое интересное и актуальное в
+              мире дизайнерского освещения,
+              а коллеги-дизайнеры и архитекторы с удовольствием и выгодой для себя сотрудничали
+              с компанией по своим проектам.</p>
+            <p class="checkmate__subtitle">Наша цель — чтобы покупатель получал все самое интересное и актуальное в
+              мире дизайнерского освещения,
+              а коллеги-дизайнеры и архитекторы с удовольствием и выгодой для себя сотрудничали
+              с компанией по своим проектам.</p>
+          </div>
+          <div class="hide-section__btn">
+            <button class="hide-section-btn btn-show" uk-toggle="target: #hidden-1; cls: is-hidden">
+              <span>Показать еще</span>
+              {{mixins.icon('arrow-menu')}}
+            </button>
+            <button class="hide-section-btn btn-hide" uk-toggle="target: #hidden-1; cls: is-hidden">
+              <span>Скрыть</span>
+              {{mixins.icon('arrow-menu')}}
+            </button>
+          </div>
         </div>
       </div>
       <div class="checkmate__image-container">
-        <div class="checkmate__image checkmate__image--vertical">
+        <div class="checkmate__image">
           <img src="./img/common/about.jpg" alt="">
         </div>
       </div>
@@ -128,11 +136,11 @@
     </div>
   </div>
 </section>
-<section class="uk-section section section--white section--border section--border-top section--border-top-outside">
+<section class="uk-section section section--border section--border-bottom section--border-bottom-outside">
   <div class="uk-container section__container">
     <div class="section__header">
       <div class="section__title">
-        <h2>Мы работаем в современных стилях</span></h2>
+        <h2>Мы работаем в современных стилях</h2>
       </div>
     </div>
     <div class="section__body">

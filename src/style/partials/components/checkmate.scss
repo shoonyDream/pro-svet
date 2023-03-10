@@ -35,6 +35,10 @@
     gap: calc(30 / var(--fz) * var(--fz-em));
     flex-direction: column;
 
+    .checkmate--top & {
+      margin-top: calc(-50 / var(--fz) * var(--fz-em));
+    }
+
     & .btn {
       width: 100%;
 
