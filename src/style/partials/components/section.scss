@@ -47,7 +47,11 @@
   }
 
   &--contacts {
-    padding: calc(20 / var(--fz) * var(--fz-em)) 0;
+    --gutter: 20;
+
+    padding: calc(var(--gutter) / var(--fz) * var(--fz-em)) 0;
+
+    margin-bottom: calc(60 / var(--fz) * var(--fz-em));
   }
 
   &__container {
