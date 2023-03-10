@@ -187,10 +187,6 @@ h4,
   text-transform: uppercase;
 }
 
-.uk-section-small {
-  padding: calc(40 / var(--fz) * var(--fz-em)) 0;
-}
-
 p {
   line-height: 1.2;
 }
@@ -301,6 +297,13 @@ p+p {
   padding: calc(var(--gutter) / var(--fz) * var(--fz-em)) 0;
 }
 
+
+.uk-section-small {
+  --gutter: 20;
+
+  padding: calc(var(--gutter) / var(--fz) * var(--fz-em)) 0;
+}
+
 .uk-section-large {
   --gutter: 40;
 
@@ -340,7 +343,8 @@ p+p {
   &__body {
     --hidden-height: 570;
 
-    height: 100%;
+    height: auto;
+    position: relative;
 
     &::after {
       position: absolute;
