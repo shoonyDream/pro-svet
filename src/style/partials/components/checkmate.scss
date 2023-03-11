@@ -37,6 +37,7 @@
 
     .checkmate--top & {
       margin-top: calc(-50 / var(--fz) * var(--fz-em));
+      gap: calc(20 / var(--fz) * var(--fz-em));
     }
 
     & .btn {
@@ -52,6 +53,15 @@
   &__subtitle {
     &:last-child {
       margin-bottom: 0;
+    }
+
+    &--top {
+      --fz: 24;
+
+      font-family: var(--font-title);
+      font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+      font-weight: 400;
+      line-height: 1.2;
     }
   }
 
