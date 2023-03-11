@@ -35,8 +35,12 @@
 }
 
 .key-indicator {
-  --icon-width: 96;
+  --icon-width: 69;
   --icon-bg: var(--bg-2);
+
+  @media (min-width: 960px) {
+    --icon-width: 96;
+  }
 }
 
 .key-indicator {
@@ -50,9 +54,13 @@
   padding: calc(20 / var(--fz) * var(--fz-em));
 
   &--horizontal {
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     padding: calc(20 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 960px) {
+      flex-direction: row;
+    }
   }
 
   &--align-left {
@@ -68,12 +76,17 @@
   }
 
   &__title {
-    --fz: 24;
+    --fz: 18;
 
     font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
     line-height: 1.2;
     position: relative;
     color: var(--primary);
+
+    @media (min-width: 960px) {
+      --fz: 24;
+
+    }
   }
 
   &__title+&__description {
