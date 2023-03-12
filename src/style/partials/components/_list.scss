@@ -42,13 +42,6 @@
         background-position: 50%;
       }
     }
-
-    &-indent {
-
-      @media (min-width: 1100px) {
-        margin-left: calc(140 / var(--fz) * var(--fz-em));
-      }
-    }
   }
 
   &--ol {
