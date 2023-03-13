@@ -121,6 +121,18 @@
     }
   }
 
+  &__header+&__body--large {
+    @media (min-width: 960px) {
+      margin-top: calc(60 / var(--fz) * var(--fz-em));
+    }
+  }
+
+  &__body--large+&__footer {
+    @media (min-width: 960px) {
+      margin-top: calc(60 / var(--fz) * var(--fz-em));
+    }
+  }
+
   &__title {
     &--decor {
       position: relative;
@@ -151,7 +163,7 @@
   &__footer {
     margin-top: calc(20 / var(--fz) * var(--fz-em));
 
-    & .btn {
+    & .btn:not(.btn--is-fixed) {
       width: 100%;
     }
   }
