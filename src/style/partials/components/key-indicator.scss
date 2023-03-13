@@ -82,6 +82,7 @@
     line-height: 1.2;
     position: relative;
     color: var(--primary);
+    font-family: var(--font-title);
 
     @media (min-width: 960px) {
       --fz: 24;

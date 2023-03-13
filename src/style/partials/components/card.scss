@@ -167,10 +167,13 @@ a.card__title {
       @media(min-width: 960px) {
         padding-bottom: 150%;
       }
-
     }
 
     &--horizontal {
+      .slider--gallery & {
+        padding-bottom: 48.4%;
+      }
+
       @media(min-width: 960px) {
         padding-bottom: 45%;
       }
@@ -191,6 +194,10 @@ a.card__title {
       left: 0;
       width: 100%;
       height: 100%;
+
+      .slider--gallery & {
+        object-fit: cover;
+      }
     }
   }
 
@@ -204,7 +211,7 @@ a.card__title {
 
   &__body {
     position: relative;
-    z-index: 1;
+    z-index: 3;
 
     &--auto-top {
       margin-top: auto;
@@ -242,19 +249,17 @@ a.card__title {
     }
 
     &--extra-large {
-      --fz: 32;
+      --fz: var(--h2);
 
       line-height: 1.2;
       font-family: var(--font-title);
       text-transform: uppercase;
-
-      @media (min-width: 1100px) {
-        --fz: var(--h2);
-      }
+      padding-right: calc(60 / var(--fz) * var(--fz-em));
+      min-height: calc(90 / var(--fz) * var(--fz-em));
     }
 
     &--h1 {
-      --fz: 40;
+      --fz: 20;
 
       line-height: 1.2;
       font-family: var(--font-title);
