@@ -5,7 +5,6 @@
 
   @media (min-width: 640px) {
     flex-wrap: nowrap;
-    padding: calc(50 / var(--fz) * var(--fz-em)) 0;
   }
 
   &--reverse {
@@ -34,9 +33,11 @@
     display: flex;
     gap: calc(30 / var(--fz) * var(--fz-em));
     flex-direction: column;
+    align-self: center;
 
     .checkmate--top & {
-      margin-top: calc(-50 / var(--fz) * var(--fz-em));
+      gap: calc(20 / var(--fz) * var(--fz-em));
+      align-self: flex-start;
     }
 
     & .btn {
@@ -49,7 +50,19 @@
     }
   }
 
+  &__lead {
+    --fz: 24;
+
+    font-family: var(--font-title);
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+    line-height: 1.2;
+  }
+
   &__subtitle {
+    --fz: 14;
+
+    line-height: 1.5;
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -59,10 +72,10 @@
     @media (min-width: 640px) {
       position: relative;
       height: 0;
-      padding-bottom: calc(275 / var(--fz) * var(--fz-em));
+      padding-bottom: calc(375 / var(--fz) * var(--fz-em));
 
       .checkmate--vertical & {
-        padding-bottom: calc(480 / var(--fz) * var(--fz-em));
+        padding-bottom: calc(580 / var(--fz) * var(--fz-em));
       }
     }
   }
