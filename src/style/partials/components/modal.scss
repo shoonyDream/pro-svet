@@ -1,3 +1,51 @@
+.modal {
+  // position: fixed;
+ // top: 0;
+ // right: 0;
+ // bottom: 0;
+ // left: 0;
+ // z-index: 1010;
+ // overflow-y: auto;
+ // background: rgba(0, 0, 0, .6);
+ // transition: opacity .15s linear;
+
+  &__header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: calc(30 / var(--fz) * var(--fz-em));
+  }
+
+  &-container {
+    position: relative;
+    margin: 0 auto;
+    top: calc(210 / var(--fz) * var(--fz-em));
+    width: calc(416 / var(--fz) * var(--fz-em));
+    padding: calc(20 / var(--fz) * var(--fz-em));
+    background-color: var(--modal-bg);
+  }
+
+  &__title {
+    --fz: 24;
+
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+    font-family: var(--font-title);
+
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
 // .uk-modal-close-outside {
 //     right: 0;
 //     transform: translateX(100%);
