@@ -14,12 +14,16 @@
 
   &--ul {
     li {
-      --fz: 18;
+      --fz: 14;
 
       line-height: 1.5;
       font-weight: 400;
       font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
       color: var(--text-color);
+
+      @media (min-width: 1100px) {
+        --fz: 18;
+      }
 
       +li {
         margin-top: calc(12 / var(--fz) * var(--fz-em));
@@ -48,13 +52,17 @@
     counter-reset: list;
 
     li {
-      --fz: 18;
+      --fz: 14;
 
       font-weight: 400;
       font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
       color: var(--text-color);
       line-height: 1.5;
       padding-left: calc(48 / var(--fz) * var(--fz-em));
+
+      @media (min-width: 1100px) {
+        --fz: 18;
+      }
 
       +li {
         margin-top: calc(12 / var(--fz) * var(--fz-em));
