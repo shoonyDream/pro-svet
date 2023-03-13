@@ -97,6 +97,7 @@
     font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
     line-height: 1.5;
     font-style: normal;
+    display: block;
     margin-top: calc(5 / var(--fz) * var(--fz-em));
   }
 }
