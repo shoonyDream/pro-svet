@@ -1,0 +1,118 @@
+.d-flex {
+  display: flex;
+  color: var(--primary);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.smart-filter {
+  font-family: var(--font);
+  font-size: inherit;
+}
+
+.smart-filter-title {
+  display: none;
+}
+
+.smart-filter-input-container {
+  padding: calc(5 / var(--fz) * var(--fz-em)) calc(10 / var(--fz) * var(--fz-em));
+  border: 1px solid var(--primary);
+  margin-right: calc(10 / var(--fz) * var(--fz-em));
+}
+
+.smart-filter-input-container {
+  & input {
+    width: 100%;
+
+    &::placeholder {
+      color: #7E7E7E;
+    }
+  }
+}
+
+.smart-filter-popup-result.left {
+  right: 0;
+  background: var(--primary);
+  border: none;
+  color: var(--z-white);
+  padding: calc(6 / var(--fz) * var(--fz-em)) calc(12 / var(--fz) * var(--fz-em));
+
+  & a {
+    color: var(--z-white);
+    border-bottom: 1px solid;
+    transition: 0.2s linear;
+
+    &:hover,
+    &:focus {
+      border-bottom-color: transparent;
+    }
+  }
+}
+
+.smart-filter-parameters-box {
+  padding: calc(20 / var(--fz) * var(--fz-em)) 0 calc(20 / var(--fz) * var(--fz-em)) calc(20 / var(--fz) * var(--fz-em));
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% + (20 / var(--fz) * var(--fz-em)));
+    height: 1px;
+    background: var(--line);
+  }
+}
+
+.smart-filter-parameters-box-title {
+  padding: 0;
+  font-size: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+
+span.smart-filter-parameters-box-title-text {
+  --fz: 14;
+
+  font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+  line-height: 1.5;
+}
+
+.smart-filter-angle {
+  align-self: center;
+  flex-shrink: 0;
+}
+
+.smart-filter-input-group-checkbox-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+
+.smart-filter-input-group-checkbox-list>* {
+  max-width: calc(50% - 10px);
+  flex-basis: calc(50% - 10px);
+}
+
+.smart-filter * {
+  box-sizing: border-box;
+}
+
+.smart-filter-input-group-checkbox-list .form-check {
+  display: flex;
+  gap: 5px;
+}
+
+.smart-filter-parameters-box-container {
+  width: 100%;
+}
+
+.smart-filter-input-group-checkbox-list .form-check .form-check-input {
+  flex-shrink: 0;
+  align-self: flex-start;
+}
+
+.smart-filter-checkbox-text {
+  overflow-wrap: anywhere;
+  line-height: 1.2;
+}

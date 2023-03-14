@@ -178,6 +178,13 @@ a.card__title {
         padding-bottom: 45%;
       }
     }
+
+    .bricks-card-list &--large {
+      @media (min-width: 960px) {
+        padding-bottom: 100%;
+        flex-grow: 1;
+      }
+    }
   }
 
   &__img {
