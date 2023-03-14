@@ -396,3 +396,21 @@ p+p {
 .page-header {
   margin-bottom: calc(20 / var(--fz) * var(--fz-em));
 }
+
+.uk-pagination>*>* {
+  color: var(--primary);
+  padding: calc(10 / var(--fz) * var(--fz-em)) calc(20 / var(--fz) * var(--fz-em));
+  border: 1px solid transparent;
+  transition: 0.2s linear;
+}
+
+.uk-pagination>*>:focus,
+.uk-pagination>*>:hover,
+.uk-pagination>.uk-active>* {
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.uk-pagination>* {
+  margin-right: 4px;
+}

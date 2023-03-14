@@ -65,6 +65,10 @@ a.tag.tag {
     }
   }
 
+  &--small {
+    padding: calc(4 / var(--fz) * var(--fz-em)) calc(5 / var(--fz) * var(--fz-em));
+  }
+
   &--rounded {
     border-radius: calc(20 / var(--fz) * var(--fz-em));
   }

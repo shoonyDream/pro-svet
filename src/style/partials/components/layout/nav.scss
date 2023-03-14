@@ -19,14 +19,16 @@
   &__row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
 
   &__list {
     display: flex;
-    flex-grow: 1;
     align-items: center;
     gap: calc(20 / var(--fz) * var(--fz-em));
+  }
+
+  &__list:not(:last-child) {
+    margin-right: calc(20 / var(--fz) * var(--fz-em));
   }
 
   &__overlay {
@@ -60,6 +62,10 @@
     color: var(--primary);
     transition: color 0.2s linear;
     padding: calc(20 / var(--fz) * var(--fz-em)) 0 calc(20 / var(--fz) * var(--fz-em));
+  }
+
+  &__services {
+    margin-left: auto;
   }
 }
 

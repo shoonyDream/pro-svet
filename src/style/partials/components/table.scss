@@ -1,5 +1,4 @@
 .table {
-
   &__header {
     border-bottom: 1px solid var(--line);
     padding-bottom: calc(10 / var(--fz) * var(--fz-em));
@@ -27,8 +26,21 @@
     justify-content: space-between;
     padding: calc(5 / var(--fz) * var(--fz-em));
 
+    .table--simple & {
+      padding: 0;
+      margin-bottom: calc(5 / var(--fz) * var(--fz-em));
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
     &:nth-child(even) {
       background-color: var(--bg-2);
+
+      .table--simple & {
+        background-color: transparent;
+      }
     }
   }
 
@@ -37,8 +49,15 @@
     flex-basis: 50%;
     position: relative;
 
+    .table--simple & {
+      color: var(--meaning);
+    }
+
     &--meaning {
       text-align: right;
+      text-overflow: ellipsis;
+      max-width: 100%;
+      overflow: hidden;
     }
   }
 
@@ -64,6 +83,4 @@
       flex-shrink: 0;
     }
   }
-
-
 }
