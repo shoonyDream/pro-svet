@@ -32,11 +32,16 @@ a.social__link {
 
   }
 
+
   & .icon {
     --fz-icon: 40;
 
     font-size: calc(var(--fz-icon) / var(--fz) * var(--fz-em));
     color: currentColor;
+
+    .social--modal & {
+      color: var(--text-color);
+    }
   }
 
 
