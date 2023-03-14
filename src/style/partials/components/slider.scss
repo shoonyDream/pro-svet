@@ -10,11 +10,19 @@
     &>.uk-position-relative {
       width: 100%;
     }
+
+    .main-nav & {
+      height: auto;
+    }
   }
 
   &__nav {
     .slider--bg & {
       margin: auto 0 calc(20 / var(--fz) * var(--fz-em));
+
+      .main-nav & {
+        margin-top: calc(20 / var(--fz) * var(--fz-em));
+      }
     }
 
     &>* {
@@ -29,11 +37,11 @@
       width: 7px;
       height: 7px;
       border: none;
-      background-color: var(--line);
+      background-color: var(--line) !important;
     }
 
     &>*.uk-active>* {
-      background-color: var(--primary);
+      background-color: var(--primary) !important;
     }
   }
 
