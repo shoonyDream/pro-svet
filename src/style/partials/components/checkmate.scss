@@ -63,9 +63,10 @@
   }
 
   &__subtitle {
-    --fz: 18;
+    --fz: 14;
 
     line-height: 1.5;
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
 
     &:last-child {
       margin-bottom: 0;
