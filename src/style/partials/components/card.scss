@@ -321,7 +321,11 @@ a.card__title {
       font-family: var(--font-title);
       text-transform: uppercase;
       padding-right: calc(60 / var(--fz) * var(--fz-em));
-      min-height: calc(90 / var(--fz) * var(--fz-em));
+      min-height: calc(60 / var(--fz) * var(--fz-em));
+
+      @media (min-width: 1100px) {
+        min-height: calc(90 / var(--fz) * var(--fz-em));
+      }
 
       .card--centered & {
         padding: 0;
@@ -415,8 +419,15 @@ a.card__title {
       margin-left: auto;
 
       & .icon {
-        width: calc(82 / var(--fz) * var(--fz-em));
-        height: calc(82 / var(--fz) * var(--fz-em));
+        width: calc(60 / var(--fz) * var(--fz-em));
+        height: calc(60 / var(--fz) * var(--fz-em));
+        margin-top: calc(20 / var(--fz) * var(--fz-em));
+
+        @media (min-width: 1100px) {
+          width: calc(82 / var(--fz) * var(--fz-em));
+          height: calc(82 / var(--fz) * var(--fz-em));
+          margin-top: 0;
+        }
       }
     }
 
