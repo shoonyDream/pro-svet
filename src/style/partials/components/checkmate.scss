@@ -51,15 +51,19 @@
   }
 
   &__lead {
-    --fz: 24;
+    --fz: 18;
 
     font-family: var(--font-title);
     font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
     line-height: 1.2;
+
+    @media (min-width: 960px) {
+      --fz: 24;
+    }
   }
 
   &__subtitle {
-    --fz: 14;
+    --fz: 18;
 
     line-height: 1.5;
 
