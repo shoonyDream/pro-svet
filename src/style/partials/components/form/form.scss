@@ -54,6 +54,14 @@
   &__date {
     position: relative;
   }
+
+  &__recaptcha {
+    margin-bottom: calc(20 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 680px) {
+      margin-bottom: calc(30 / var(--fz) * var(--fz-em));
+    }
+  }
 }
 
 input,

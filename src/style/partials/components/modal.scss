@@ -1,6 +1,6 @@
 .modal {
 
-  width: calc(416 / var(--fz) * var(--fz-em));
+  width: 416px !important;
   padding: calc(20 / var(--fz) * var(--fz-em));
   background-color: var(--modal-bg);
 
@@ -54,7 +54,6 @@
     }
   }
 
-
   &__social {
     display: flex;
     gap: calc(20 / var(--fz) * var(--fz-em));
@@ -68,43 +67,3 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-
-// .uk-modal-close-outside {
-//     right: 0;
-//     transform: translateX(100%);
-//     background: $primary;
-//     width: em(56, $fz);
-//     height: em(56, $fz);
-//     color: var(--z-white);
-
-//     @media(max-width: 959px) {
-//         transform: none;
-//     }
-// }
-
-// .uk-modal-close-outside svg {
-//     width: 50%;
-//     height: 50%;
-//     margin: 0 auto;
-// }
-
-// .section__form-modal .section__header {
-//     padding: em(20, $fz);
-// }
-
-// .section__form-modal .form {
-//     padding: em(20, $fz);
-// }
-
-// .form__btn .btn {
-//     padding: em(16, $fz);
-//     min-width: auto;
-// }
