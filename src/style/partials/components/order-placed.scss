@@ -1,0 +1,18 @@
+.order-placed {
+  display: flex;
+  flex-direction: column;
+  gap: calc(20 / var(--fz) * var(--fz-em));
+
+  &__body {
+    --fz: 24;
+
+    font-family: var(--font-title);
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  &__text {
+    margin-bottom: calc(20 / var(--fz) * var(--fz-em));
+  }
+}

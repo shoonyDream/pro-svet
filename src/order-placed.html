@@ -1,0 +1,142 @@
+{% set page = 'main' %}
+{% import "template/_mixins.html" as mixins %}
+{% include "template/header.html" %}
+{% include "template/breadcrumbs.html" %}
+<section class="uk-section uk-section-small section section--border section--border-bottom">
+  <div class="uk-container section__container">
+    <div uk-grid class="uk-grid-small card-list uk-grid">
+      <div class="order-placed uk-width-1-2@s card-list__item uk-first__item">
+        <div class="order-placed__title section__title">
+          <h1 class="uk-h2">Спасибо, скоро мы вам перезвоним</h1>
+        </div>
+        <div class="order-placed__body section__body">
+          <div class="order-placed__text">
+            <p>Мы уже обрабатываем ваш заказ, если у вас остались вопросы, позвоните нам по номеру</p>
+          </div>
+          <div class="order-placed__phone"><a href="tel:+7 (495) 534-97-00" class="link"><span>+7 (495)
+                534-97-00</span></a></div>
+        </div>
+        <div class="section__footer">
+          <a href="#" class="btn btn--is-fixed"><span>Перейти в каталог</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="uk-section uk-section section section--border section--border-bottom section--border-bottom-outside section--order-placed">
+  <div class="uk-container section__container">
+    <div class="section__header">
+      <h2>Вы недавно смотрели</h2>
+    </div>
+    <div class="section__body">
+      <div uk-slider class="slider">
+        <div class="uk-position-relative uk-light" tabindex="-1">
+          <ul class="slider__list uk-grid uk-grid-small uk-slider-items">
+            <li class="slider__item uk-width-5-6 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+              <article class="card card--bordered">
+                <div class="card__labels">
+                  <ul class="label-list">
+                    <li class="label-list__item">
+                      <span>До 01.01.2023</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card__icon">
+                  {{mixins.icon('3d')}}
+                </div>
+                <div class="card__body">
+                  <div class="card__title card__title--large">Дизайн-проект освещения бесплатно*</div>
+                  <div class="card__info">
+                    <p class="card__text">*При первой покупке в нашем магазине.</p>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <a href="#" class="btn"><span>Перейти в каталог</span></a>
+                </div>
+              </article>
+            </li>
+            <li class="slider__item uk-width-5-6 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+              <a href="#" class="card">
+                <div class="card__image">
+                  <div class="card__img">
+                    <img src="./decor/2.png" alt="product">
+                  </div>
+                </div>
+                <div class="card__body">
+                  <div class="card__title">Торшер Rondo 450*2300</div>
+                  <div class="card__info">
+                    <div class="price">
+                      <span class="price__unit">26 780 ₽</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="slider__item uk-width-5-6 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+              <article class="card">
+                <div class="card__labels">
+                  <ul class="label-list">
+                    <li class="label-list__item">
+                      <span>Скидка</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card__image">
+                  <div class="card__img">
+                    <img src="./decor/3.png" alt="product">
+                  </div>
+                </div>
+                <div class="card__body">
+                  <div class="card__title">Торшер Rondo 450*2300</div>
+                  <div class="card__info">
+                    <div class="price">
+                      <span class="price__unit price__unit--through">46 780 ₽</span>
+                      <span class="price__unit">26 780 ₽</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="slider__item uk-width-5-6 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+              <article class="card">
+                <div class="card__image">
+                  <div class="card__img">
+                    <img src="./decor/4.png" alt="product">
+                  </div>
+                </div>
+                <div class="card__body">
+                  <div class="card__title">Торшер Rondo 450*2300</div>
+                  <div class="card__info">
+                    <div class="price">
+                      <span class="price__unit">26 780 ₽</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="slider__item uk-width-5-6 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+              <article class="card">
+                <div class="card__image">
+                  <div class="card__img">
+                    <img src="./decor/5.png" alt="product">
+                  </div>
+                </div>
+                <div class="card__body">
+                  <div class="card__title">Торшер Rondo 450*2300</div>
+                  <div class="card__info">
+                    <div class="price">
+                      <span class="price__unit">26 780 ₽</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+        <ul class="slider__nav uk-slider-nav uk-dotnav uk-flex-center uk-margin-medium"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+{% include "template/footer.html" %}
