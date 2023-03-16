@@ -16,6 +16,18 @@ a.link {
     border-color: currentColor;
   }
 
+  &--active {
+    color: var(--text-color);
+    text-decoration: none;
+    cursor: default;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      border: 0;
+    }
+  }
+
   &--bordered {
     border-color: currentColor;
   }

@@ -1,9 +1,17 @@
 .table {
 
+  &--delivery:not(:last-child) {
+    border-right: 1px solid var(--line);
+  }
+
   &__header {
     border-bottom: 1px solid var(--line);
     padding-bottom: calc(10 / var(--fz) * var(--fz-em));
     margin-bottom: calc(15 / var(--fz) * var(--fz-em));
+
+    &--delivery {
+      border-bottom: none;
+    }
   }
 
   &__title {
@@ -14,6 +22,13 @@
     font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
     font-weight: 400;
     line-height: 1.2;
+
+    &--delivery {
+      --fz: 24;
+
+      font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
+      text-transform: uppercase;
+    }
   }
 
   &__row {
@@ -29,6 +44,14 @@
 
     &:nth-child(even) {
       background-color: var(--bg-2);
+    }
+
+    &--delivery:nth-child(odd) {
+      background-color: var(--bg-2);
+    }
+
+    &:nth-child(even) {
+      background-color: var(--white);
     }
   }
 
@@ -64,6 +87,4 @@
       flex-shrink: 0;
     }
   }
-
-
 }
