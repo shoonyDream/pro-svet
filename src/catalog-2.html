@@ -1,5 +1,1410 @@
 {% set page = 'main' %}
 {% import "template/_mixins.html" as mixins %}
 {% include "template/header.html" %}
-<p>catalog-2</p>
+{% include "template/breadcrumbs.html" %}
+{% include "template/page-header.html" %}
+<section
+  class="section section--catalog section--border section--border-top section--border-bottom section--border-bottom-outside">
+  <div class="section__container uk-container">
+    <div class="section-grid">
+      <aside class="section-grid__aside">
+        <button uk-toggle="target: .section-grid-aside; cls: is-opened" class="btn-toggle uk-hidden@m">
+          <span>Открыть фильтр</span>
+          {{mixins.icon('arrow-triangle')}}
+        </button>
+        <div class="section-grid-aside scrollbar" uk-sticky="offset: 157; end: true">
+          <div class="section-grid-aside__content">
+            <p>Aside</p>
+          </div>
+        </div>
+      </aside>
+      <div class="section-grid__content">
+        <section class="section section--filters section--border section--border-bottom section--border-bottom-outside">
+          <div class="section__container">
+            Filters
+          </div>
+        </section>
+        <section class="section section--catalog-list">
+          <div class="section__body">
+            <div uk-grid class="bricks-card-list uk-grid-small uk-child-width-1-2 uk-child-width-1-3@m">
+              <div class="uk-width-1-1 uk-width-2-3@m">
+                <article class="card card--hover card--large-image">
+                  <div class="card__labels">
+                    <ul class="label-list">
+                      <li class="label-list__item">
+                        <span>Скидка</span>
+                      </li>
+                      <li class="label-list__item">
+                        <span>Скидка</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="#" class="card__image">
+                    <div class="card__img">
+                      <img src="./decor/1.png" alt="product">
+                    </div>
+                  </a>
+                  <div class="card__body">
+                    <a href="#" class="card__title">Торшер Rondo 450*2300</a>
+                    <div class="card__info">
+                      <div class="price">
+                        <span class="price__unit price__unit--through">46 780 ₽</span>
+                        <span class="price__unit">26 780 ₽</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__additional">
+                    <div class="card__title">Торшер Rondo 450*2300</div>
+                    <div class="table table--simple">
+                      <div class="table__body">
+                        <div class="table__row">
+                          <div class="table__cell">Тип лампы</div>
+                          <div class="table__cell table__cell--meaning">энергосберегающая</div>
+                        </div>
+                        <div class="table__row">
+                          <div class="table__cell">Материал</div>
+                          <div class="table__cell table__cell--meaning">метал/акрил/
+                            алюминий/кварц/сталь</div>
+                        </div>
+                        <div class="table__row">
+                          <div class="table__cell">Тип лампы</div>
+                          <div class="table__cell table__cell--meaning">энергосберегающая</div>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="card__text">Цвет</p>
+                    <ul class="card-tags" uk-tab>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">Белый</span>
+                        </a>
+                      </li>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">Розовый</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <p class="card__text">Диаметр</p>
+                    <ul class="card-tags" uk-tab>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">400</span>
+                        </a>
+                      </li>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">800</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="table table--simple">
+                      <div class="table__body">
+                        <div class="table__row">
+                          <div class="table__cell">Количество ламп</div>
+                          <div class="table__cell table__cell--meaning">4</div>
+                        </div>
+                        <div class="table__row">
+                          <div class="table__cell">Мощность Вт</div>
+                          <div class="table__cell table__cell--meaning">250</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <span class="price__unit price__unit--through">46 780 ₽</span>
+                      <span class="price__unit">26 780 ₽</span>
+                    </div>
+                    <div class="card__btn">
+                      <button type="button" class="btn btn--icon uk-width-1-1">
+                        <span>{{mixins.icon('cart')}}</span>
+                        <span>Добавить в корзину</span>
+                      </button>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="uk-width-1-1 uk-width-1-3@m">
+                <div uk-grid class="uk-grid-small">
+                  <div class="uk-width-1-1@m uk-width-1-2">
+                    <article class="card card--hover">
+                      <div class="card__labels">
+                        <ul class="label-list">
+                          <li class="label-list__item">
+                            <span>Скидка</span>
+                          </li>
+                          <li class="label-list__item">
+                            <span>Скидка</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <a href="#" class="card__image">
+                        <div class="card__img">
+                          <img src="./decor/1.png" alt="product">
+                        </div>
+                      </a>
+                      <div class="card__body">
+                        <a href="#" class="card__title">Торшер Rondo 450*2300</a>
+                        <div class="card__info">
+                          <div class="price">
+                            <span class="price__unit price__unit--through">46 780 ₽</span>
+                            <span class="price__unit">26 780 ₽</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__additional">
+                        <div class="card__title">Торшер Rondo 450*2300</div>
+                        <div class="table table--simple">
+                          <div class="table__body">
+                            <div class="table__row">
+                              <div class="table__cell">Тип лампы</div>
+                              <div class="table__cell table__cell--meaning">энергосберегающая</div>
+                            </div>
+                            <div class="table__row">
+                              <div class="table__cell">Материал</div>
+                              <div class="table__cell table__cell--meaning">метал/акрил/
+                                алюминий/кварц/сталь</div>
+                            </div>
+                            <div class="table__row">
+                              <div class="table__cell">Тип лампы</div>
+                              <div class="table__cell table__cell--meaning">энергосберегающая</div>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="card__text">Цвет</p>
+                        <ul class="card-tags" uk-tab>
+                          <li class="card-tags__item">
+                            <a href="#" class="tag tag--bordered tag--small">
+                              <span class="tag__text">Белый</span>
+                            </a>
+                          </li>
+                          <li class="card-tags__item">
+                            <a href="#" class="tag tag--bordered tag--small">
+                              <span class="tag__text">Розовый</span>
+                            </a>
+                          </li>
+                        </ul>
+                        <p class="card__text">Диаметр</p>
+                        <ul class="card-tags" uk-tab>
+                          <li class="card-tags__item">
+                            <a href="#" class="tag tag--bordered tag--small">
+                              <span class="tag__text">400</span>
+                            </a>
+                          </li>
+                          <li class="card-tags__item">
+                            <a href="#" class="tag tag--bordered tag--small">
+                              <span class="tag__text">800</span>
+                            </a>
+                          </li>
+                        </ul>
+                        <div class="table table--simple">
+                          <div class="table__body">
+                            <div class="table__row">
+                              <div class="table__cell">Количество ламп</div>
+                              <div class="table__cell table__cell--meaning">4</div>
+                            </div>
+                            <div class="table__row">
+                              <div class="table__cell">Мощность Вт</div>
+                              <div class="table__cell table__cell--meaning">250</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="price">
+                          <span class="price__unit price__unit--through">46 780 ₽</span>
+                          <span class="price__unit">26 780 ₽</span>
+                        </div>
+                        <div class="card__btn">
+                          <button type="button" class="btn btn--icon uk-width-1-1">
+                            <span>{{mixins.icon('cart')}}</span>
+                            <span>Добавить в корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="uk-width-1-1@m uk-width-1-2">
+                    <article class="card card--hover">
+                      <div class="card__labels">
+                        <ul class="label-list">
+                          <li class="label-list__item">
+                            <span>Скидка</span>
+                          </li>
+                          <li class="label-list__item">
+                            <span>Скидка</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <a href="#" class="card__image">
+                        <div class="card__img">
+                          <img src="./decor/1.png" alt="product">
+                        </div>
+                      </a>
+                      <div class="card__body">
+                        <a href="#" class="card__title">Торшер Rondo 450*2300</a>
+                        <div class="card__info">
+                          <div class="price">
+                            <span class="price__unit price__unit--through">46 780 ₽</span>
+                            <span class="price__unit">26 780 ₽</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__additional">
+                        <div class="card__title">Торшер Rondo 450*2300</div>
+                        <div class="table table--simple">
+                          <div class="table__body">
+                            <div class="table__row">
+                              <div class="table__cell">Тип лампы</div>
+                              <div class="table__cell table__cell--meaning">энергосберегающая</div>
+                            </div>
+                            <div class="table__row">
+                              <div class="table__cell">Материал</div>
+                              <div class="table__cell table__cell--meaning">метал/акрил/
+                                алюминий/кварц/сталь</div>
+                            </div>
+                            <div class="table__row">
+                              <div class="table__cell">Тип лампы</div>
+                              <div class="table__cell table__cell--meaning">энергосберегающая</div>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="card__text">Цвет</p>
+                        <ul class="card-tags" uk-tab>
+                          <li class="card-tags__item">
+                            <a href="#" class="tag tag--bordered tag--small">
+                              <span class="tag__text">Белый</span>
+                            </a>
+                          </li>
+                          <li class="card-tags__item">
+                            <a href="#" class="tag tag--bordered tag--small">
+                              <span class="tag__text">Розовый</span>
+                            </a>
+                          </li>
+                        </ul>
+                        <p class="card__text">Диаметр</p>
+                        <ul class="card-tags" uk-tab>
+                          <li class="card-tags__item">
+                            <a href="#" class="tag tag--bordered tag--small">
+                              <span class="tag__text">400</span>
+                            </a>
+                          </li>
+                          <li class="card-tags__item">
+                            <a href="#" class="tag tag--bordered tag--small">
+                              <span class="tag__text">800</span>
+                            </a>
+                          </li>
+                        </ul>
+                        <div class="table table--simple">
+                          <div class="table__body">
+                            <div class="table__row">
+                              <div class="table__cell">Количество ламп</div>
+                              <div class="table__cell table__cell--meaning">4</div>
+                            </div>
+                            <div class="table__row">
+                              <div class="table__cell">Мощность Вт</div>
+                              <div class="table__cell table__cell--meaning">250</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="price">
+                          <span class="price__unit price__unit--through">46 780 ₽</span>
+                          <span class="price__unit">26 780 ₽</span>
+                        </div>
+                        <div class="card__btn">
+                          <button type="button" class="btn btn--icon uk-width-1-1">
+                            <span>{{mixins.icon('cart')}}</span>
+                            <span>Добавить в корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <div class="uk-width-1-2 uk-width-1-3@m">
+                <div>
+                  <article class="card card--hover">
+                    <div class="card__labels">
+                      <ul class="label-list">
+                        <li class="label-list__item">
+                          <span>Скидка</span>
+                        </li>
+                        <li class="label-list__item">
+                          <span>Скидка</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <a href="#" class="card__image">
+                      <div class="card__img">
+                        <img src="./decor/1.png" alt="product">
+                      </div>
+                    </a>
+                    <div class="card__body">
+                      <a href="#" class="card__title">Торшер Rondo 450*2300</a>
+                      <div class="card__info">
+                        <div class="price">
+                          <span class="price__unit price__unit--through">46 780 ₽</span>
+                          <span class="price__unit">26 780 ₽</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__additional">
+                      <div class="card__title">Торшер Rondo 450*2300</div>
+                      <div class="table table--simple">
+                        <div class="table__body">
+                          <div class="table__row">
+                            <div class="table__cell">Тип лампы</div>
+                            <div class="table__cell table__cell--meaning">энергосберегающая</div>
+                          </div>
+                          <div class="table__row">
+                            <div class="table__cell">Материал</div>
+                            <div class="table__cell table__cell--meaning">метал/акрил/
+                              алюминий/кварц/сталь</div>
+                          </div>
+                          <div class="table__row">
+                            <div class="table__cell">Тип лампы</div>
+                            <div class="table__cell table__cell--meaning">энергосберегающая</div>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="card__text">Цвет</p>
+                      <ul class="card-tags" uk-tab>
+                        <li class="card-tags__item">
+                          <a href="#" class="tag tag--bordered tag--small">
+                            <span class="tag__text">Белый</span>
+                          </a>
+                        </li>
+                        <li class="card-tags__item">
+                          <a href="#" class="tag tag--bordered tag--small">
+                            <span class="tag__text">Розовый</span>
+                          </a>
+                        </li>
+                      </ul>
+                      <p class="card__text">Диаметр</p>
+                      <ul class="card-tags" uk-tab>
+                        <li class="card-tags__item">
+                          <a href="#" class="tag tag--bordered tag--small">
+                            <span class="tag__text">400</span>
+                          </a>
+                        </li>
+                        <li class="card-tags__item">
+                          <a href="#" class="tag tag--bordered tag--small">
+                            <span class="tag__text">800</span>
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="table table--simple">
+                        <div class="table__body">
+                          <div class="table__row">
+                            <div class="table__cell">Количество ламп</div>
+                            <div class="table__cell table__cell--meaning">4</div>
+                          </div>
+                          <div class="table__row">
+                            <div class="table__cell">Мощность Вт</div>
+                            <div class="table__cell table__cell--meaning">250</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="price">
+                        <span class="price__unit price__unit--through">46 780 ₽</span>
+                        <span class="price__unit">26 780 ₽</span>
+                      </div>
+                      <div class="card__btn">
+                        <button type="button" class="btn btn--icon uk-width-1-1">
+                          <span>{{mixins.icon('cart')}}</span>
+                          <span>Добавить в корзину</span>
+                        </button>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="uk-width-1-2 uk-width-1-3@m">
+                <article class="card card--hover">
+                  <div class="card__labels">
+                    <ul class="label-list">
+                      <li class="label-list__item">
+                        <span>Скидка</span>
+                      </li>
+                      <li class="label-list__item">
+                        <span>Скидка</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="#" class="card__image">
+                    <div class="card__img">
+                      <img src="./decor/1.png" alt="product">
+                    </div>
+                  </a>
+                  <div class="card__body">
+                    <a href="#" class="card__title">Торшер Rondo 450*2300</a>
+                    <div class="card__info">
+                      <div class="price">
+                        <span class="price__unit price__unit--through">46 780 ₽</span>
+                        <span class="price__unit">26 780 ₽</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__additional">
+                    <div class="card__title">Торшер Rondo 450*2300</div>
+                    <div class="table table--simple">
+                      <div class="table__body">
+                        <div class="table__row">
+                          <div class="table__cell">Тип лампы</div>
+                          <div class="table__cell table__cell--meaning">энергосберегающая</div>
+                        </div>
+                        <div class="table__row">
+                          <div class="table__cell">Материал</div>
+                          <div class="table__cell table__cell--meaning">метал/акрил/
+                            алюминий/кварц/сталь</div>
+                        </div>
+                        <div class="table__row">
+                          <div class="table__cell">Тип лампы</div>
+                          <div class="table__cell table__cell--meaning">энергосберегающая</div>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="card__text">Цвет</p>
+                    <ul class="card-tags" uk-tab>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">Белый</span>
+                        </a>
+                      </li>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">Розовый</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <p class="card__text">Диаметр</p>
+                    <ul class="card-tags" uk-tab>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">400</span>
+                        </a>
+                      </li>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">800</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="table table--simple">
+                      <div class="table__body">
+                        <div class="table__row">
+                          <div class="table__cell">Количество ламп</div>
+                          <div class="table__cell table__cell--meaning">4</div>
+                        </div>
+                        <div class="table__row">
+                          <div class="table__cell">Мощность Вт</div>
+                          <div class="table__cell table__cell--meaning">250</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <span class="price__unit price__unit--through">46 780 ₽</span>
+                      <span class="price__unit">26 780 ₽</span>
+                    </div>
+                    <div class="card__btn">
+                      <button type="button" class="btn btn--icon uk-width-1-1">
+                        <span>{{mixins.icon('cart')}}</span>
+                        <span>Добавить в корзину</span>
+                      </button>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="uk-width-1-2 uk-width-1-3@m">
+                <article class="card card--hover">
+                  <div class="card__labels">
+                    <ul class="label-list">
+                      <li class="label-list__item">
+                        <span>Скидка</span>
+                      </li>
+                      <li class="label-list__item">
+                        <span>Скидка</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="#" class="card__image">
+                    <div class="card__img">
+                      <img src="./decor/1.png" alt="product">
+                    </div>
+                  </a>
+                  <div class="card__body">
+                    <a href="#" class="card__title">Торшер Rondo 450*2300</a>
+                    <div class="card__info">
+                      <div class="price">
+                        <span class="price__unit price__unit--through">46 780 ₽</span>
+                        <span class="price__unit">26 780 ₽</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__additional">
+                    <div class="card__title">Торшер Rondo 450*2300</div>
+                    <div class="table table--simple">
+                      <div class="table__body">
+                        <div class="table__row">
+                          <div class="table__cell">Тип лампы</div>
+                          <div class="table__cell table__cell--meaning">энергосберегающая</div>
+                        </div>
+                        <div class="table__row">
+                          <div class="table__cell">Материал</div>
+                          <div class="table__cell table__cell--meaning">метал/акрил/
+                            алюминий/кварц/сталь</div>
+                        </div>
+                        <div class="table__row">
+                          <div class="table__cell">Тип лампы</div>
+                          <div class="table__cell table__cell--meaning">энергосберегающая</div>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="card__text">Цвет</p>
+                    <ul class="card-tags" uk-tab>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">Белый</span>
+                        </a>
+                      </li>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">Розовый</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <p class="card__text">Диаметр</p>
+                    <ul class="card-tags" uk-tab>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">400</span>
+                        </a>
+                      </li>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">800</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="table table--simple">
+                      <div class="table__body">
+                        <div class="table__row">
+                          <div class="table__cell">Количество ламп</div>
+                          <div class="table__cell table__cell--meaning">4</div>
+                        </div>
+                        <div class="table__row">
+                          <div class="table__cell">Мощность Вт</div>
+                          <div class="table__cell table__cell--meaning">250</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <span class="price__unit price__unit--through">46 780 ₽</span>
+                      <span class="price__unit">26 780 ₽</span>
+                    </div>
+                    <div class="card__btn">
+                      <button type="button" class="btn btn--icon uk-width-1-1">
+                        <span>{{mixins.icon('cart')}}</span>
+                        <span>Добавить в корзину</span>
+                      </button>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="uk-width-1-2 uk-hidden@m">
+                <article class="card card--hover">
+                  <div class="card__labels">
+                    <ul class="label-list">
+                      <li class="label-list__item">
+                        <span>Скидка</span>
+                      </li>
+                      <li class="label-list__item">
+                        <span>Скидка</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="#" class="card__image">
+                    <div class="card__img">
+                      <img src="./decor/1.png" alt="product">
+                    </div>
+                  </a>
+                  <div class="card__body">
+                    <a href="#" class="card__title">Торшер Rondo 450*2300</a>
+                    <div class="card__info">
+                      <div class="price">
+                        <span class="price__unit price__unit--through">46 780 ₽</span>
+                        <span class="price__unit">26 780 ₽</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__additional">
+                    <div class="card__title">Торшер Rondo 450*2300</div>
+                    <div class="table table--simple">
+                      <div class="table__body">
+                        <div class="table__row">
+                          <div class="table__cell">Тип лампы</div>
+                          <div class="table__cell table__cell--meaning">энергосберегающая</div>
+                        </div>
+                        <div class="table__row">
+                          <div class="table__cell">Материал</div>
+                          <div class="table__cell table__cell--meaning">метал/акрил/
+                            алюминий/кварц/сталь</div>
+                        </div>
+                        <div class="table__row">
+                          <div class="table__cell">Тип лампы</div>
+                          <div class="table__cell table__cell--meaning">энергосберегающая</div>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="card__text">Цвет</p>
+                    <ul class="card-tags" uk-tab>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">Белый</span>
+                        </a>
+                      </li>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">Розовый</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <p class="card__text">Диаметр</p>
+                    <ul class="card-tags" uk-tab>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">400</span>
+                        </a>
+                      </li>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">800</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="table table--simple">
+                      <div class="table__body">
+                        <div class="table__row">
+                          <div class="table__cell">Количество ламп</div>
+                          <div class="table__cell table__cell--meaning">4</div>
+                        </div>
+                        <div class="table__row">
+                          <div class="table__cell">Мощность Вт</div>
+                          <div class="table__cell table__cell--meaning">250</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <span class="price__unit price__unit--through">46 780 ₽</span>
+                      <span class="price__unit">26 780 ₽</span>
+                    </div>
+                    <div class="card__btn">
+                      <button type="button" class="btn btn--icon uk-width-1-1">
+                        <span>{{mixins.icon('cart')}}</span>
+                        <span>Добавить в корзину</span>
+                      </button>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="uk-width-1-1 uk-width-1-3@m">
+                <div uk-grid class="uk-grid-small">
+                  <div class="uk-width-1-1@m uk-width-1-2">
+                    <article class="card card--hover">
+                      <div class="card__labels">
+                        <ul class="label-list">
+                          <li class="label-list__item">
+                            <span>Скидка</span>
+                          </li>
+                          <li class="label-list__item">
+                            <span>Скидка</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <a href="#" class="card__image">
+                        <div class="card__img">
+                          <img src="./decor/1.png" alt="product">
+                        </div>
+                      </a>
+                      <div class="card__body">
+                        <a href="#" class="card__title">Торшер Rondo 450*2300</a>
+                        <div class="card__info">
+                          <div class="price">
+                            <span class="price__unit price__unit--through">46 780 ₽</span>
+                            <span class="price__unit">26 780 ₽</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__additional">
+                        <div class="card__title">Торшер Rondo 450*2300</div>
+                        <div class="table table--simple">
+                          <div class="table__body">
+                            <div class="table__row">
+                              <div class="table__cell">Тип лампы</div>
+                              <div class="table__cell table__cell--meaning">энергосберегающая</div>
+                            </div>
+                            <div class="table__row">
+                              <div class="table__cell">Материал</div>
+                              <div class="table__cell table__cell--meaning">метал/акрил/
+                                алюминий/кварц/сталь</div>
+                            </div>
+                            <div class="table__row">
+                              <div class="table__cell">Тип лампы</div>
+                              <div class="table__cell table__cell--meaning">энергосберегающая</div>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="card__text">Цвет</p>
+                        <ul class="card-tags" uk-tab>
+                          <li class="card-tags__item">
+                            <a href="#" class="tag tag--bordered tag--small">
+                              <span class="tag__text">Белый</span>
+                            </a>
+                          </li>
+                          <li class="card-tags__item">
+                            <a href="#" class="tag tag--bordered tag--small">
+                              <span class="tag__text">Розовый</span>
+                            </a>
+                          </li>
+                        </ul>
+                        <p class="card__text">Диаметр</p>
+                        <ul class="card-tags" uk-tab>
+                          <li class="card-tags__item">
+                            <a href="#" class="tag tag--bordered tag--small">
+                              <span class="tag__text">400</span>
+                            </a>
+                          </li>
+                          <li class="card-tags__item">
+                            <a href="#" class="tag tag--bordered tag--small">
+                              <span class="tag__text">800</span>
+                            </a>
+                          </li>
+                        </ul>
+                        <div class="table table--simple">
+                          <div class="table__body">
+                            <div class="table__row">
+                              <div class="table__cell">Количество ламп</div>
+                              <div class="table__cell table__cell--meaning">4</div>
+                            </div>
+                            <div class="table__row">
+                              <div class="table__cell">Мощность Вт</div>
+                              <div class="table__cell table__cell--meaning">250</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="price">
+                          <span class="price__unit price__unit--through">46 780 ₽</span>
+                          <span class="price__unit">26 780 ₽</span>
+                        </div>
+                        <div class="card__btn">
+                          <button type="button" class="btn btn--icon uk-width-1-1">
+                            <span>{{mixins.icon('cart')}}</span>
+                            <span>Добавить в корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="uk-width-1-1@m uk-width-1-2">
+                    <article class="card card--hover">
+                      <div class="card__labels">
+                        <ul class="label-list">
+                          <li class="label-list__item">
+                            <span>Скидка</span>
+                          </li>
+                          <li class="label-list__item">
+                            <span>Скидка</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <a href="#" class="card__image">
+                        <div class="card__img">
+                          <img src="./decor/1.png" alt="product">
+                        </div>
+                      </a>
+                      <div class="card__body">
+                        <a href="#" class="card__title">Торшер Rondo 450*2300</a>
+                        <div class="card__info">
+                          <div class="price">
+                            <span class="price__unit price__unit--through">46 780 ₽</span>
+                            <span class="price__unit">26 780 ₽</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__additional">
+                        <div class="card__title">Торшер Rondo 450*2300</div>
+                        <div class="table table--simple">
+                          <div class="table__body">
+                            <div class="table__row">
+                              <div class="table__cell">Тип лампы</div>
+                              <div class="table__cell table__cell--meaning">энергосберегающая</div>
+                            </div>
+                            <div class="table__row">
+                              <div class="table__cell">Материал</div>
+                              <div class="table__cell table__cell--meaning">метал/акрил/
+                                алюминий/кварц/сталь</div>
+                            </div>
+                            <div class="table__row">
+                              <div class="table__cell">Тип лампы</div>
+                              <div class="table__cell table__cell--meaning">энергосберегающая</div>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="card__text">Цвет</p>
+                        <ul class="card-tags" uk-tab>
+                          <li class="card-tags__item">
+                            <a href="#" class="tag tag--bordered tag--small">
+                              <span class="tag__text">Белый</span>
+                            </a>
+                          </li>
+                          <li class="card-tags__item">
+                            <a href="#" class="tag tag--bordered tag--small">
+                              <span class="tag__text">Розовый</span>
+                            </a>
+                          </li>
+                        </ul>
+                        <p class="card__text">Диаметр</p>
+                        <ul class="card-tags" uk-tab>
+                          <li class="card-tags__item">
+                            <a href="#" class="tag tag--bordered tag--small">
+                              <span class="tag__text">400</span>
+                            </a>
+                          </li>
+                          <li class="card-tags__item">
+                            <a href="#" class="tag tag--bordered tag--small">
+                              <span class="tag__text">800</span>
+                            </a>
+                          </li>
+                        </ul>
+                        <div class="table table--simple">
+                          <div class="table__body">
+                            <div class="table__row">
+                              <div class="table__cell">Количество ламп</div>
+                              <div class="table__cell table__cell--meaning">4</div>
+                            </div>
+                            <div class="table__row">
+                              <div class="table__cell">Мощность Вт</div>
+                              <div class="table__cell table__cell--meaning">250</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="price">
+                          <span class="price__unit price__unit--through">46 780 ₽</span>
+                          <span class="price__unit">26 780 ₽</span>
+                        </div>
+                        <div class="card__btn">
+                          <button type="button" class="btn btn--icon uk-width-1-1">
+                            <span>{{mixins.icon('cart')}}</span>
+                            <span>Добавить в корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <div class="uk-width-1-1 uk-width-2-3@m">
+                <article class="card card--hover card--large-image">
+                  <div class="card__labels">
+                    <ul class="label-list">
+                      <li class="label-list__item">
+                        <span>Скидка</span>
+                      </li>
+                      <li class="label-list__item">
+                        <span>Скидка</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="#" class="card__image">
+                    <div class="card__img">
+                      <img src="./decor/1.png" alt="product">
+                    </div>
+                  </a>
+                  <div class="card__body">
+                    <a href="#" class="card__title">Торшер Rondo 450*2300</a>
+                    <div class="card__info">
+                      <div class="price">
+                        <span class="price__unit price__unit--through">46 780 ₽</span>
+                        <span class="price__unit">26 780 ₽</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__additional">
+                    <div class="card__title">Торшер Rondo 450*2300</div>
+                    <div class="table table--simple">
+                      <div class="table__body">
+                        <div class="table__row">
+                          <div class="table__cell">Тип лампы</div>
+                          <div class="table__cell table__cell--meaning">энергосберегающая</div>
+                        </div>
+                        <div class="table__row">
+                          <div class="table__cell">Материал</div>
+                          <div class="table__cell table__cell--meaning">метал/акрил/
+                            алюминий/кварц/сталь</div>
+                        </div>
+                        <div class="table__row">
+                          <div class="table__cell">Тип лампы</div>
+                          <div class="table__cell table__cell--meaning">энергосберегающая</div>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="card__text">Цвет</p>
+                    <ul class="card-tags" uk-tab>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">Белый</span>
+                        </a>
+                      </li>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">Розовый</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <p class="card__text">Диаметр</p>
+                    <ul class="card-tags" uk-tab>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">400</span>
+                        </a>
+                      </li>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">800</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="table table--simple">
+                      <div class="table__body">
+                        <div class="table__row">
+                          <div class="table__cell">Количество ламп</div>
+                          <div class="table__cell table__cell--meaning">4</div>
+                        </div>
+                        <div class="table__row">
+                          <div class="table__cell">Мощность Вт</div>
+                          <div class="table__cell table__cell--meaning">250</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <span class="price__unit price__unit--through">46 780 ₽</span>
+                      <span class="price__unit">26 780 ₽</span>
+                    </div>
+                    <div class="card__btn">
+                      <button type="button" class="btn btn--icon uk-width-1-1">
+                        <span>{{mixins.icon('cart')}}</span>
+                        <span>Добавить в корзину</span>
+                      </button>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="uk-width-1-2 uk-width-1-3@m">
+                <div>
+                  <article class="card card--hover">
+                    <div class="card__labels">
+                      <ul class="label-list">
+                        <li class="label-list__item">
+                          <span>Скидка</span>
+                        </li>
+                        <li class="label-list__item">
+                          <span>Скидка</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <a href="#" class="card__image">
+                      <div class="card__img">
+                        <img src="./decor/1.png" alt="product">
+                      </div>
+                    </a>
+                    <div class="card__body">
+                      <a href="#" class="card__title">Торшер Rondo 450*2300</a>
+                      <div class="card__info">
+                        <div class="price">
+                          <span class="price__unit price__unit--through">46 780 ₽</span>
+                          <span class="price__unit">26 780 ₽</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__additional">
+                      <div class="card__title">Торшер Rondo 450*2300</div>
+                      <div class="table table--simple">
+                        <div class="table__body">
+                          <div class="table__row">
+                            <div class="table__cell">Тип лампы</div>
+                            <div class="table__cell table__cell--meaning">энергосберегающая</div>
+                          </div>
+                          <div class="table__row">
+                            <div class="table__cell">Материал</div>
+                            <div class="table__cell table__cell--meaning">метал/акрил/
+                              алюминий/кварц/сталь</div>
+                          </div>
+                          <div class="table__row">
+                            <div class="table__cell">Тип лампы</div>
+                            <div class="table__cell table__cell--meaning">энергосберегающая</div>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="card__text">Цвет</p>
+                      <ul class="card-tags" uk-tab>
+                        <li class="card-tags__item">
+                          <a href="#" class="tag tag--bordered tag--small">
+                            <span class="tag__text">Белый</span>
+                          </a>
+                        </li>
+                        <li class="card-tags__item">
+                          <a href="#" class="tag tag--bordered tag--small">
+                            <span class="tag__text">Розовый</span>
+                          </a>
+                        </li>
+                      </ul>
+                      <p class="card__text">Диаметр</p>
+                      <ul class="card-tags" uk-tab>
+                        <li class="card-tags__item">
+                          <a href="#" class="tag tag--bordered tag--small">
+                            <span class="tag__text">400</span>
+                          </a>
+                        </li>
+                        <li class="card-tags__item">
+                          <a href="#" class="tag tag--bordered tag--small">
+                            <span class="tag__text">800</span>
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="table table--simple">
+                        <div class="table__body">
+                          <div class="table__row">
+                            <div class="table__cell">Количество ламп</div>
+                            <div class="table__cell table__cell--meaning">4</div>
+                          </div>
+                          <div class="table__row">
+                            <div class="table__cell">Мощность Вт</div>
+                            <div class="table__cell table__cell--meaning">250</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="price">
+                        <span class="price__unit price__unit--through">46 780 ₽</span>
+                        <span class="price__unit">26 780 ₽</span>
+                      </div>
+                      <div class="card__btn">
+                        <button type="button" class="btn btn--icon uk-width-1-1">
+                          <span>{{mixins.icon('cart')}}</span>
+                          <span>Добавить в корзину</span>
+                        </button>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="uk-width-1-2 uk-width-1-3@m">
+                <article class="card card--hover">
+                  <div class="card__labels">
+                    <ul class="label-list">
+                      <li class="label-list__item">
+                        <span>Скидка</span>
+                      </li>
+                      <li class="label-list__item">
+                        <span>Скидка</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="#" class="card__image">
+                    <div class="card__img">
+                      <img src="./decor/1.png" alt="product">
+                    </div>
+                  </a>
+                  <div class="card__body">
+                    <a href="#" class="card__title">Торшер Rondo 450*2300</a>
+                    <div class="card__info">
+                      <div class="price">
+                        <span class="price__unit price__unit--through">46 780 ₽</span>
+                        <span class="price__unit">26 780 ₽</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__additional">
+                    <div class="card__title">Торшер Rondo 450*2300</div>
+                    <div class="table table--simple">
+                      <div class="table__body">
+                        <div class="table__row">
+                          <div class="table__cell">Тип лампы</div>
+                          <div class="table__cell table__cell--meaning">энергосберегающая</div>
+                        </div>
+                        <div class="table__row">
+                          <div class="table__cell">Материал</div>
+                          <div class="table__cell table__cell--meaning">метал/акрил/
+                            алюминий/кварц/сталь</div>
+                        </div>
+                        <div class="table__row">
+                          <div class="table__cell">Тип лампы</div>
+                          <div class="table__cell table__cell--meaning">энергосберегающая</div>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="card__text">Цвет</p>
+                    <ul class="card-tags" uk-tab>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">Белый</span>
+                        </a>
+                      </li>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">Розовый</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <p class="card__text">Диаметр</p>
+                    <ul class="card-tags" uk-tab>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">400</span>
+                        </a>
+                      </li>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">800</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="table table--simple">
+                      <div class="table__body">
+                        <div class="table__row">
+                          <div class="table__cell">Количество ламп</div>
+                          <div class="table__cell table__cell--meaning">4</div>
+                        </div>
+                        <div class="table__row">
+                          <div class="table__cell">Мощность Вт</div>
+                          <div class="table__cell table__cell--meaning">250</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <span class="price__unit price__unit--through">46 780 ₽</span>
+                      <span class="price__unit">26 780 ₽</span>
+                    </div>
+                    <div class="card__btn">
+                      <button type="button" class="btn btn--icon uk-width-1-1">
+                        <span>{{mixins.icon('cart')}}</span>
+                        <span>Добавить в корзину</span>
+                      </button>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="uk-width-1-2 uk-width-1-3@m">
+                <article class="card card--hover">
+                  <div class="card__labels">
+                    <ul class="label-list">
+                      <li class="label-list__item">
+                        <span>Скидка</span>
+                      </li>
+                      <li class="label-list__item">
+                        <span>Скидка</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="#" class="card__image">
+                    <div class="card__img">
+                      <img src="./decor/1.png" alt="product">
+                    </div>
+                  </a>
+                  <div class="card__body">
+                    <a href="#" class="card__title">Торшер Rondo 450*2300</a>
+                    <div class="card__info">
+                      <div class="price">
+                        <span class="price__unit price__unit--through">46 780 ₽</span>
+                        <span class="price__unit">26 780 ₽</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__additional">
+                    <div class="card__title">Торшер Rondo 450*2300</div>
+                    <div class="table table--simple">
+                      <div class="table__body">
+                        <div class="table__row">
+                          <div class="table__cell">Тип лампы</div>
+                          <div class="table__cell table__cell--meaning">энергосберегающая</div>
+                        </div>
+                        <div class="table__row">
+                          <div class="table__cell">Материал</div>
+                          <div class="table__cell table__cell--meaning">метал/акрил/
+                            алюминий/кварц/сталь</div>
+                        </div>
+                        <div class="table__row">
+                          <div class="table__cell">Тип лампы</div>
+                          <div class="table__cell table__cell--meaning">энергосберегающая</div>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="card__text">Цвет</p>
+                    <ul class="card-tags" uk-tab>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">Белый</span>
+                        </a>
+                      </li>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">Розовый</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <p class="card__text">Диаметр</p>
+                    <ul class="card-tags" uk-tab>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">400</span>
+                        </a>
+                      </li>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">800</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="table table--simple">
+                      <div class="table__body">
+                        <div class="table__row">
+                          <div class="table__cell">Количество ламп</div>
+                          <div class="table__cell table__cell--meaning">4</div>
+                        </div>
+                        <div class="table__row">
+                          <div class="table__cell">Мощность Вт</div>
+                          <div class="table__cell table__cell--meaning">250</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <span class="price__unit price__unit--through">46 780 ₽</span>
+                      <span class="price__unit">26 780 ₽</span>
+                    </div>
+                    <div class="card__btn">
+                      <button type="button" class="btn btn--icon uk-width-1-1">
+                        <span>{{mixins.icon('cart')}}</span>
+                        <span>Добавить в корзину</span>
+                      </button>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="uk-width-1-2 uk-hidden@m">
+                <article class="card card--hover">
+                  <div class="card__labels">
+                    <ul class="label-list">
+                      <li class="label-list__item">
+                        <span>Скидка</span>
+                      </li>
+                      <li class="label-list__item">
+                        <span>Скидка</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="#" class="card__image">
+                    <div class="card__img">
+                      <img src="./decor/1.png" alt="product">
+                    </div>
+                  </a>
+                  <div class="card__body">
+                    <a href="#" class="card__title">Торшер Rondo 450*2300</a>
+                    <div class="card__info">
+                      <div class="price">
+                        <span class="price__unit price__unit--through">46 780 ₽</span>
+                        <span class="price__unit">26 780 ₽</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__additional">
+                    <div class="card__title">Торшер Rondo 450*2300</div>
+                    <div class="table table--simple">
+                      <div class="table__body">
+                        <div class="table__row">
+                          <div class="table__cell">Тип лампы</div>
+                          <div class="table__cell table__cell--meaning">энергосберегающая</div>
+                        </div>
+                        <div class="table__row">
+                          <div class="table__cell">Материал</div>
+                          <div class="table__cell table__cell--meaning">метал/акрил/
+                            алюминий/кварц/сталь</div>
+                        </div>
+                        <div class="table__row">
+                          <div class="table__cell">Тип лампы</div>
+                          <div class="table__cell table__cell--meaning">энергосберегающая</div>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="card__text">Цвет</p>
+                    <ul class="card-tags" uk-tab>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">Белый</span>
+                        </a>
+                      </li>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">Розовый</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <p class="card__text">Диаметр</p>
+                    <ul class="card-tags" uk-tab>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">400</span>
+                        </a>
+                      </li>
+                      <li class="card-tags__item">
+                        <a href="#" class="tag tag--bordered tag--small">
+                          <span class="tag__text">800</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="table table--simple">
+                      <div class="table__body">
+                        <div class="table__row">
+                          <div class="table__cell">Количество ламп</div>
+                          <div class="table__cell table__cell--meaning">4</div>
+                        </div>
+                        <div class="table__row">
+                          <div class="table__cell">Мощность Вт</div>
+                          <div class="table__cell table__cell--meaning">250</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <span class="price__unit price__unit--through">46 780 ₽</span>
+                      <span class="price__unit">26 780 ₽</span>
+                    </div>
+                    <div class="card__btn">
+                      <button type="button" class="btn btn--icon uk-width-1-1">
+                        <span>{{mixins.icon('cart')}}</span>
+                        <span>Добавить в корзину</span>
+                      </button>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section--filters section--border section--border-top section--border-top-outside">
+          <div class="section__container">
+            <div class="section__more">
+              <div class="pagination">
+                <ul class="uk-pagination" uk-margin>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li class="uk-active"><span>3</span></li>
+                  <li class="uk-disabled"><span>…</span></li>
+                  <li><a href="#">12</a></li>
+                </ul>
+              </div>
+              <a href="#" class="btn btn--secondary"><span>Показать еще</span></a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
+{% include "template/blog.html" %}
 {% include "template/footer.html" %}

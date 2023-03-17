@@ -61,6 +61,7 @@
 .section-grid-aside {
   max-height: calc(100vh - var(--header-height) / var(--fz) * var(--fz-em) - 60px);
   display: none;
+  overflow-x: hidden;
 
   &.is-opened {
     display: block;
