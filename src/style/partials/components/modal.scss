@@ -4,6 +4,10 @@
   padding: calc(20 / var(--fz) * var(--fz-em));
   background-color: var(--modal-bg);
 
+  &--large {
+    width: 609px !important;
+  }
+
   &__header {
     position: relative;
     display: flex;

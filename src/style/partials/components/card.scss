@@ -94,6 +94,14 @@ a.card__title {
 
   &--horizontal {
     flex-direction: row;
+
+    &-large {
+
+      & .card__image,
+      .card__body {
+        flex-basis: 50%;
+      }
+    }
   }
 
   &--bordered {
@@ -208,6 +216,13 @@ a.card__title {
     }
 
     #{$self}--horizontal & {
+      flex-shrink: 0;
+      max-width: calc(274 / var(--fz) * var(--fz-em));
+      flex-basis: calc(274 / var(--fz) * var(--fz-em));
+      padding-bottom: calc(274 / var(--fz) * var(--fz-em));
+    }
+
+    #{$self}--horizontal-large & {
       flex-shrink: 0;
       max-width: calc(78 / var(--fz) * var(--fz-em));
       flex-basis: calc(78 / var(--fz) * var(--fz-em));
@@ -382,6 +397,17 @@ a.card__title {
 
   &__btn {
     margin-top: calc(20 / var(--fz) * var(--fz-em));
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: column;
+    gap: calc(10 / var(--fz) * var(--fz-em));
+    margin-top: calc(30 / var(--fz) * var(--fz-em));
+  }
+
+  &__link {
+    margin-top: calc(35 / var(--fz) * var(--fz-em));
   }
 
   &__footer {
