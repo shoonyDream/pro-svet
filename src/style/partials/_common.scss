@@ -353,7 +353,7 @@ p+p {
       left: 0;
       width: 100%;
       height: calc(90 / var(--fz) * var(--fz-em));
-      z-index: 1;
+      z-index: 4;
       opacity: 0;
       visibility: hidden;
       transition: 0.2s linear;

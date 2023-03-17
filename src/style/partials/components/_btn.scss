@@ -11,7 +11,8 @@ button {
   --button-bg-hover: var(--primary-light);
   --button-border: var(--primary);
 
-  &--secondary {
+  &--secondary,
+  &.btn-link {
     --button-text-color: var(--primary);
     --button-text-color-hover: var(--z-white);
     --button-bg: transparent;
@@ -28,7 +29,8 @@ button {
   }
 }
 
-.btn {
+.btn,
+.btn-link {
   font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
   color: var(--button-text-color);
   outline: none;
