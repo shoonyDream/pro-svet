@@ -7,6 +7,14 @@
     margin-top: calc(40 / var(--fz) * var(--fz-em));
   }
 
+  &__img img {
+    max-height: 31px;
+
+    @media (min-width: 960px) {
+      max-height: 37px;
+    }
+  }
+
   &__text {
     --fz: 18;
 

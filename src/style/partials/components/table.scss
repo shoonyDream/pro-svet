@@ -1,9 +1,5 @@
 .table {
 
-  &--delivery:not(:last-child) {
-    border-right: 1px solid var(--line);
-  }
-
   &__header {
     border-bottom: 1px solid var(--line);
     padding-bottom: calc(10 / var(--fz) * var(--fz-em));
@@ -24,9 +20,6 @@
     line-height: 1.2;
 
     &--delivery {
-      --fz: 24;
-
-      font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
       text-transform: uppercase;
     }
   }
@@ -50,7 +43,7 @@
       background-color: var(--bg-2);
     }
 
-    &:nth-child(even) {
+    &--delivery:nth-child(even) {
       background-color: var(--white);
     }
   }
