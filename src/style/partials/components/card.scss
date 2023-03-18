@@ -94,14 +94,6 @@ a.card__title {
 
   &--horizontal {
     flex-direction: row;
-
-    &-large {
-
-      & .card__image,
-      .card__body {
-        flex-basis: 50%;
-      }
-    }
   }
 
   &--bordered {
@@ -217,16 +209,16 @@ a.card__title {
 
     #{$self}--horizontal & {
       flex-shrink: 0;
-      max-width: calc(274 / var(--fz) * var(--fz-em));
-      flex-basis: calc(274 / var(--fz) * var(--fz-em));
-      padding-bottom: calc(274 / var(--fz) * var(--fz-em));
-    }
-
-    #{$self}--horizontal-large & {
-      flex-shrink: 0;
       max-width: calc(78 / var(--fz) * var(--fz-em));
       flex-basis: calc(78 / var(--fz) * var(--fz-em));
       padding-bottom: calc(78 / var(--fz) * var(--fz-em));
+    }
+
+    #{$self}--horizontal-large & {
+      flex-shrink: inherit;
+      max-width: 50%;
+      flex-basis: 50%;
+      padding-bottom: calc(50% - 10px);
     }
 
     &--vertical {
@@ -287,13 +279,19 @@ a.card__title {
     z-index: 3;
     transition: z-index 0.15s ease;
 
-
     &--auto-top {
       margin-top: auto;
     }
 
     #{$self}--bg & {
       padding: 0 calc(20 / var(--fz) * var(--fz-em));
+    }
+
+    #{$self}--horizontal-large & {
+      flex-basis: 50%;
+      max-width: 50%;
+      display: flex;
+      flex-direction: column;
     }
 
     .card--hover:hover & {
@@ -399,7 +397,7 @@ a.card__title {
     margin-top: calc(20 / var(--fz) * var(--fz-em));
   }
 
-  &__button {
+  &__btn-list {
     display: flex;
     flex-direction: column;
     gap: calc(10 / var(--fz) * var(--fz-em));
@@ -407,7 +405,12 @@ a.card__title {
   }
 
   &__link {
-    margin-top: calc(35 / var(--fz) * var(--fz-em));
+    margin-top: auto;
+
+    & .link {
+      display: inline-block;
+      margin-top: calc(35 / var(--fz) * var(--fz-em));
+    }
   }
 
   &__footer {

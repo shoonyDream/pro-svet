@@ -1,11 +1,11 @@
 .modal {
 
-  width: 416px !important;
+  max-width: 416px !important;
   padding: calc(20 / var(--fz) * var(--fz-em));
   background-color: var(--modal-bg);
 
   &--large {
-    width: 609px !important;
+    max-width: 609px !important;
   }
 
   &__header {
@@ -15,11 +15,6 @@
     justify-content: space-between;
     align-items: flex-end;
     gap: calc(10 / var(--fz) * var(--fz-em));
-    margin-bottom: calc(20 / var(--fz) * var(--fz-em));
-
-    @media (min-width: 680px) {
-      margin-bottom: calc(30 / var(--fz) * var(--fz-em));
-    }
   }
 
   & &__title {
@@ -46,6 +41,26 @@
     height: calc(40 / var(--fz) * var(--fz-em));
   }
 
+  &__body {
+    .modal__header+& {
+      margin-top: calc(20 / var(--fz) * var(--fz-em));
+
+      @media (min-width: 960px) {
+        margin-top: calc(30 / var(--fz) * var(--fz-em));
+      }
+    }
+
+    &--no-gutter {
+      & .uk-section-small {
+        --gutter: 30;
+      }
+
+      .modal__header+& {
+        margin-top: 0;
+      }
+    }
+  }
+
   &__text {
     margin-bottom: 0;
   }
@@ -53,7 +68,7 @@
   &__checkbox {
     margin-top: calc(20 / var(--fz) * var(--fz-em));
 
-    @media (min-width: 680px) {
+    @media (min-width: 960px) {
       margin-top: calc(30 / var(--fz) * var(--fz-em));
     }
   }
@@ -65,7 +80,7 @@
     justify-content: center;
     margin-top: calc(20 / var(--fz) * var(--fz-em));
 
-    @media (min-width: 680px) {
+    @media (min-width: 960px) {
       gap: calc(30 / var(--fz) * var(--fz-em));
       margin-top: calc(30 / var(--fz) * var(--fz-em));
     }

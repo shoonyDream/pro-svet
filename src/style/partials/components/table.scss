@@ -1,4 +1,6 @@
 .table {
+  width: 100%;
+
   &__header {
     border-bottom: 1px solid var(--line);
     padding-bottom: calc(10 / var(--fz) * var(--fz-em));
