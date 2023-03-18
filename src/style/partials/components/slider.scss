@@ -17,6 +17,8 @@
   }
 
   &__nav {
+    margin-top: calc(30 / var(--fz) * var(--fz-em));
+
     .slider--bg & {
       margin: auto 0 calc(20 / var(--fz) * var(--fz-em));
 

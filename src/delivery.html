@@ -1,5 +1,313 @@
 {% set page = 'main' %}
 {% import "template/_mixins.html" as mixins %}
 {% include "template/header.html" %}
-<p>delivery</p>
+{% include "template/breadcrumbs.html" %}
+<section class="uk-section-small section section--border section--border-bottom">
+  <div class="uk-container section__container">
+    <div class="section__header">
+      <div class="section__title">
+        <h1 class="uk-h2">Доставка</h1>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section--border section--border-bottom">
+  <div class="uk-container section__container">
+    <div uk-grid class="uk-grid-small key-indicators key-indicators--bordered-inside uk-child-width-1-3@m">
+      <div class="key-indicators__item">
+        <div class="key-indicator key-indicator--horizontal key-indicator--align-left">
+          <div class="table table--inversion">
+            <div class="table__header table__header--no-border">
+              <span class="table__title table__title--uppercase">В пределах МКАД</span>
+            </div>
+            <div class="table__body">
+              <div class="table__row">
+                <div class="table__cell"><span class="table__tooltip" uk-tooltip="title: Выявляем основные пробелы и ошибки на сайте, которые мешают сео продвижению.; pos: bottom-left" title="" aria-expanded="false" tabindex="0">От 30 000 рублей</span>
+                </div>
+                <div class="table__cell table__cell--meaning">Бесплатно</div>
+              </div>
+              <div class="table__row">
+                <div class="table__cell"><span>3 000 рублей</span></div>
+                <div class="table__cell table__cell--meaning">
+                  <span>Минимальная сумма заказа</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="key-indicators__item">
+        <div class="key-indicator key-indicator--horizontal key-indicator--align-left">
+          <div class="table">
+            <div class="table__header table__header--no-border">
+              <span class="table__title table__title--uppercase">За МКАД</span>
+            </div>
+            <div class="table__body">
+              <div class="table__row">
+                <div class="table__cell"><span>При любой стоимости заказа</span>
+                </div>
+                <div class="table__cell table__cell--meaning"><span>30 рублей/1 км</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="key-indicators__item">
+        <div class="key-indicator key-indicator--horizontal key-indicator--align-left">
+          <div class="table">
+            <div class="table__header table__header--no-border">
+              <span class="table__title table__title--uppercase">Самовывоз</span>
+            </div>
+            <div class="table__body">
+              <div class="table__row">
+                <div class="table__cell"><span>С нашего склада в Москве (метро Калужская)</span>
+                </div>
+                <div class="table__cell table__cell--meaning"><span>Бесплатно</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="uk-section section section--border section--border-bottom section--border-bottom-outside">
+  <div class="uk-container section__container">
+    <div class="uk-width-2-3@m">
+      <div class="section__header">
+        <div class="section__title">
+          <h3>Другие города России, в Казахстан и Беларусь</h3>
+        </div>
+        <div class="section__body">
+          <div class="delivery__transport">
+            <div class="delivery__image">
+              <div class="delivery__img">
+                <img src="img/common/pek.jpg">
+              </div>
+            </div>
+            <div class="delivery__image">
+              <div class="delivery__img">
+                <img src="img/common/delline.jpg">
+              </div>
+            </div>
+          </div>
+          <div class="delivery__text">
+            <span>Осуществляется Транспортной компанией «ПЭК» или «Деловые Линии»
+              по их текущим тарифам.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="uk-section section section--border section--border-bottom">
+  <div class="uk-container section__container">
+    <div class="section__header">
+      <div class="section__title">
+        <h2>Оплата</h2>
+      </div>
+    </div>
+    <div class="section__body">
+      <div uk-grid class="uk-grid-small uk-width-1-1@m">
+        <div class="uk-width-1-1 uk-width-2-3@m">
+          <div class="delivery__text delivery__text--pay">Как правило, мы работаем по системе предзаказа — это означает, что для каждого клиента мы подбираем светильник или люстру по индивидуально заданным параметрам: цвет, размер, количество источников света и т.д.</div>
+        </div>
+        <div class="uk-width-1-1 uk-width-1-3@m">
+          <div class="delivery__pay">
+            <div class="delivery__image">
+              <div class="delivery__img">
+                <img src="img/common/union.png">
+              </div>
+            </div>
+            <div class="delivery__image">
+              <div class="delivery__img">
+                <img src="img/common/visa.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- <section class="uk-section section section--border section--border-bottom section--border-bottom-outside">
+  <div class="uk-container section__container">
+    <div class="section__header">
+      <div class="section__title">
+        <h2>Правила возврата и обмена товара</h2>
+      </div>
+    </div>
+    <div class="section__body">
+      <div uk-grid class="uk-grid-small uk-width-1-1@m">
+        <div class="uk-width-1-4@m">
+          <div class="delivery-rules">
+            <ul class="delivery-rules__list">
+              <li class="delivery-rules__item">
+                <a href="#rule1" class="link link--active">Порядок принятия Товара</a>
+              </li>
+              <li class="delivery-rules__item">
+                <a href="#rule2" class="link">Условия обмена и возврата товара надлежащего качества</a>
+              </li>
+              <li class="delivery-rules__item">
+                <a href="#" class="link">Порядок возврата товара</a>
+              </li>
+              <li class="delivery-rules__item">
+                <a href="#" class="link">Гарантии и условия возврата товара ненадлежащего качества</a>
+              </li>
+              <li class="delivery-rules__item">
+                <a href="#" class="link">Порядок принятия Товара</a>
+              </li>
+              <li class="delivery-rules__item">
+                <a href="#" class="link">Возврат денежных средств при оформлении возврата товара</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="uk-width-1-1 uk-width-3-4@m">
+          <div class="hide-section">
+            <div id="hidden-1" style="--hidden-height: 420" class="hide-section__body is-hidden">
+              <h3 class="delivery-rules__title" id="rule1">Порядок принятия Товара</h3>
+              <p class="delivery-rules__text">При приемке Товара Покупатель обязан проверить Товар по количеству, качеству (общая целостность Товара, наличие трещин, сколов, потертостей, пятен, разводов, а также иных недостатков, для обнаружения которых не требуется применение специального оборудования) и комплектности, на его соответствие образцу/описанию Товара, а также данным, указанным в заказе на продажу.</p>
+              <p class="delivery-rules__text">В случае обнаружения недостатков Товара и/или его несоответствия данным, указанным на Сайте или в Заказе на продажу, Покупатель обязан указать об этом в заявке на оказание услуги по доставке Товара.</p>
+              <p class="delivery-rules__text">В противном случае, Товар считается принятым без претензий по количеству, качеству и комплектности, что не лишает покупателя возможности реализации права предъявления требований в соответствии с действующим законодательством, в том числе Законом «О защите прав потребителей» от 07.02.1992 № 2300-1.</p>
+              <h3 class="delivery-rules__title" id="rule2">Условия обмена и возврата товара надлежащего качества</h3>
+              <p class="delivery-rules__text">Статьей 502 Гражданского кодекса РФ и статьей 25 закона «О защите прав потребителей» потребителю предоставляется право обменять или вернуть товар при одновременном соблюдении следующих условий:</p>
+              <ul>
+                <li>товар непродовольственный;</li>
+                <li>товар надлежащего качества (если товар ненадлежащего качества – см. <a href="#" class="link">условия возврата и обмена товара ненадлежащего качества</a>;</li>
+                <li>товар не был в употреблении, т.е. упаковка не нарушена, нет следов эксплуатации, комплектация сохранена (в случае потери упаковки, бирок, ярлыков и т.п. возврат или обмен возможен по согласованию с администратором магазина), в том числе если товар был поставлен в разобранном виде, и не были собран покупателем;</li>
+              </ul>
+            </div>
+            <div class="hide-section__btn">
+              <button class="hide-section-btn btn-show" uk-toggle="target: #hidden-1; cls: is-hidden">
+                <span>Показать еще</span>
+                {{mixins.icon('arrow-menu')}}
+              </button>
+              <button class="hide-section-btn btn-hide" uk-toggle="target: #hidden-1; cls: is-hidden">
+                <span>Скрыть</span>
+                {{mixins.icon('arrow-menu')}}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<section class="uk-section section section--border section--border-bottom section--border-bottom-outside">
+  <div class="uk-container section__container">
+    <div class="section__header">
+      <h2>Вы недавно смотрели</h2>
+    </div>
+    <div class="section__body">
+      <div uk-slider class="slider">
+        <div class="uk-position-relative uk-light" tabindex="-1">
+          <ul class="slider__list uk-grid uk-grid-small uk-slider-items">
+            <li class="slider__item uk-width-5-6 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+              <article class="card card--bordered">
+                <div class="card__labels">
+                  <ul class="label-list">
+                    <li class="label-list__item">
+                      <span>До 01.01.2023</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card__icon">
+                  {{mixins.icon('3d')}}
+                </div>
+                <div class="card__body">
+                  <div class="card__title card__title--large">Дизайн-проект освещения бесплатно*</div>
+                  <div class="card__info">
+                    <p class="card__text">*При первой покупке в нашем магазине.</p>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <a href="#" class="btn"><span>Перейти в каталог</span></a>
+                </div>
+              </article>
+            </li>
+            <li class="slider__item uk-width-5-6 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+              <a href="#" class="card">
+                <div class="card__image">
+                  <div class="card__img">
+                    <img src="./decor/2.png" alt="product">
+                  </div>
+                </div>
+                <div class="card__body">
+                  <div class="card__title">Торшер Rondo 450*2300</div>
+                  <div class="card__info">
+                    <div class="price">
+                      <span class="price__unit">26 780 ₽</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="slider__item uk-width-5-6 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+              <article class="card">
+                <div class="card__labels">
+                  <ul class="label-list">
+                    <li class="label-list__item">
+                      <span>Скидка</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card__image">
+                  <div class="card__img">
+                    <img src="./decor/3.png" alt="product">
+                  </div>
+                </div>
+                <div class="card__body">
+                  <div class="card__title">Торшер Rondo 450*2300</div>
+                  <div class="card__info">
+                    <div class="price">
+                      <span class="price__unit price__unit--through">46 780 ₽</span>
+                      <span class="price__unit">26 780 ₽</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="slider__item uk-width-5-6 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+              <article class="card">
+                <div class="card__image">
+                  <div class="card__img">
+                    <img src="./decor/4.png" alt="product">
+                  </div>
+                </div>
+                <div class="card__body">
+                  <div class="card__title">Торшер Rondo 450*2300</div>
+                  <div class="card__info">
+                    <div class="price">
+                      <span class="price__unit">26 780 ₽</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="slider__item uk-width-5-6 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+              <article class="card">
+                <div class="card__image">
+                  <div class="card__img">
+                    <img src="./decor/5.png" alt="product">
+                  </div>
+                </div>
+                <div class="card__body">
+                  <div class="card__title">Торшер Rondo 450*2300</div>
+                  <div class="card__info">
+                    <div class="price">
+                      <span class="price__unit">26 780 ₽</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+        <ul class="slider__nav uk-slider-nav uk-dotnav uk-flex-center uk-margin-medium"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+{% include "template/blog.html" %}
 {% include "template/footer.html" %}

@@ -4,9 +4,12 @@
     overflow: hidden;
   }
 
-  &--bordered-full,
+  &--bordered-full {
+    margin: 0
+  }
+
   &--bordered-inside {
-    margin: 0;
+    margin: 0 calc(-20 / var(--fz) * var(--fz-em));
   }
 
 

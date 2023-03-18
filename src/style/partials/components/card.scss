@@ -214,6 +214,13 @@ a.card__title {
       padding-bottom: calc(78 / var(--fz) * var(--fz-em));
     }
 
+    #{$self}--horizontal-large & {
+      flex-shrink: inherit;
+      max-width: 50%;
+      flex-basis: 50%;
+      padding-bottom: calc(50% - 10px);
+    }
+
     &--vertical {
       @media(min-width: 960px) {
         padding-bottom: 120%;
@@ -272,13 +279,19 @@ a.card__title {
     z-index: 3;
     transition: z-index 0.15s ease;
 
-
     &--auto-top {
       margin-top: auto;
     }
 
     #{$self}--bg & {
       padding: 0 calc(20 / var(--fz) * var(--fz-em));
+    }
+
+    #{$self}--horizontal-large & {
+      flex-basis: 50%;
+      max-width: 50%;
+      display: flex;
+      flex-direction: column;
     }
 
     .card--hover:hover & {
@@ -382,6 +395,22 @@ a.card__title {
 
   &__btn {
     margin-top: calc(20 / var(--fz) * var(--fz-em));
+  }
+
+  &__btn-list {
+    display: flex;
+    flex-direction: column;
+    gap: calc(10 / var(--fz) * var(--fz-em));
+    margin-top: calc(30 / var(--fz) * var(--fz-em));
+  }
+
+  &__link {
+    margin-top: auto;
+
+    & .link {
+      display: inline-block;
+      margin-top: calc(35 / var(--fz) * var(--fz-em));
+    }
   }
 
   &__footer {

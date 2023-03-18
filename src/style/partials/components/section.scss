@@ -60,6 +60,13 @@
     z-index: 3;
   }
 
+  &--order-placed {
+    --gutter: 50;
+
+    padding: calc(var(--gutter) / var(--fz) * var(--fz-em)) 0;
+    margin-bottom: calc(60 / var(--fz) * var(--fz-em));
+  }
+
   &__container {
     position: relative;
     z-index: 2;

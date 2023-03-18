@@ -1,8 +1,14 @@
 .table {
+  width: 100%;
+
   &__header {
     border-bottom: 1px solid var(--line);
     padding-bottom: calc(10 / var(--fz) * var(--fz-em));
     margin-bottom: calc(15 / var(--fz) * var(--fz-em));
+
+    &--no-border {
+      border-bottom: none;
+    }
   }
 
   &__title {
@@ -13,6 +19,10 @@
     font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
     font-weight: 400;
     line-height: 1.2;
+
+    &--uppercase {
+      text-transform: uppercase;
+    }
   }
 
   &__row {
@@ -38,8 +48,15 @@
     &:nth-child(even) {
       background-color: var(--bg-2);
 
-      .table--simple & {
+      .table--simple &,
+      .table--inversion & {
         background-color: transparent;
+      }
+    }
+
+    &:nth-child(odd) {
+      .table--inversion & {
+        background-color: var(--bg-2);
       }
     }
   }

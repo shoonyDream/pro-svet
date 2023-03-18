@@ -7,6 +7,12 @@
     height: 100%;
   }
 
+  &__item {
+    &--center {
+      text-align: center;
+    }
+  }
+
   &__item+&__item {
     margin-top: calc(20 / var(--fz) * var(--fz-em));
   }
@@ -15,7 +21,11 @@
 
     .form--small &,
     .form--contacts & {
-      margin-bottom: calc(30 / var(--fz) * var(--fz-em));
+      margin-bottom: calc(20 / var(--fz) * var(--fz-em));
+
+      @media (min-width: 960px) {
+        margin-bottom: calc(30 / var(--fz) * var(--fz-em));
+      }
     }
   }
 
@@ -45,6 +55,14 @@
 
   &__date {
     position: relative;
+  }
+
+  &__recaptcha {
+    margin-bottom: calc(20 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 960px) {
+      margin-bottom: calc(30 / var(--fz) * var(--fz-em));
+    }
   }
 }
 
@@ -316,6 +334,9 @@ input::-webkit-inner-spin-button {
   }
 
   &__text {
+    --fz: 14;
+
+    font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
     line-height: 1;
     color: var(--text-color);
     margin-left: calc(12 / var(--fz) * var(--fz-em));
@@ -330,6 +351,10 @@ input::-webkit-inner-spin-button {
       #{$self}--confirm & {
         color: var(--text-color);
       }
+    }
+
+    &--small {
+      --fz: 12;
     }
 
     #{$self}__mark:hover+&,

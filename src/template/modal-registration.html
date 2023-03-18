@@ -1,0 +1,99 @@
+<div id="modal-registration" uk-modal>
+  <div class="modal uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+    <div class="modal__header">
+      <h2 class="modal__title">Регистрация</h2>
+      <button class="modal__close uk-modal-close" type="button"></button>
+    </div>
+    <div class="modal__body">
+      <form action="" class="form form--small">
+        <div class="form__body">
+          <div class="form__item">
+            <label class="form__label">
+              <span>Имя и Фамилия</span>
+              <div class="input input--success">
+                <input type="text" class="input__field" placeholder="Иван Иванов">
+              </div>
+            </label>
+          </div>
+          <div class="form__item">
+            <label class="form__label">
+              <span>E-mail</span>
+              <div class="input">
+                <input type="email" class="input__field" placeholder="E-mail">
+              </div>
+            </label>
+          </div>
+          <div class="form__item">
+            <label class="form__label">
+              <span>Пароль</span>
+              <div class="input">
+                <input type="text" class="input__field" placeholder="Пароль">
+              </div>
+            </label>
+          </div>
+          <div class="form__item">
+            <label class="form__label">
+              <span>Повторите пароль</span>
+              <div class="input">
+                <input type="text" class="input__field" placeholder="Пароль">
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="form__footer">
+          <div class="form__item">
+            <div class="form__recaptcha">
+              <p>Recaptcha</p>
+            </div>
+            <div uk-grid class="uk-child-width-1-1@m">
+              <div class="form__btn">
+                <button class="btn btn--primary uk-width-1-1" role="button">
+                  <span>Зарегистрироваться</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="form__item form__item--center">
+            <a href="#" class="link">Войти с паролем</a>
+          </div>
+          <div class="form__item form__item--center">
+            <div class="checkbox checkbox--confirm">
+              <div class="checkbox__text checkbox__text--small">
+                <span>Нажимая на кнопку "Войти", я соглашаюсь <a class="link link--bordered" href="#">с политикой конфиденциальности</a> </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal__footer">
+      <div class="modal__social">
+        <span>Войти через</span>
+        <div class="social social--modal">
+          <div class="social__list">
+            <div class="social__item">
+              <a href="#" class="link social__link social__link--bg social__link--bg-light social__link--is-small">
+                <svg class="icon">{{mixins.icon('fb-footer')}}</svg>
+              </a>
+            </div>
+            <div class="social__item">
+              <a href="#" class="link social__link social__link--bg social__link--bg-light social__link--is-small">
+                <svg class="icon icon--bg">{{mixins.icon('inst-footer')}}</svg>
+              </a>
+            </div>
+            <div class="social__item">
+              <a href="#" class="link social__link social__link--bg social__link--bg-light social__link--is-small">
+                <svg class="icon icon--bg">{{mixins.icon('ytb-footer')}}</svg>
+              </a>
+            </div>
+            <div class="social__item">
+              <a href="#" class="link social__link social__link--bg social__link--bg-light social__link--is-small">
+                <svg class="icon icon--bg">{{mixins.icon('pnrst-footer')}}</svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
