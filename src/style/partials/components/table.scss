@@ -48,17 +48,16 @@
     &:nth-child(even) {
       background-color: var(--bg-2);
 
-      .table--simple & {
+      .table--simple &,
+      .table--inversion & {
         background-color: transparent;
       }
     }
 
-    &--bg:nth-child(odd) {
-      background-color: var(--bg-2);
-    }
-
-    &--bg:nth-child(even) {
-      background-color: var(--white);
+    &:nth-child(odd) {
+      .table--inversion & {
+        background-color: var(--bg-2);
+      }
     }
   }
 
