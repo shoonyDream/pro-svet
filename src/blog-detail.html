@@ -1,5 +1,118 @@
 {% set page = 'main' %}
 {% import "template/_mixins.html" as mixins %}
 {% include "template/header.html" %}
-<p>blog-detail</p>
+{% include "template/breadcrumbs.html" %}
+<article class="article-blog section uk-section-small section--border section--border-top section--border-bottom section--border-bottom-outside">
+  <div class="section__container uk-container blog-container">
+    <div class="article-blog__header">
+      <div uk-grid class="uk-grid uk-grid-small uk-child-width-1-3@m">
+        <div class="uk-width-2-3@m">
+          <article class="tile tile--main tile--top">
+            <div class="tile__body tile__body--top">
+              <div class="tile__date uk-visible@s">
+                <time class="date date--bg" datetime="2023-10-26">
+                  <span class="date__day">26</span>
+                  <span class="date__month">окт</span>
+                </time>
+              </div>
+              <div class="tile__container">
+                <div class="tile__details">
+                  <div class="details">
+                    <div class="details__time uk-hidden@s">
+                      <time class="date" datetime="2023-10-26">
+                        <span class="date__day">26</span>
+                        <span class="date__month">окт</span>
+                        <span class="date__year">2023</span>
+                      </time>
+                    </div>
+                  </div>
+                </div>
+                <div class="tile__info tile__info--top">
+                  <h1 class="tile__title tile__title--large uk-h2">
+                    Топ-10 основных стилей в интерьере
+                  </h1>
+                </div>
+                <div class="details__body details__body--top">
+                  <span class="details__tag">
+                    <span class="details__text">Гостиная</span>
+                  </span>
+                  <span class="details__tag">
+                    <span class="details__text">Гостиная</span>
+                  </span>
+                  <span class="details__tag">
+                    <span class="details__text">Гостиная</span>
+                  </span>
+                  <span class="details__tag">
+                    <span class="details__text">Гостиная</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="tile__image">
+              <div class="tile__img">
+                <img src="img/common/blog-test.jpg" alt="">
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="uk-widht-1-1 uk-widht-1-3@m">
+          <div class="card card--medium card--custom-gap" style="background-color: #F7F4EF;">
+            <div class="card__header">
+              <div class="card__title">
+                <h3>Подпишитесь на рассылку</h3>
+              </div>
+            </div>
+            <div class="card__body">
+              <div class="card__info">
+                <ul class="list list--ul">
+                  <li>Новые статьи</li>
+                  <li>Спецпредложения</li>
+                  <li>Скидки</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card__footer">
+              <form action="" class="form form--contacts">
+                <div class="form__body">
+                  <div class="form__item">
+                    <label class="form__label">
+                      <span>E-mail</span>
+                      <div class="input input--white">
+                        <input type="email" class="input__field" placeholder="E-mail">
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <div class="form__footer">
+                  <div class="form__item">
+                    <div class="form__btn">
+                      <button class="btn btn--primary uk-width-3-4" role="button">
+                        <span>Отправить заявку</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="form__item">
+                    <div class="checkbox checkbox--confirm">
+                      <div class="checkbox__text checkbox__text--small">
+                        <span>Нажимая на кнопку "Отправить заявку", я соглашаюсь <a class="link link--bordered" href="#">с политикой
+                            конфиденциальности</a> </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="article-blog__body">
+      <div class="blog-lead">
+        <section class="section--blog section uk-section-small section--border section--border-bottom">
+        </section>
+      </div>
+    </div>
+  </div>
+</article>
+{% include "template/blog.html" %}
 {% include "template/footer.html" %}

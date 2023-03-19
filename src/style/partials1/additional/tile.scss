@@ -33,6 +33,14 @@
     }
   }
 
+  &__info {
+    margin-top: calc(10 / var(--fz) * var(--fz-em));
+
+    &--top {
+      margin-top: 0;
+    }
+  }
+
   &__body {
     position: relative;
     display: flex;
@@ -43,6 +51,11 @@
     .tile--main & {
       flex-direction: row;
       gap: calc(20 / var(--fz) * var(--fz-em));
+    }
+
+    &--top {
+      margin-bottom: calc(20 / var(--fz) * var(--fz-em));
+      margin-top: 0;
     }
   }
 
@@ -71,6 +84,12 @@
     @media (min-width: 960px) {
       --fz: 24;
     }
+
+    &--large {
+      --fz: 40;
+
+      color: var(--text-color);
+    }
   }
 
   &__description {
@@ -97,9 +116,6 @@
     }
   }
 
-  &__info {
-    margin-top: calc(10 / var(--fz) * var(--fz-em));
-  }
 
   &__date {
     flex-shrink: 0;

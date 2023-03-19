@@ -37,6 +37,8 @@ a.card__title {
   }
 
   &--medium {
+    padding: calc(20 / var(--fz) * var(--fz-em));
+
     @media (min-width: 1100px) {
       padding: calc(40 / var(--fz) * var(--fz-em));
     }

@@ -1,13 +1,1 @@
-.blog {
-
-
-  &__close {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    gap: calc(10 / var(--fz) * var(--fz-em));
-  }
-
-}
+.blog {}
