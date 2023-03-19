@@ -37,7 +37,11 @@ var path = {
 		tooot: 'src/',
 		html: 'src/*.html',
 		js: 'src/js/**/*.*',
-		style: 'src/style/**/*.*',
+		style: 'src/style/partials/*.*',
+		styleAdditional: 'src/style/partials1/**/*.*',
+		styleForm: 'src/style/partials2/**/*.*',
+		styleLayout: 'src/style/partials3/**/*.*',
+		stylePages: 'src/style/partials4/**/*.*',
 		img: 'src/img/**/*.*',
 		decor: 'src/decor/**/*.*',
 		icns: 'src/img/icns/**/*.*',
@@ -47,7 +51,11 @@ var path = {
 	watch: {
 		html: 'src/**/*.html',
 		js: 'src/js/**/*.js',
-		style: 'src/style/**/*.*',
+		style: 'src/style/partials/*.*',
+		styleAdditional: 'src/style/partials1/**/*.*',
+		styleForm: 'src/style/partials2/**/*.*',
+		styleLayout: 'src/style/partials3/**/*.*',
+		stylePages: 'src/style/partials4/**/*.*',
 		img: 'src/img/**/*.*',
 		decor: 'src/decor/**/*.*',
 		icns: 'src/img/icns/**/*.*',
@@ -63,10 +71,10 @@ var config = {
 	}
 };
 
-gulp.task('html:build', function() {
+gulp.task('html:build', function () {
 	gulp.src(path.src.html)
 		.pipe(plumber({
-			errorHandler: function(err) {
+			errorHandler: function (err) {
 				notifier.notify({
 					title: 'HTML compilation error',
 					message: err.message
@@ -80,10 +88,10 @@ gulp.task('html:build', function() {
 		.pipe(reload({ stream: true }));
 });
 
-gulp.task('js:build', function() {
+gulp.task('js:build', function () {
 	gulp.src(path.src.js)
 		.pipe(plumber({
-			errorHandler: function(err) {
+			errorHandler: function (err) {
 				notifier.notify({
 					title: 'JS compilation error',
 					message: err.message
@@ -98,10 +106,10 @@ gulp.task('js:build', function() {
 		.pipe(reload({ stream: true }));
 });
 
-gulp.task('style:build', function() {
+gulp.task('style:build', function () {
 	gulp.src(path.src.style)
 		.pipe(plumber({
-			errorHandler: function(err) {
+			errorHandler: function (err) {
 				notifier.notify({
 					title: 'SASS compilation error',
 					message: err.message
@@ -117,7 +125,83 @@ gulp.task('style:build', function() {
 		.pipe(reload({ stream: true }));
 });
 
-gulp.task('image:build', function() {
+gulp.task('styleAdditional:build', function () {
+	gulp.src(path.src.styleAdditional)
+		.pipe(plumber({
+			errorHandler: function (err) {
+				notifier.notify({
+					title: 'SASS compilation error',
+					message: err.message
+				});
+			}
+		}))
+		.pipe(sourcemaps.init())
+		.pipe(sass())
+		.pipe(prefixer(['last 4 versions']))
+		.pipe(cleanmin())
+		.pipe(sourcemaps.write('.'))
+		.pipe(gulp.dest(path.build.css))
+		.pipe(reload({ stream: true }));
+});
+
+gulp.task('styleForm:build', function () {
+	gulp.src(path.src.styleForm)
+		.pipe(plumber({
+			errorHandler: function (err) {
+				notifier.notify({
+					title: 'SASS compilation error',
+					message: err.message
+				});
+			}
+		}))
+		.pipe(sourcemaps.init())
+		.pipe(sass())
+		.pipe(prefixer(['last 4 versions']))
+		.pipe(cleanmin())
+		.pipe(sourcemaps.write('.'))
+		.pipe(gulp.dest(path.build.css))
+		.pipe(reload({ stream: true }));
+});
+
+gulp.task('styleLayout:build', function () {
+	gulp.src(path.src.styleLayout)
+		.pipe(plumber({
+			errorHandler: function (err) {
+				notifier.notify({
+					title: 'SASS compilation error',
+					message: err.message
+				});
+			}
+		}))
+		.pipe(sourcemaps.init())
+		.pipe(sass())
+		.pipe(prefixer(['last 4 versions']))
+		.pipe(cleanmin())
+		.pipe(sourcemaps.write('.'))
+		.pipe(gulp.dest(path.build.css))
+		.pipe(reload({ stream: true }));
+});
+
+gulp.task('stylePages:build', function () {
+	gulp.src(path.src.stylePages)
+		.pipe(plumber({
+			errorHandler: function (err) {
+				notifier.notify({
+					title: 'SASS compilation error',
+					message: err.message
+				});
+			}
+		}))
+		.pipe(sourcemaps.init())
+		.pipe(sass())
+		.pipe(prefixer(['last 4 versions']))
+		.pipe(cleanmin())
+		.pipe(sourcemaps.write('.'))
+		.pipe(gulp.dest(path.build.css))
+		.pipe(reload({ stream: true }));
+});
+
+gulp.task('image:build', function () {
 	gulp.src(path.src.img)
 		// .pipe(imagemin({
 		// 	progressive: true,
@@ -130,7 +214,7 @@ gulp.task('image:build', function() {
 		.pipe(reload({ stream: true }));
 });
 
-gulp.task('decor:build', function() {
+gulp.task('decor:build', function () {
 	gulp.src(path.src.decor)
 		// .pipe(imagemin({
 		// 	progressive: true,
@@ -143,7 +227,7 @@ gulp.task('decor:build', function() {
 		.pipe(reload({ stream: true }));
 });
 
-gulp.task('icns:build', function() {
+gulp.task('icns:build', function () {
 	return gulp.src(path.src.icns)
 		.pipe(replace('&gt;', '>'))
 		// build svg sprite
@@ -163,12 +247,12 @@ gulp.task('icns:build', function() {
 		.pipe(gulp.dest(path.build.icns));
 });
 
-gulp.task('fonts:build', function() {
+gulp.task('fonts:build', function () {
 	gulp.src(path.src.fonts)
 		.pipe(gulp.dest(path.build.fonts))
 });
 
-gulp.task('toRoot:build', function() {
+gulp.task('toRoot:build', function () {
 	gulp.src(path.src.toRoot)
 		.pipe(gulp.dest(path.build.toRoot))
 });
@@ -178,6 +262,10 @@ gulp.task('build', [
 	'html:build',
 	'js:build',
 	'style:build',
+	'styleAdditional:build',
+	'styleForm:build',
+	'styleLayout:build',
+	'stylePages:build',
 	'fonts:build',
 	'toRoot:build',
 	'image:build',
@@ -185,38 +273,50 @@ gulp.task('build', [
 	'icns:build'
 ]);
 
-gulp.task('watch', function() {
-	watch([path.watch.html], function(event, cb) {
+gulp.task('watch', function () {
+	watch([path.watch.html], function (event, cb) {
 		gulp.start('html:build');
 	});
-	watch([path.watch.style], function(event, cb) {
+	watch([path.watch.style], function (event, cb) {
 		gulp.start('style:build');
 	});
-	watch([path.watch.js], function(event, cb) {
+	watch([path.watch.styleAdditional], function (event, cb) {
+		gulp.start('styleAdditional:build');
+	});
+	watch([path.watch.styleForm], function (event, cb) {
+		gulp.start('styleForm:build');
+	});
+	watch([path.watch.styleLayout], function (event, cb) {
+		gulp.start('styleLayout:build');
+	});
+	watch([path.watch.stylePages], function (event, cb) {
+		gulp.start('stylePages:build');
+	});
+	watch([path.watch.js], function (event, cb) {
 		gulp.start('js:build');
 	});
-	watch([path.watch.img], function(event, cb) {
+	watch([path.watch.img], function (event, cb) {
 		gulp.start('image:build');
 	});
-	watch([path.watch.decor], function(event, cb) {
+	watch([path.watch.decor], function (event, cb) {
 		gulp.start('decor:build');
 	});
-	watch([path.watch.fonts], function(event, cb) {
+	watch([path.watch.fonts], function (event, cb) {
 		gulp.start('fonts:build');
 	});
-	watch([path.watch.toRoot], function(event, cb) {
+	watch([path.watch.toRoot], function (event, cb) {
 		gulp.start('toRoot:build');
 	});
-	watch([path.watch.icns], function(event, cb) {
+	watch([path.watch.icns], function (event, cb) {
 		gulp.start('icns:build');
 	});
 });
 
-gulp.task('webserver', function() {
+gulp.task('webserver', function () {
 	browserSync(config);
 });
 
-gulp.task('clean', function(cb) {
+gulp.task('clean', function (cb) {
 	return del.sync(path.clean)
 });
 
