@@ -1,0 +1,46 @@
+.content-typography {
+  h2 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+}
+
+.content-typography ul {
+  font-weight: 600;
+  margin: 1.25em;
+}
+
+.content-typography ul li {
+  position: relative;
+  padding-left: .625em;
+}
+
+.content-typography ul li+li {
+  margin-top: 0.5em;
+}
+
+.content-typography ul li:before {
+  position: absolute;
+  top: .45em;
+  left: 0;
+  border-radius: 50%;
+  background: #252525;
+  width: .3125em;
+  height: .3125em;
+  content: ""
+}
+
+.content-typography ol {
+  list-style-type: decimal;
+  padding-left: 1em;
+  margin: 1.25em;
+}
+
+.content-typography ol li {
+  padding-left: .625em
+}
+
+.content-typography ol li+li {
+  margin-top: 0.5em;
+}
