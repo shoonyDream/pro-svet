@@ -36,7 +36,7 @@
   &__info {
     margin-top: calc(10 / var(--fz) * var(--fz-em));
 
-    &--top {
+    .tile--top & {
       margin-top: 0;
     }
   }
@@ -53,7 +53,7 @@
       gap: calc(20 / var(--fz) * var(--fz-em));
     }
 
-    &--top {
+    .tile--top & {
       margin-bottom: calc(20 / var(--fz) * var(--fz-em));
       margin-top: 0;
     }

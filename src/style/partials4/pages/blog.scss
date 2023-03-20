@@ -1,1 +1,12 @@
-.blog {}
+.blog {
+
+  .section--& {
+    counter-reset: list;
+
+  }
+
+  &-lead__title {
+    counter-increment: list;
+    content: counter(list, decimal);
+  }
+}
