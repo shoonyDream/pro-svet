@@ -1,20 +1,120 @@
 <div class="services-list">
-  <div class="services-list__item">
-    <a href="#" class="services-list__icon link link--icon-only">
+  <div class="services-list__item search-drop-mobile">
+    <a href="#" class="services-list__icon link link--icon-only"
+      uk-toggle="target: .search-drop-mobile; animation: uk-animation-fade">
       {{mixins.icon('search')}}
       <span class="link">Поиск</span>
     </a>
   </div>
-  <div class="services-list__item">
+  <div class="services-list__item search-drop-mobile">
     <a href="#" class="services-list__icon link link--icon-only">
       {{mixins.icon('favorite')}}
       <span class="link">Избранное</span>
     </a>
   </div>
-  <div class="services-list__item">
+  <div class="services-list__item search-drop-mobile">
     <a href="#" class="services-list__icon link link--icon-only">
       {{mixins.icon('user')}}
       <span class="link">Личный кабинет</span>
     </a>
+  </div>
+  <div class="services-list__item search-drop-mobile" hidden>
+    <div class="input input--search">
+      <a href="#" class="link link--icon-only" uk-toggle="target: .search-drop-mobile; animation: uk-animation-fade">
+        {{mixins.icon('cross')}}
+      </a>
+      <input type="text" class="input__field" placeholder="Поиск">
+    </div>
+    <section class="section">
+      <div class="section__container">
+        <div class="section__body">
+          <div uk-grid class="uk-child-width-1-4@l uk-child-width-1-3@m">
+            <div>
+              <a href="#" class="card card--horizontal">
+                <div class="card__image">
+                  <div class="card__img">
+                    <img src="./decor/7.png" alt="product">
+                  </div>
+                </div>
+                <div class="card__body">
+                  <div class="card__title">Светильник подвесной металлический в форме купола Campana средний
+                    черный
+                  </div>
+                  <div class="card__info">
+                    <div class="price">
+                      <span class="price__unit price__unit--through">48 980 ₽</span>
+                      <span class="price__unit">26 780 ₽</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="#" class="card card--horizontal">
+                <div class="card__image">
+                  <div class="card__img">
+                    <img src="./decor/7.png" alt="product">
+                  </div>
+                </div>
+                <div class="card__body">
+                  <div class="card__title">Светильник подвесной металлический в форме купола Campana средний
+                    черный
+                  </div>
+                  <div class="card__info">
+                    <div class="price">
+                      <span class="price__unit price__unit--through">48 980 ₽</span>
+                      <span class="price__unit">26 780 ₽</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="#" class="card card--horizontal">
+                <div class="card__image">
+                  <div class="card__img">
+                    <img src="./decor/7.png" alt="product">
+                  </div>
+                </div>
+                <div class="card__body">
+                  <div class="card__title">Светильник подвесной металлический в форме купола Campana средний
+                    черный
+                  </div>
+                  <div class="card__info">
+                    <div class="price">
+                      <span class="price__unit price__unit--through">48 980 ₽</span>
+                      <span class="price__unit">26 780 ₽</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="#" class="card card--horizontal">
+                <div class="card__image">
+                  <div class="card__img">
+                    <img src="./decor/7.png" alt="product">
+                  </div>
+                </div>
+                <div class="card__body">
+                  <div class="card__title">Светильник подвесной металлический в форме купола Campana средний
+                    черный
+                  </div>
+                  <div class="card__info">
+                    <div class="price">
+                      <span class="price__unit price__unit--through">48 980 ₽</span>
+                      <span class="price__unit">26 780 ₽</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="section__footer">
+          <a href="#" class="btn btn--secondary"><span>Смотреть все</span></a>
+        </div>
+      </div>
+    </section>
   </div>
 </div>

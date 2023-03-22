@@ -153,7 +153,18 @@ input::-webkit-inner-spin-button {
 
       font-size: calc(var(--fz-icon) / var(--fz) * var(--fz-em));
       flex-shrink: 0;
-      margin-right: calc(20 / var(--fz) * var(--fz-em));
+      margin-right: calc(20 / var(--fz-icon) * var(--fz-em));
+    }
+
+    .mobile-menu & {
+      padding-top: 0;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: calc(20 / var(--fz) * var(--fz-em));
+      margin-bottom: calc(20 / var(--fz) * var(--fz-em));
+
+      .icon {
+        --fz-icon: 32;
+      }
     }
   }
 

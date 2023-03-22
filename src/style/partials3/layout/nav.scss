@@ -317,11 +317,11 @@ a.main-nav__link {
   font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
 
   &__services {
-    padding-bottom: calc(20 / var(--fz) * var(--fz-em));
-    border-bottom: 1px solid var(--line);
+    margin-bottom: calc(20 / var(--fz) * var(--fz-em));
   }
 
   &__nav {
+    border-top: 1px solid var(--line);
     padding: calc(20 / var(--fz) * var(--fz-em)) 0;
   }
 
