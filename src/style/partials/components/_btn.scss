@@ -30,7 +30,9 @@ button {
 }
 
 .btn,
-.btn-link {
+.btn-link,
+.uk-offcanvas-bar .btn,
+.uk-offcanvas-bar .btn-link {
   font-size: calc(var(--fz) / var(--fz-base) * var(--fz-em));
   color: var(--button-text-color);
   outline: none;

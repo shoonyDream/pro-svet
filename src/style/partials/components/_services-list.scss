@@ -20,6 +20,10 @@
       position: absolute;
       background-color: var(--primary);
     }
+
+    .top-nav & {
+      padding: calc(20 / var(--fz) * var(--fz-em)) 0 calc(20 / var(--fz) * var(--fz-em));
+    }
   }
 
   &__icon {
