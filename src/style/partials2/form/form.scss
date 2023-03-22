@@ -142,6 +142,21 @@ input::-webkit-inner-spin-button {
     }
   }
 
+  &--search {
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+
+    .icon {
+      --fz-icon: 24;
+
+      font-size: calc(var(--fz-icon) / var(--fz) * var(--fz-em));
+      flex-shrink: 0;
+      margin-right: calc(20 / var(--fz) * var(--fz-em));
+    }
+  }
+
   &__field {
     --fz: 14;
 
@@ -179,6 +194,10 @@ input::-webkit-inner-spin-button {
     .input--textarea & {
       width: 100%;
       min-height: calc(80 / var(--fz) * var(--fz-em));
+    }
+
+    .input--search & {
+      margin-top: 4px;
     }
   }
 
