@@ -38,14 +38,43 @@
     line-height: 1.5;
   }
 
-  figure {
+  .figure {
     margin-top: calc(40 / var(--fz) * var(--fz-em));
-  }
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 
-  figcaption {
-    color: var(--primary);
-    line-height: 1.5;
-    padding-left: calc(20 / var(--fz) * var(--fz-em));
+    &__image {
+      position: relative;
+      overflow: hidden;
+      padding-bottom: 56.8%;
+      height: 0;
+    }
+
+    &__img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      & img {
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__caption {
+      color: var(--primary);
+      line-height: 1.5;
+      padding-right: calc(20 / var(--fz) * var(--fz-em));
+    }
   }
 
   ul {
@@ -97,43 +126,3 @@
     }
   }
 }
-
-
-// .content-typography ul {
-//   font-weight: 600;
-//   margin: 1.25em;
-// }
-
-// .content-typography ul li {
-//   position: relative;
-//   padding-left: .625em;
-// }
-
-// .content-typography ul li+li {
-//   margin-top: 0.5em;
-// }
-
-// .content-typography ul li:before {
-//   position: absolute;
-//   top: .45em;
-//   left: 0;
-//   border-radius: 50%;
-//   background: #252525;
-//   width: .3125em;
-//   height: .3125em;
-//   content: ""
-// }
-
-// .content-typography ol {
-//   list-style-type: decimal;
-//   padding-left: 1em;
-//   margin: 1.25em;
-// }
-
-// .content-typography ol li {
-//   padding-left: .625em
-// }
-
-// .content-typography ol li+li {
-//   margin-top: 0.5em;
-// }

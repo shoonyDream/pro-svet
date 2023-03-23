@@ -2,17 +2,17 @@
 {% import "template/_mixins.html" as mixins %}
 {% include "template/header.html" %}
 {% include "template/breadcrumbs.html" %}
-<section class="section section--border section--border-top section--border-bottom">
+<section class="section uk-section-small section--border section--border-top section--border-bottom">
   <div class="section__container uk-container">
     <p>Filters</p>
     <p>Sorting</p>
   </div>
 </section>
-<section class="section uk-section-small section--border">
-  <div class="section__container uk-container blog-container">
+<section class="section section--blog uk-section-small section--border">
+  <div class="section__container uk-container">
     <div class="section__header">
-      <div uk-grid class="uk-grid uk-grid-small uk-child-width-1-3@m">
-        <div class="uk-width-2-3@m">
+      <div uk-grid class="uk-grid uk-grid-small">
+        <div class="uk-width-2-3@l">
           <article class="tile tile--main">
             <div class="tile__image">
               <div class="tile__img">
@@ -67,8 +67,8 @@
             </div>
           </article>
         </div>
-        <div class="uk-widht-1-1 uk-widht-1-3@m">
-          <div class="card card--medium card--custom-gap" style="background-color: #F7F4EF;">
+        <div class="uk-width-1-3@l">
+          <div class="card card--medium" style="background-color: #F7F4EF;">
             <div class="card__header">
               <div class="card__title">
                 <h3>Подпишитесь на рассылку</h3>
@@ -98,7 +98,7 @@
                 <div class="form__footer">
                   <div class="form__item">
                     <div class="form__btn">
-                      <button class="btn btn--primary uk-width-3-4" role="button">
+                      <button class="btn btn--primary" role="button">
                         <span>Отправить заявку</span>
                       </button>
                     </div>
@@ -106,7 +106,8 @@
                   <div class="form__item">
                     <div class="checkbox checkbox--confirm">
                       <div class="checkbox__text checkbox__text--small">
-                        <span>Нажимая на кнопку "Отправить заявку", я соглашаюсь <a class="link link--bordered" href="#">с политикой
+                        <span>Нажимая на кнопку "Отправить заявку", я соглашаюсь <a class="link link--bordered"
+                            href="#">с политикой
                             конфиденциальности</a> </span>
                       </div>
                     </div>
@@ -396,7 +397,8 @@
                 </div>
                 <div class="tile__info">
                   <a href="#" class="tile__title">Топ-10 основных стилей в интерьере</a>
-                  <div class="tile__description"><span>Каждый владелец дома старается сделать жилое пространство не только функциональным, но и...</span></div>
+                  <div class="tile__description"><span>Каждый владелец дома старается сделать жилое пространство не
+                      только функциональным, но и...</span></div>
                 </div>
                 <div class="tile__link">
                   <a href="#" class="link link--bordered">Читать дальше</a>
@@ -466,7 +468,8 @@
     </div>
   </div>
 </section>
-<section class="section uk-section-small section--border section--border-top section--border-bottom section--border-bottom-outside section--margin-bottom">
+<section
+  class="section uk-section-small section--border section--border-top section--border-bottom section--border-bottom-outside section--margin-bottom">
   <div class="section__container uk-container">
     <div class="section__more">
       <div class="pagination">

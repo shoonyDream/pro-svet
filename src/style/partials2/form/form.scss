@@ -43,6 +43,8 @@
   }
 
   &__label {
+    display: block;
+
     >span {
       --fz: 14;
 
@@ -90,9 +92,10 @@ input::-webkit-inner-spin-button {
   border: 1px solid var(--primary);
   padding: calc(10 / var(--fz) * var(--fz-em)) calc(15 / var(--fz) * var(--fz-em));
   line-height: 1.5;
+  background-color: var(--z-white);
 
-  &--white {
-    background-color: var(--z-white);
+  .footer & {
+    background-color: transparent;
   }
 
   &.error,

@@ -1,10 +1,10 @@
 .section-grid {
-  @media (min-width: 1100px) {
+  @media (min-width: 960px) {
     display: flex;
   }
 
   &--reverse {
-    @media (min-width: 1100px) {
+    @media (min-width: 960px) {
       flex-direction: row-reverse;
     }
   }
@@ -21,7 +21,7 @@
       width: 100vw;
       height: 1px;
 
-      @media (min-width: 1100px) {
+      @media (min-width: 960px) {
         display: none;
       }
     }
@@ -34,7 +34,7 @@
       right: -50%;
     }
 
-    @media (min-width: 1100px) {
+    @media (min-width: 960px) {
       overflow: hidden;
       flex-shrink: 0;
       max-width: calc((295 + 20) / var(--fz) * var(--fz-em));
@@ -52,22 +52,24 @@
     }
 
     &--third {
-      @media (min-width: 1100px) {
-        max-width: calc(33% + 10px);
-        flex-basis: calc(33% + 10px);
+      @media (min-width: 960px) {
+        max-width: calc(33% + (10 / var(--fz) * var(--fz-em)));
+        flex-basis: calc(33% + (10 / var(--fz) * var(--fz-em)));
       }
     }
   }
 
   &__content {
-    @media (min-width: 1100px) {
+    @media (min-width: 960px) {
       flex-grow: 1;
     }
 
-    &>.section:not(.section--filters) {
+    &>.section:not(.section--filters):not(.section--blog-detail) {
       padding: calc(20 / var(--fz) * var(--fz-em)) 0;
+    }
 
-      @media (min-width: 1100px) {
+    &>.section:not(.section--filters) {
+      @media (min-width: 960px) {
         margin-left: calc(20 / var(--fz) * var(--fz-em));
 
         .section-grid--reverse & {

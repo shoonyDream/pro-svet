@@ -3,7 +3,7 @@
     margin-top: calc(20 / var(--fz) * var(--fz-em));
   }
 
-  .section--blog {
+  .section--blog-detail {
     counter-reset: list;
   }
 
@@ -83,4 +83,8 @@
     color: var(--link-color);
     margin-top: calc(10 / var(--fz) * var(--fz-em));
   }
+}
+
+.blog-list {
+  margin-bottom: calc(20 / var(--fz) * var(--fz-em));
 }
