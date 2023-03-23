@@ -39,7 +39,8 @@
     }
   }
 
-  &--blog-detail {
+  &--blog-detail,
+  &--delivery-rules {
     padding: 0;
 
     .section:last-child {

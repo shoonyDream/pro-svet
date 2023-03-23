@@ -46,45 +46,6 @@
   }
 }
 
-.content-nav {
-  &__list {
-    counter-reset: list;
-    line-height: 1.5;
-  }
-
-  &__item {
-    color: var(--link-color);
-
-    &::before {
-      counter-increment: list;
-      content: counter(list, decimal)'.';
-      margin-right: calc(5 / var(--fz) * var(--fz-em));
-    }
-  }
-
-  &__item+&__item {
-    margin-top: calc(10 / var(--fz) * var(--fz-em));
-  }
-
-  &__link {
-    transition: 0.2s;
-    border-bottom: 1px solid transparent;
-
-    &:hover,
-    &:focus {
-      color: var(--link-color-hover);
-      text-decoration: none;
-      border-color: currentColor;
-    }
-  }
-
-  &__text {
-    line-height: 1.5;
-    color: var(--link-color);
-    margin-top: calc(10 / var(--fz) * var(--fz-em));
-  }
-}
-
 .blog-list {
   margin-bottom: calc(20 / var(--fz) * var(--fz-em));
 }

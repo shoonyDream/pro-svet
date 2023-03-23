@@ -57,6 +57,10 @@
         flex-basis: calc(33% + (10 / var(--fz) * var(--fz-em)));
       }
     }
+
+    .delivery-rules & {
+      margin-left: 0;
+    }
   }
 
   &__content {
@@ -64,7 +68,7 @@
       flex-grow: 1;
     }
 
-    &>.section:not(.section--filters):not(.section--blog-detail) {
+    &>.section:not(.section--filters):not(.section--blog-detail):not(.section--delivery-rules) {
       padding: calc(20 / var(--fz) * var(--fz-em)) 0;
     }
 
