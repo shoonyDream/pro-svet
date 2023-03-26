@@ -1,6 +1,12 @@
 .section-grid {
-  @media (min-width: 1100px) {
+  @media (min-width: 960px) {
     display: flex;
+  }
+
+  &--reverse {
+    @media (min-width: 960px) {
+      flex-direction: row-reverse;
+    }
   }
 
   &__aside {
@@ -15,7 +21,7 @@
       width: 100vw;
       height: 1px;
 
-      @media (min-width: 1100px) {
+      @media (min-width: 960px) {
         display: none;
       }
     }
@@ -28,7 +34,7 @@
       right: -50%;
     }
 
-    @media (min-width: 1100px) {
+    @media (min-width: 960px) {
       overflow: hidden;
       flex-shrink: 0;
       max-width: calc((295 + 20) / var(--fz) * var(--fz-em));
@@ -36,23 +42,52 @@
       border-right: 1px solid var(--border-color);
       margin: 0;
       margin-left: calc(-20 / var(--fz) * var(--fz-em));
+
+      .section-grid--reverse & {
+        border-right: none;
+        border-left: 1px solid var(--border-color);
+        margin-left: 0;
+        padding-left: calc(20 / var(--fz) * var(--fz-em));
+      }
+    }
+
+    &--third {
+      @media (min-width: 960px) {
+        max-width: calc(33% + (10 / var(--fz) * var(--fz-em)));
+        flex-basis: calc(33% + (10 / var(--fz) * var(--fz-em)));
+      }
+    }
+
+    .delivery-rules & {
+      margin-left: 0;
     }
   }
 
   &__content {
-    @media (min-width: 1100px) {
+    @media (min-width: 960px) {
       flex-grow: 1;
     }
 
-    &>.section:not(.section--filters) {
+    &>.section:not(.section--filters):not(.section--blog-detail):not(.section--delivery-rules) {
       padding: calc(20 / var(--fz) * var(--fz-em)) 0;
+    }
 
-      @media (min-width: 1100px) {
+    &>.section:not(.section--filters) {
+      @media (min-width: 960px) {
         margin-left: calc(20 / var(--fz) * var(--fz-em));
+
+        .section-grid--reverse & {
+          margin-left: 0;
+          margin-right: calc(20 / var(--fz) * var(--fz-em));
+        }
       }
 
       .section__header+.section__body {
         margin-top: calc(20 / var(--fz) * var(--fz-em));
+
+        .blog-article & {
+          margin-top: calc(10 / var(--fz) * var(--fz-em));
+        }
       }
     }
   }

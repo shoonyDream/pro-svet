@@ -38,7 +38,7 @@
       </div>
       <div class="key-indicators__item">
         <div class="key-indicator key-indicator--horizontal key-indicator--align-left">
-          <div class="table">
+          <div class="table table--inversion">
             <div class="table__header table__header--no-border">
               <span class="table__title table__title--uppercase">За МКАД</span>
             </div>
@@ -54,7 +54,7 @@
       </div>
       <div class="key-indicators__item">
         <div class="key-indicator key-indicator--horizontal key-indicator--align-left">
-          <div class="table">
+          <div class="table table--inversion">
             <div class="table__header table__header--no-border">
               <span class="table__title table__title--uppercase">Самовывоз</span>
             </div>
@@ -130,70 +130,107 @@
     </div>
   </div>
 </section>
-<!-- <section class="uk-section section section--border section--border-bottom section--border-bottom-outside">
+<section class="uk-section section section--border section--border-bottom section--border-bottom-outside">
   <div class="uk-container section__container">
-    <div class="section__header">
-      <div class="section__title">
-        <h2>Правила возврата и обмена товара</h2>
-      </div>
-    </div>
     <div class="section__body">
-      <div uk-grid class="uk-grid-small uk-width-1-1@m">
-        <div class="uk-width-1-4@m">
-          <div class="delivery-rules">
-            <ul class="delivery-rules__list">
-              <li class="delivery-rules__item">
-                <a href="#rule1" class="link link--active">Порядок принятия Товара</a>
-              </li>
-              <li class="delivery-rules__item">
-                <a href="#rule2" class="link">Условия обмена и возврата товара надлежащего качества</a>
-              </li>
-              <li class="delivery-rules__item">
-                <a href="#" class="link">Порядок возврата товара</a>
-              </li>
-              <li class="delivery-rules__item">
-                <a href="#" class="link">Гарантии и условия возврата товара ненадлежащего качества</a>
-              </li>
-              <li class="delivery-rules__item">
-                <a href="#" class="link">Порядок принятия Товара</a>
-              </li>
-              <li class="delivery-rules__item">
-                <a href="#" class="link">Возврат денежных средств при оформлении возврата товара</a>
-              </li>
-            </ul>
+      <div class="delivery-rules">
+        <div class="delivery-rules__header">
+          <div class="section__title">
+            <h2>Правила возврата и обмена товара</h2>
           </div>
         </div>
-        <div class="uk-width-1-1 uk-width-3-4@m">
-          <div class="hide-section">
-            <div id="hidden-1" style="--hidden-height: 420" class="hide-section__body is-hidden">
-              <h3 class="delivery-rules__title" id="rule1">Порядок принятия Товара</h3>
-              <p class="delivery-rules__text">При приемке Товара Покупатель обязан проверить Товар по количеству, качеству (общая целостность Товара, наличие трещин, сколов, потертостей, пятен, разводов, а также иных недостатков, для обнаружения которых не требуется применение специального оборудования) и комплектности, на его соответствие образцу/описанию Товара, а также данным, указанным в заказе на продажу.</p>
-              <p class="delivery-rules__text">В случае обнаружения недостатков Товара и/или его несоответствия данным, указанным на Сайте или в Заказе на продажу, Покупатель обязан указать об этом в заявке на оказание услуги по доставке Товара.</p>
-              <p class="delivery-rules__text">В противном случае, Товар считается принятым без претензий по количеству, качеству и комплектности, что не лишает покупателя возможности реализации права предъявления требований в соответствии с действующим законодательством, в том числе Законом «О защите прав потребителей» от 07.02.1992 № 2300-1.</p>
-              <h3 class="delivery-rules__title" id="rule2">Условия обмена и возврата товара надлежащего качества</h3>
-              <p class="delivery-rules__text">Статьей 502 Гражданского кодекса РФ и статьей 25 закона «О защите прав потребителей» потребителю предоставляется право обменять или вернуть товар при одновременном соблюдении следующих условий:</p>
-              <ul>
-                <li>товар непродовольственный;</li>
-                <li>товар надлежащего качества (если товар ненадлежащего качества – см. <a href="#" class="link">условия возврата и обмена товара ненадлежащего качества</a>;</li>
-                <li>товар не был в употреблении, т.е. упаковка не нарушена, нет следов эксплуатации, комплектация сохранена (в случае потери упаковки, бирок, ярлыков и т.п. возврат или обмен возможен по согласованию с администратором магазина), в том числе если товар был поставлен в разобранном виде, и не были собран покупателем;</li>
-              </ul>
-            </div>
-            <div class="hide-section__btn">
-              <button class="hide-section-btn btn-show" uk-toggle="target: #hidden-1; cls: is-hidden">
-                <span>Показать еще</span>
-                {{mixins.icon('arrow-menu')}}
-              </button>
-              <button class="hide-section-btn btn-hide" uk-toggle="target: #hidden-1; cls: is-hidden">
-                <span>Скрыть</span>
-                {{mixins.icon('arrow-menu')}}
-              </button>
+        <div class="delivery-rules__body">
+          <div class="section-grid">
+            <aside class="section-grid__aside">
+              <div class="section-grid-aside scrollbar" uk-sticky="offset: 157; end: true">
+                <div class="section-grid-aside__content">
+                  <div class="content-nav">
+                    <ol class="content-nav__list">
+                      <li class="content-nav__item">
+                        <a href="#rules1" uk-scroll="offset: 160" class="content-nav__link"><span>Порядок принятия Товара</span></a>
+                      </li>
+                      <li class="content-nav__item">
+                        <a href="#rules2" uk-scroll="offset: 160" class="content-nav__link"><span>Условия обмена и возврата товара надлежащего качества</span></a>
+                      </li>
+                      <li class="content-nav__item">
+                        <a href="#rules3" uk-scroll="offset: 160" class="content-nav__link"><span>Порядок возврата товара</span></a>
+                      </li>
+                      <li class="content-nav__item">
+                        <a href="#rules4" uk-scroll="offset: 160" class="content-nav__link"><span>Гарантии и условия возврата товара ненадлежащего качества</span></a>
+                      </li>
+                      <li class="content-nav__item">
+                        <a href="#rules5" uk-scroll="offset: 160" class="content-nav__link"><span>Перечень товаров, которые
+                            не подлежат возврату или обмену</span></a>
+                      </li>
+                      <li class="content-nav__item">
+                        <a href="#rules6" uk-scroll="offset: 160" class="content-nav__link"><span>Возврат денежных средств
+                            при оформлении возврата
+                            товара</span></a>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </aside>
+            <div class="section-grid__content">
+              <section class="section section--delivery-rules">
+                <div class="section__container">
+                  <div class="hide-section">
+                    <div id="hidden-1" style="--hidden-height: 620" class="hide-section__body is-hidden">
+                      <div class="section__body">
+                        <section class="section uk-section-small section--border section--border-bottom  section--border-bottom-outside">
+                          <div class="uk-container section__container">
+                            <div class="section__header">
+                              <div class="section__title">
+                                <h2 class="delivery-rules__title" id="rules1" uk-scroll="offset: 160">Порядок принятия Товара</h2>
+                              </div>
+                            </div>
+                            <div class="section__body">
+                              <p class="delivery-rules__text">При приемке Товара Покупатель обязан проверить Товар по количеству, качеству (общая целостность Товара, наличие трещин, сколов, потертостей, пятен, разводов, а также иных недостатков, для обнаружения которых не требуется применение специального оборудования) и комплектности, на его соответствие образцу/описанию Товара, а также данным, указанным в заказе на продажу.</p>
+                              <p class="delivery-rules__text">В случае обнаружения недостатков Товара и/или его несоответствия данным, указанным на Сайте или в Заказе на продажу, Покупатель обязан указать об этом в заявке на оказание услуги по доставке Товара.</p>
+                              <p class="delivery-rules__text">В противном случае, Товар считается принятым без претензий по количеству, качеству и комплектности, что не лишает покупателя возможности реализации права предъявления требований в соответствии с действующим законодательством, в том числе Законом «О защите прав потребителей» от 07.02.1992 № 2300-1.</p>
+                            </div>
+                          </div>
+                        </section>
+                        <section class="section uk-section-small">
+                          <div class="uk-container section__container">
+                            <div class="section__header">
+                              <div class="section__title">
+                                <h2 class="delivery-rules__title" id="rules2" uk-scroll="offset: 160">Условия обмена и возврата товара надлежащего качества</h2>
+                              </div>
+                            </div>
+                            <div class="section__body">
+                              <p class="delivery-rules__text">Статьей 502 Гражданского кодекса РФ и статьей 25 закона «О защите прав потребителей» потребителю предоставляется право обменять или вернуть товар при одновременном соблюдении следующих условий:</p>
+                              <ul class="delivery-rules__list">
+                                <li class="delivery-rules__item">товар непродовольственный;</li>
+                                <li class="delivery-rules__item">товар надлежащего качества (если товар ненадлежащего качества – см. <a href="#" class="link">условия возврата и обмена товара ненадлежащего качества</a>;</li>
+                                <li class="delivery-rules__item">товар не был в употреблении, т.е. упаковка не нарушена, нет следов эксплуатации, комплектация сохранена (в случае потери упаковки, бирок, ярлыков и т.п. возврат или обмен возможен по согласованию с администратором магазина), в том числе если товар был поставлен в разобранном виде, и не были собран покупателем; Статьей 502 Гражданского кодекса РФ и статьей 25 закона «О защите прав потребителей» потребителю предоставляется право обменять или вернуть товар при одновременном; товар не был в употреблении, т.е. упаковка не нарушена, нет следов эксплуатации, комплектация сохранена (в случае потери упаковки, бирок, ярлыков и т.п. возврат или обмен возможен по согласованию с администратором магазина), в том числе если товар был поставлен в разобранном виде, и не были собран покупателем; Статьей 502 Гражданского кодекса РФ и статьей 25 закона «О защите прав потребителей» потребителю предоставляется право обменять или вернуть товар при одновременном;</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </section>
+                      </div>
+                    </div>
+                    <div class="hide-section__btn">
+                      <button class="hide-section-btn btn-show" uk-toggle="target: #hidden-1; cls: is-hidden">
+                        <span>Показать еще</span>
+                        {{mixins.icon('arrow-menu')}}
+                      </button>
+                      <button class="hide-section-btn btn-hide" uk-toggle="target: #hidden-1; cls: is-hidden">
+                        <span>Скрыть</span>
+                        {{mixins.icon('arrow-menu')}}
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section> -->
+</section>
 <section class="uk-section section section--border section--border-bottom section--border-bottom-outside">
   <div class="uk-container section__container">
     <div class="section__header">
@@ -311,3 +348,63 @@
 </section>
 {% include "template/blog.html" %}
 {% include "template/footer.html" %}
+<!--<div class="section__header">
+      <div class="section__title">
+        <h2>Правила возврата и обмена товара</h2>
+      </div>
+    </div>
+    <div class="section__body">
+      <div uk-grid class="uk-grid-small uk-width-1-1@m">
+        <div class="uk-width-1-4@m">
+          <div class="delivery-rules">
+            <ul class="delivery-rules__list">
+              <li class="delivery-rules__item">
+                <a href="#rule1" class="link link--active">Порядок принятия Товара</a>
+              </li>
+              <li class="delivery-rules__item">
+                <a href="#rule2" class="link">Условия обмена и возврата товара надлежащего качества</a>
+              </li>
+              <li class="delivery-rules__item">
+                <a href="#" class="link">Порядок возврата товара</a>
+              </li>
+              <li class="delivery-rules__item">
+                <a href="#" class="link">Гарантии и условия возврата товара ненадлежащего качества</a>
+              </li>
+              <li class="delivery-rules__item">
+                <a href="#" class="link">Порядок принятия Товара</a>
+              </li>
+              <li class="delivery-rules__item">
+                <a href="#" class="link">Возврат денежных средств при оформлении возврата товара</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="uk-width-1-1 uk-width-3-4@m">
+          <div class="hide-section">
+            <div id="hidden-1" style="--hidden-height: 420" class="hide-section__body is-hidden">
+              <h3 class="delivery-rules__title" id="rule1">Порядок принятия Товара</h3>
+              <p class="delivery-rules__text">При приемке Товара Покупатель обязан проверить Товар по количеству, качеству (общая целостность Товара, наличие трещин, сколов, потертостей, пятен, разводов, а также иных недостатков, для обнаружения которых не требуется применение специального оборудования) и комплектности, на его соответствие образцу/описанию Товара, а также данным, указанным в заказе на продажу.</p>
+              <p class="delivery-rules__text">В случае обнаружения недостатков Товара и/или его несоответствия данным, указанным на Сайте или в Заказе на продажу, Покупатель обязан указать об этом в заявке на оказание услуги по доставке Товара.</p>
+              <p class="delivery-rules__text">В противном случае, Товар считается принятым без претензий по количеству, качеству и комплектности, что не лишает покупателя возможности реализации права предъявления требований в соответствии с действующим законодательством, в том числе Законом «О защите прав потребителей» от 07.02.1992 № 2300-1.</p>
+              <h3 class="delivery-rules__title" id="rule2">Условия обмена и возврата товара надлежащего качества</h3>
+              <p class="delivery-rules__text">Статьей 502 Гражданского кодекса РФ и статьей 25 закона «О защите прав потребителей» потребителю предоставляется право обменять или вернуть товар при одновременном соблюдении следующих условий:</p>
+              <ul>
+                <li>товар непродовольственный;</li>
+                <li>товар надлежащего качества (если товар ненадлежащего качества – см. <a href="#" class="link">условия возврата и обмена товара ненадлежащего качества</a>;</li>
+                <li>товар не был в употреблении, т.е. упаковка не нарушена, нет следов эксплуатации, комплектация сохранена (в случае потери упаковки, бирок, ярлыков и т.п. возврат или обмен возможен по согласованию с администратором магазина), в том числе если товар был поставлен в разобранном виде, и не были собран покупателем;</li>
+              </ul>
+            </div>
+            <div class="hide-section__btn">
+              <button class="hide-section-btn btn-show" uk-toggle="target: #hidden-1; cls: is-hidden">
+                <span>Показать еще</span>
+                {{mixins.icon('arrow-menu')}}
+              </button>
+              <button class="hide-section-btn btn-hide" uk-toggle="target: #hidden-1; cls: is-hidden">
+                <span>Скрыть</span>
+                {{mixins.icon('arrow-menu')}}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>-->

@@ -287,6 +287,14 @@ p+p {
   margin-top: 15px;
 }
 
+.blog-list.uk-grid-small>.uk-grid-margin {
+  margin-top: calc(40 / var(--fz) * var(--fz-em));
+
+  @media (min-width: 960px) {
+    margin-top: calc(80 / var(--fz) * var(--fz-em))
+  }
+}
+
 .uk-section {
   --gutter: 40;
 

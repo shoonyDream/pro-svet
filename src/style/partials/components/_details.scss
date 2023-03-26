@@ -9,6 +9,10 @@
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
+
+    &--last {
+      margin-top: auto;
+    }
   }
 
   &__time {
