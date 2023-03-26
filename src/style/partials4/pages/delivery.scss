@@ -70,7 +70,7 @@
     position: relative;
     padding-left: calc(10 / var(--fz) * var(--fz-em));
 
-    &:before {
+    &::before {
       position: absolute;
       top: calc(7 / var(--fz) * var(--fz-em));
       left: 0;
@@ -78,7 +78,7 @@
       background: var(--primary);
       width: calc(4 / var(--fz) * var(--fz-em));
       height: calc(4 / var(--fz) * var(--fz-em));
-      content: "";
+      content: '';
     }
   }
 }

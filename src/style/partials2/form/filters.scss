@@ -70,6 +70,7 @@
 
   &-parameters-box {
     padding: calc(20 / var(--fz) * var(--fz-em)) 0 calc(20 / var(--fz) * var(--fz-em)) calc(20 / var(--fz) * var(--fz-em));
+    margin: 0 !important;
 
     &::before {
       content: '';
@@ -121,11 +122,17 @@
     .form-check {
       display: flex;
       gap: calc(5 / var(--fz) * var(--fz-em));
+      padding: 0;
+      min-height: auto;
+      margin-bottom: 0 !important;
     }
 
     .form-check-input {
       flex-shrink: 0;
       align-self: flex-start;
+      margin: 0;
+      width: 0;
+      height: 0;
     }
   }
 
@@ -168,7 +175,7 @@
     height: calc(10 / var(--fz) * var(--fz-em));
     border-radius: 50%;
     background: var(--primary);
-    top: calc(-5 / var(--fz) * var(--fz-em));
+    top: calc(-4 / var(--fz) * var(--fz-em));
     margin: 0 !important;
   }
 
@@ -188,6 +195,7 @@
     position: relative;
     cursor: pointer;
     transition: 0.2s linear;
+    font-size: inherit;
 
     &::before {
       content: '';
@@ -295,5 +303,15 @@
 
   &::after {
     display: none;
+  }
+}
+
+.form-control {
+  border: none;
+  padding: 0;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
   }
 }

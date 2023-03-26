@@ -19,6 +19,10 @@
       font-size: calc(var(--fz-badge) / var(--fz) * var(--fz-em));
       position: absolute;
       background-color: var(--primary);
+
+      @media (min-width: 1140px) {
+        top: calc(16 / var(--fz-badge) * var(--fz-em));
+      }
     }
 
     .top-nav & {
