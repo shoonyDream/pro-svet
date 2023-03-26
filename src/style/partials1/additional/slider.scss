@@ -1,4 +1,13 @@
 .slider {
+  .uk-hidden\@m+& {
+    margin-top: 20px !important;
+
+    @media (min-width: 960px) {
+      margin-top: 40px !important;
+    }
+  }
+
+
   &--bg {
     background-color: var(--card-bg);
     height: 100%;

@@ -323,11 +323,15 @@ a.card__title {
     font-size: calc(var(--fz)/ var(--fz-base) * var(--fz-em));
 
     &--large {
-      --fz: 24;
+      --fz: 18;
 
       line-height: 1.2;
       font-family: var(--font-title);
       color: var(--card-title-color-large);
+
+      @media (min-width: 960px) {
+        --fz: 24;
+      }
 
       #{$self}--custom-bg & {
         --fz: 32;

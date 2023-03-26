@@ -198,6 +198,8 @@ p+p {
 .uk-container {
   box-sizing: border-box;
 
+  padding: 0 20px;
+
   @media (min-width: 1140px) {
     max-width: 1440px;
     padding: 0 calc(var(--save-gutter) * 1px);
@@ -284,7 +286,7 @@ p+p {
 .uk-grid+.uk-grid-small,
 .uk-grid-row-small>.uk-grid-margin,
 .uk-grid-small>.uk-grid-margin {
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .blog-list.uk-grid-small>.uk-grid-margin {
@@ -296,7 +298,7 @@ p+p {
 }
 
 .uk-section {
-  --gutter: 40;
+  --gutter: 30;
 
   @media (min-width: 960px) {
     --gutter: 60;

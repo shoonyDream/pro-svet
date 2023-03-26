@@ -37,7 +37,7 @@ var path = {
 		tooot: 'src/',
 		html: 'src/*.html',
 		js: 'src/js/**/*.*',
-		style: 'src/style/partials/*.*',
+		style: 'src/style/partials/**/*.*',
 		styleAdditional: 'src/style/partials1/**/*.*',
 		styleForm: 'src/style/partials2/**/*.*',
 		styleLayout: 'src/style/partials3/**/*.*',
@@ -51,7 +51,7 @@ var path = {
 	watch: {
 		html: 'src/**/*.html',
 		js: 'src/js/**/*.js',
-		style: 'src/style/partials/*.*',
+		style: 'src/style/partials/**/*.*',
 		styleAdditional: 'src/style/partials1/**/*.*',
 		styleForm: 'src/style/partials2/**/*.*',
 		styleLayout: 'src/style/partials3/**/*.*',

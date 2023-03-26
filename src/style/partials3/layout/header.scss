@@ -21,7 +21,7 @@
       position: absolute;
       width: 1px;
       height: calc(100% - 20 / var(--fz) * var(--fz-em));
-      left: calc(-22 / var(--fz) * var(--fz-em));
+      left: calc(-18 / var(--fz) * var(--fz-em));
       top: calc(20 / var(--fz) * var(--fz-em));
       background-color: var(--header-border-color);
     }
@@ -29,9 +29,9 @@
     &::after {
       content: '';
       position: absolute;
-      width: calc(100% + 22 / var(--fz) * var(--fz-em));
+      width: calc(100% + 18 / var(--fz) * var(--fz-em));
       height: 1px;
-      left: calc(-22 / var(--fz) * var(--fz-em));
+      left: calc(-18 / var(--fz) * var(--fz-em));
       bottom: 1px;
       background-color: var(--header-border-color);
     }
@@ -65,7 +65,7 @@
     display: flex;
     height: 100%;
     width: 100%;
-    gap: calc(42 / var(--fz) * var(--fz-em));
+    gap: calc(38 / var(--fz) * var(--fz-em));
   }
 
   &__logo {

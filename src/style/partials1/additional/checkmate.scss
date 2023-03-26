@@ -35,6 +35,18 @@
     flex-direction: column;
     align-self: center;
 
+    & .uk-h2 {
+      margin-bottom: 0;
+    }
+
+    &--row-mobile {
+      flex-direction: row;
+
+      @media (min-width: 960px) {
+        flex-direction: column;
+      }
+    }
+
     .checkmate--top & {
       gap: calc(20 / var(--fz) * var(--fz-em));
       align-self: flex-start;

@@ -66,6 +66,10 @@
   }
 
   &__container {
-    margin-top: calc(30 / var(--fz) * var(--fz-em));
+    margin-top: calc(20 / var(--fz) * var(--fz-em));
+
+    @media (min-width: 1100px) {
+      margin-top: calc(30 / var(--fz) * var(--fz-em));
+    }
   }
 }

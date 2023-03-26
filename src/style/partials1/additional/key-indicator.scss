@@ -38,7 +38,7 @@
 }
 
 .key-indicator {
-  --icon-width: 69;
+  --icon-width: 64;
   --icon-bg: var(--bg-2);
 
   @media (min-width: 960px) {
@@ -51,10 +51,14 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: calc(20 / var(--fz) * var(--fz-em));
+  gap: calc(10 / var(--fz) * var(--fz-em));
   align-items: center;
   text-align: center;
   padding: calc(20 / var(--fz) * var(--fz-em));
+
+  @media (min-width: 960px) {
+    gap: calc(20 / var(--fz) * var(--fz-em));
+  }
 
   &--horizontal {
     flex-direction: column;

@@ -10,6 +10,10 @@
   margin: 0;
   min-width: none;
 
+  & .row {
+    margin: 0;
+  }
+
   *,
   *::before,
   *::after {
