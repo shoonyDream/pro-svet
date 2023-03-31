@@ -1,5 +1,290 @@
 {% set page = 'main' %}
 {% import "template/_mixins.html" as mixins %}
 {% include "template/header.html" %}
-<p>cart</p>
+{% include "template/breadcrumbs.html" %}
+
+<section class="uk-section-small section section--border section--border-bottom">
+  <div class="uk-container section__container">
+    <div class="section__header">
+      <h2>Корзина</h2>
+    </div>
+    <div class="section__body">
+      <form class="cart-table">
+        <div class="cart-table__body">
+          <div class="cart-table__row cart-table__row--header">
+            <div class="cart-table__cell cart-table__cell--image">
+              <span>Товар</span>
+            </div>
+            <div class="cart-table__cell"></div>
+            <div class="cart-table__cell cart-table__cell--price">
+              <span>Цена</span>
+            </div>
+            <div class="cart-table__cell cart-table__cell--count">
+              <span>Количество</span>
+            </div>
+            <div class="cart-table__cell cart-table__cell--price">
+              <span>Сумма</span>
+            </div>
+            <div class="cart-table__cell cart-table__cell--cross"></div>
+          </div>
+          <div class="cart-table__row">
+            <div class="cart-table__cell cart-table__cell--image">
+              <a href="#" class="card card--horizontal">
+                <div class="card__image">
+                  <div class="card__img">
+                    <img src="./decor/1.png" alt="product">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="cart-table__cell">
+              <div class="cart-table__row">
+                <div class="cart-table__cell">
+                  <article class="card card--horizontal">
+                    <div class="card__body">
+                      <a href="#" class="card__title">Светильник подвесной металлический в форме купола Campana средний
+                        черный
+                      </a>
+                      <div class="card__info">
+                        <div class="info-list">
+                          <span class="info-list__item">Количество ламп: 4</span>
+                          <span class="info-list__item">Цвет: серый</span>
+                          <span class="info-list__item">Диаметр: 400 мм</span>
+                          <span class="info-list__item">Мощность Вт: 250</span>
+                          <span class="info-list__item">Материал: метал/акрил/ алюминий/кварц/сталь</span>
+                          <span class="info-list__item">Материал:
+                            ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="cart-table__cell cart-table__cell--price cart-table__cell--price-per">
+                  <div class="price">
+                    <span class="price__unit">26 780 ₽</span>
+                  </div>
+                </div>
+                <div class="cart-table__cell cart-table__cell--count">
+                  <div class="count-tools js-product-quantity">
+                    <a class="count-tools__arrow-minus js-product-quantity__arrow-minus"> — </a>
+                    <input class="count-tools__num js-product-quantity__num input-num" type="number" value="1"
+                      id="quantity">
+                    <a class="count-tools__arrow-plus js-product-quantity__arrow-plus"> + </a>
+                  </div>
+                </div>
+                <div class="cart-table__cell cart-table__cell--price">
+                  <div class="price">
+                    <span class="price__unit">26 780 ₽</span>
+                  </div>
+                </div>
+                <div class="cart-table__cell cart-table__cell--cross">
+                  <button type="button" class="cross-btn">{{mixins.icon('cross')}}</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-table__row">
+            <div class="cart-table__cell cart-table__cell--image">
+              <a href="#" class="card card--horizontal">
+                <div class="card__image">
+                  <div class="card__img">
+                    <img src="./decor/1.png" alt="product">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="cart-table__cell">
+              <div class="cart-table__row">
+                <div class="cart-table__cell">
+                  <article class="card card--horizontal">
+                    <div class="card__body">
+                      <a href="#" class="card__title">Светильник подвесной металлический в форме купола Campana средний
+                        черный
+                      </a>
+                      <div class="card__info">
+                        <div class="info-list">
+                          <span class="info-list__item">Количество ламп: 4</span>
+                          <span class="info-list__item">Цвет: серый</span>
+                          <span class="info-list__item">Диаметр: 400 мм</span>
+                          <span class="info-list__item">Мощность Вт: 250</span>
+                          <span class="info-list__item">Материал: метал/акрил/ алюминий/кварц/сталь</span>
+                          <span class="info-list__item">Материал:
+                            ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</span>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="cart-table__cell cart-table__cell--price cart-table__cell--price-per">
+                  <div class="price">
+                    <span class="price__unit">26 780 ₽</span>
+                  </div>
+                </div>
+                <div class="cart-table__cell cart-table__cell--count">
+                  <div class="count-tools js-product-quantity">
+                    <a class="count-tools__arrow-minus js-product-quantity__arrow-minus"> — </a>
+                    <input class="count-tools__num js-product-quantity__num input-num" type="number" value="1"
+                      id="quantity">
+                    <a class="count-tools__arrow-plus js-product-quantity__arrow-plus"> + </a>
+                  </div>
+                </div>
+                <div class="cart-table__cell cart-table__cell--price">
+                  <div class="price">
+                    <span class="price__unit">26 780 ₽</span>
+                  </div>
+                </div>
+                <div class="cart-table__cell cart-table__cell--cross">
+                  <button type="button" class="cross-btn">{{mixins.icon('cross')}}</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-table__footer">
+          <div class="cart-table__row cart-table__sum-container">
+            <div class="cart-table__cell">Итого</div>
+            <div class="cart-table__cell cart-table__cell--price"></div>
+            <div class="cart-table__cell cart-table__cell--count">3</div>
+            <div class="cart-table__cell cart-table__cell--price">78 980 ₽</div>
+            <div class="cart-table__cell cart-table__cell--cross"></div>
+          </div>
+          <div class="cart-table__action-container">
+            <div class="cart-table__row cart-table__row--action">
+              <div class="cart-table__cell">
+                <div class="promocode">
+                  <div class="input">
+                    <input type="text" class="input__field" placeholder="Промокод">
+                  </div>
+                  <button class="btn btn--secondary"><span>Применить</span></button>
+                </div>
+              </div>
+              <div class="cart-table__cell">
+                <button class="btn"><span>Перейти к формлению</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="uk-section section section--border section--border-bottom section--border-bottom-outside">
+  <div class="uk-container section__container">
+    <div class="section__header">
+      <h2>Вы недавно смотрели</h2>
+    </div>
+    <div class="section__body">
+      <div uk-slider class="slider">
+        <div class="uk-position-relative uk-light" tabindex="-1">
+          <ul class="slider__list uk-grid uk-grid-small uk-slider-items">
+            <li class="slider__item uk-width-5-6 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+              <a href="#" class="card">
+                <div class="card__image">
+                  <div class="card__img">
+                    <img src="./decor/2.png" alt="product">
+                  </div>
+                </div>
+                <div class="card__body">
+                  <div class="card__title">Торшер Rondo 450*2300</div>
+                  <div class="card__info">
+                    <div class="price">
+                      <span class="price__unit">26 780 ₽</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="slider__item uk-width-5-6 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+              <a href="#" class="card">
+                <div class="card__labels">
+                  <ul class="label-list">
+                    <li class="label-list__item">
+                      <span>Скидка</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card__image">
+                  <div class="card__img">
+                    <img src="./decor/3.png" alt="product">
+                  </div>
+                </div>
+                <div class="card__body">
+                  <div class="card__title">Торшер Rondo 450*2300</div>
+                  <div class="card__info">
+                    <div class="price">
+                      <span class="price__unit price__unit--through">46 780 ₽</span>
+                      <span class="price__unit">26 780 ₽</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="slider__item uk-width-5-6 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+              <a href="#" class="card">
+                <div class="card__image">
+                  <div class="card__img">
+                    <img src="./decor/4.png" alt="product">
+                  </div>
+                </div>
+                <div class="card__body">
+                  <div class="card__title">Торшер Rondo 450*2300</div>
+                  <div class="card__info">
+                    <div class="price">
+                      <span class="price__unit">26 780 ₽</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="slider__item uk-width-5-6 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+              <a href="#" class="card">
+                <div class="card__image">
+                  <div class="card__img">
+                    <img src="./decor/5.png" alt="product">
+                  </div>
+                </div>
+                <div class="card__body">
+                  <div class="card__title">Торшер Rondo 450*2300</div>
+                  <div class="card__info">
+                    <div class="price">
+                      <span class="price__unit">26 780 ₽</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="slider__nav uk-slider-nav uk-dotnav uk-flex-center"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section uk-section section--white">
+  <div class="uk-container section__container">
+    <div class="section__body">
+      <div uk-grid class="uk-grid-small card-list uk-grid">
+        <div class="uk-width-1-2@s card-list__item uk-first__item">
+          <div class="section__header">
+            <div class="section__title">
+              <h2>Оформить заказ</h2>
+            </div>
+            <div class="section__subtitle">
+              <p><a href="#" class="link">Авторизоваться</a>, чтобы ускорить оформление.</p>
+              <p>Заполите форму и мы свяжемся с вами как можно скорее, или сделайте заказ по телефону:</p>
+              <p><a href="tel:+74955349700" class="link">+7 (495) 534-97-00</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="uk-width-1-2@s">
+          <div class="card card--custom-bg" style="background-color: #F7F4EF;">
+            {% include "template/form-cart.html" %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 {% include "template/footer.html" %}

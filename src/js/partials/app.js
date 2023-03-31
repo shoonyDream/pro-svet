@@ -10,15 +10,15 @@ function stickyToTop() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   stickyToTop();
 });
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
   stickyToTop();
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
   $('.js-select').select2({
     minimumResultsForSearch: Infinity
   });
@@ -26,13 +26,13 @@ $(document).ready(function() {
 
 //Reference:
 //https://www.onextrapixel.com/2012/12/10/how-to-create-a-custom-file-input-with-jquery-css3-and-php/
-(function($) {
+(function ($) {
   // Browser supports HTML5 multiple file?
   var multipleSupport = typeof $('<input/>')[0].multiple !== 'undefined',
     isIE = /msie/i.test(navigator.userAgent);
 
-  $.fn.customFile = function() {
-    return this.each(function() {
+  $.fn.customFile = function () {
+    return this.each(function () {
       var $file = $(this).addClass('custom-file-upload-hidden'), // the original file input
         $wrap = $('<div class="file-upload-wrapper">'),
         $input = $('<input type="text" class="file-upload-input input__field" placeholder="Здесь отобразятся названия файлов" disabled />'),
@@ -52,10 +52,10 @@ $(document).ready(function() {
       // Prevent focus
       $file.attr('tabIndex', -1);
       $button.attr('tabIndex', -1);
-      $button.click(function() {
+      $button.click(function () {
         $file.focus().click(); // Open dialog
       });
-      $file.change(function() {
+      $file.change(function () {
         var files = [],
           fileArr, filename;
         // If multiple is supported then extract
@@ -79,8 +79,8 @@ $(document).ready(function() {
       });
 
       $input.on({
-        blur: function() { $file.trigger('blur'); },
-        keydown: function(e) {
+        blur: function () { $file.trigger('blur'); },
+        keydown: function (e) {
           if (e.which === 13) { // Enter
             if (!isIE) { $file.trigger('click'); }
           } else if (e.which === 8 || e.which === 46) { // Backspace & Del
@@ -102,7 +102,7 @@ $(document).ready(function() {
 
   // Old browser fallback
   if (!multipleSupport) {
-    $(document).on('change', 'input.customfile', function() {
+    $(document).on('change', 'input.customfile', function () {
 
       var $this = $(this),
         // Create a unique ID so we
@@ -112,13 +112,13 @@ $(document).ready(function() {
 
         // Filter empty input
         $inputs = $wrap.siblings().find('.file-upload-input')
-        .filter(function() { return !this.value }),
+          .filter(function () { return !this.value }),
 
         $file = $('<input type="file" id="' + uniqId + '" name="' + $this.attr('name') + '"/>');
 
       // 1ms timeout so it runs after all other events
       // that modify the value have triggered
-      setTimeout(function() {
+      setTimeout(function () {
         // Add a new input
         if ($this.val()) {
           // Check for empty fields to prevent
@@ -141,3 +141,23 @@ $(document).ready(function() {
 }(jQuery));
 
 $('input[type=file]').customFile();
+
+$(function () {
+  (function quantityProducts() {
+    $(".js-product-quantity").each(function () {
+      let $quantityNum = $(this).find($(".js-product-quantity__num"));
+      let $quantityArrowMinus = $(this).find($(".js-product-quantity__arrow-minus"));
+      let $quantityArrowPlus = $(this).find($(".js-product-quantity__arrow-plus"));
+
+      $quantityArrowMinus.click(function () {
+        if ($quantityNum.val() > 1) {
+          $quantityNum.val(+$quantityNum.val() - 1);
+        }
+      });
+      $quantityArrowPlus.click(function () {
+        $quantityNum.val(+$quantityNum.val() + 1);
+      });
+
+    })
+  })();
+});
