@@ -303,6 +303,10 @@ a.card__title {
       flex-direction: column;
     }
 
+    .product-item-detail-slider-container & {
+      z-index: 1;
+    }
+
     .blog-article &,
     .section--blog & {
       margin: auto 0;

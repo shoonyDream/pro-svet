@@ -119,3 +119,19 @@
     color: var(--text-color);
   }
 }
+
+.product-item-detail-slider-block {
+  padding-top: 100%;
+}
+
+.product-item-detail-slider-image {
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.product-item-detail-slider-controls-image img {
+  object-fit: cover;
+}
