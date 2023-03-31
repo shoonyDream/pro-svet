@@ -114,6 +114,8 @@ a.card__title {
   }
 
   &--hover {
+    height: auto !important;
+
     @media (min-width: 960px) {
       position: relative;
       transition: z-index 0.15s ease;
@@ -142,7 +144,7 @@ a.card__title {
     color: var(--meaning);
 
     .card--large-image & {
-      padding-top: calc(100% + (95 / var(--fz) * var(--fz-em)));
+      padding-top: calc(100% + (35 / var(--fz) * var(--fz-em)));
     }
 
     &>* {
@@ -377,6 +379,14 @@ a.card__title {
         --fz: var(--h1);
       }
     }
+
+    .section--catalog-list .card__body & {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 100%;
+      overflow: hidden;
+      display: block;
+    }
   }
 
   &__info {
@@ -501,4 +511,9 @@ a.card__title {
   &__item {
     padding-left: 0;
   }
+}
+
+.product-item-image-original,
+.product-item-image-alternative {
+  background-size: cover;
 }
